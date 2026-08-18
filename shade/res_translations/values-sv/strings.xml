@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Appförslag"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alla appar"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Föreslagna appar"</string>
-	<string name="device_theme_tone">"Färgton"</string>
-	<string name="device_theme_wallpaper">"Automatiskt (utifrån bakgrunden)"</string>
-	<string name="device_theme_light">"Ljust"</string>
-	<string name="device_theme_dark">"Mörkt"</string>
 	<string name="category_general">"Allmänt"</string>
-	<string name="category_style">"Tema"</string>
 	<string name="category_customization">"Anpassning"</string>
 	<string name="category_about">"Om"</string>
 	<string name="pref_value_default">"Standardinställning"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"Mer"</string>
 	<string name="app_info_version">"Version"</string>
 	<string name="app_info_source_unknown">"Okänd"</string>
-	<string name="font">"Teckensnitt"</string>
 	<string name="loading">"Läser in..."</string>
 	<string name="about_donate">"Donera"</string>
 	<string name="any_activity_shortcut">"Välj aktivitet"</string>

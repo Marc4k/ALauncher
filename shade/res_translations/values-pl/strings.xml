@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Sugerowane aplikacje"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Wszystkie aplikacje"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Przewidywane aplikacje"</string>
-	<string name="device_theme_tone">"Ton"</string>
-	<string name="device_theme_wallpaper">"Automatyczny (na podstawie tapety)"</string>
-	<string name="device_theme_light">"Jasny"</string>
-	<string name="device_theme_dark">"Ciemny"</string>
 	<string name="category_general">"Ogólne"</string>
-	<string name="category_style">"Motyw"</string>
 	<string name="category_customization">"Dostosowywanie"</string>
 	<string name="category_about">"Informacje"</string>
 	<string name="pref_value_default">"Domyślne"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"Więcej"</string>
 	<string name="app_info_version">"Wersja"</string>
 	<string name="app_info_source_unknown">"Nieznany"</string>
-	<string name="font">"Czcionka"</string>
 	<string name="loading">"Ładowanie..."</string>
 	<string name="about_donate">"Wspomóż"</string>
 	<string name="any_activity_shortcut">"Wybierz działanie"</string>

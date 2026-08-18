@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ಆ್ಯಪ್ ಸಲಹೆಗಳು"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"ನಿಮ್ಮ ಸಂಭವನೀಯ ಆ್ಯಪ್‌ಗಳು"</string>
-	<string name="device_theme_tone">"ಟೋನ್"</string>
-	<string name="device_theme_wallpaper">"ಸ್ವಯಂಚಾಲಿತ (ವಾಲ್‌ಪೇಪರ್‌ ಅನ್ನು ಆಧರಿಸಿ)"</string>
-	<string name="device_theme_light">"ಹಗುರ"</string>
-	<string name="device_theme_dark">"ಕತ್ತಲೆ"</string>
 	<string name="category_general">"ಸಾಮಾನ್ಯ"</string>
-	<string name="category_style">"ಥೀಮ್"</string>
 	<string name="category_customization">"ಗ್ರಾಹಕೀಯಗೊಳಿಸುವಿಕೆ"</string>
 	<string name="category_about">"ಕುರಿತು"</string>
 	<string name="pref_value_default">"ಡಿಫಾಲ್ಟ್"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"ಇನ್ನಷ್ಟು"</string>
 	<string name="app_info_version">"ಆವೃತ್ತಿ"</string>
 	<string name="app_info_source_unknown">"ಅಪರಿಚಿತ"</string>
-	<string name="font">"ಫಾಂಟ್"</string>
 	<string name="loading">"ಲೋಡ್ ಆಗುತ್ತಿದೆ..."</string>
 	<string name="about_donate">"ದಾನ"</string>
 	<string name="any_activity_shortcut">"ಚಟುವಟಿಕೆಯನ್ನು ಆರಿಸಿ"</string>

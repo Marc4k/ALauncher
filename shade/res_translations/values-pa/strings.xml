@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ਐਪ ਸੰਬੰਧੀ ਸੁਝਾਅ"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ਸਾਰੀਆਂ ਐਪਾਂ"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"ਤੁਹਾਡੀਆਂ ਪੂਰਵ ਅਨੁਮਾਨਿਤ ਐਪਾਂ"</string>
-	<string name="device_theme_wallpaper">"ਸਵੈਚਲਿਤ (ਵਾਲਪੇਪਰ \'ਤੇ ਆਧਾਰਿਤ)"</string>
-	<string name="device_theme_light">"ਬਲਬ"</string>
-	<string name="device_theme_dark">"ਗੂੜ੍ਹਾ"</string>
 	<string name="category_general">"ਸਧਾਰਨ"</string>
 	<string name="category_about">"ਇਸ ਬਾਰੇ"</string>
 	<string name="pref_value_default">"ਪੂਰਵ-ਨਿਰਧਾਰਤ"</string>

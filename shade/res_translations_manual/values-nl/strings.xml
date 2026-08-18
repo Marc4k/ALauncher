@@ -6,13 +6,6 @@
     <string name="app_info_source">Oorsprong</string>
     <string name="app_info_last_update">Laatste update</string>
     <string name="item_hidden">Item verborgen</string>
-    <string name="theme_title">Accent</string>
-    <string name="theme_campfire">Kampvuur</string>
-    <string name="theme_sunset">Zonsondergang</string>
-    <string name="theme_forest">Oerwoud</string>
-    <string name="theme_ocean">Oceaan</string>
-    <string name="theme_twilight">Schemering</string>
-    <string name="theme_blossom">Bloesem</string>
     <string name="dock_search">Zoekbalk</string>
     <string name="fading_transition">Vloeiende overgang</string>
     <string name="fading_transition_desc">Wanneer je apps opent</string>

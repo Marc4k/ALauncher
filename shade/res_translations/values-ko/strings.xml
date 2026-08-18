@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"앱 추천"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"모든 앱"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"추천 앱"</string>
-	<string name="device_theme_tone">"톤"</string>
-	<string name="device_theme_wallpaper">"자동(배경화면에 따라)"</string>
-	<string name="device_theme_light">"밝게"</string>
-	<string name="device_theme_dark">"어둡게"</string>
 	<string name="category_general">"기본설정"</string>
-	<string name="category_style">"테마"</string>
 	<string name="category_customization">"사용자 지정"</string>
 	<string name="category_about">"정보"</string>
 	<string name="pref_value_default">"기본"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"더보기"</string>
 	<string name="app_info_version">"버전"</string>
 	<string name="app_info_source_unknown">"알 수 없음"</string>
-	<string name="font">"글꼴"</string>
 	<string name="loading">"로드하는 중..."</string>
 	<string name="about_donate">"기부"</string>
 	<string name="any_activity_shortcut">"작업 선택"</string>

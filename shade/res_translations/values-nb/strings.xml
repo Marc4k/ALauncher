@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Appanbefalinger"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alle apper"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Forslag til apper"</string>
-	<string name="device_theme_tone">"Tone"</string>
-	<string name="device_theme_wallpaper">"Automatisk (basert på bakgrunn)"</string>
-	<string name="device_theme_light">"Lys"</string>
-	<string name="device_theme_dark">"Mørk"</string>
 	<string name="category_general">"Generelt"</string>
-	<string name="category_style">"Tema"</string>
 	<string name="category_customization">"Brukertilpasning"</string>
 	<string name="category_about">"Info"</string>
 	<string name="pref_value_default">"Standard"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"Se mer"</string>
 	<string name="app_info_version">"Versjon"</string>
 	<string name="app_info_source_unknown">"Ukjent"</string>
-	<string name="font">"Font"</string>
 	<string name="loading">"Laster inn..."</string>
 	<string name="about_donate">"Donere"</string>
 	<string name="any_activity_shortcut">"Velg aktivitet"</string>

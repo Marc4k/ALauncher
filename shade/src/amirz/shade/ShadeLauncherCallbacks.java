@@ -21,13 +21,9 @@ import amirz.shade.hidden.HiddenAppsDrawerState;
 import amirz.shade.search.AllAppsQsb;
 import amirz.unread.UnreadSession;
 
-import static amirz.shade.ShadeFont.DEFAULT_FONT;
-import static amirz.shade.ShadeFont.KEY_FONT;
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
-import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static android.content.Context.SEARCH_SERVICE;
 import static com.android.launcher3.LauncherState.ALL_APPS;
-import static com.android.launcher3.util.Themes.KEY_DEVICE_THEME;
 
 public class ShadeLauncherCallbacks implements LauncherCallbacks,
         SharedPreferences.OnSharedPreferenceChangeListener {
@@ -68,15 +64,16 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-        if (KEY_DEVICE_THEME.equals(key) || KEY_THEME.equals(key) || KEY_FONT.equals(key)) {
-            mLauncher.recreate();
-        } else if (KEY_DOCK_SEARCH.equals(key)) {
+        if (KEY_DOCK_SEARCH.equals(key)) {
             mLauncher.kill();
         }
     }
 
     private void setDefaultValues(SharedPreferences prefs) {
-        prefs.edit().putString(KEY_FONT, prefs.getString(KEY_FONT, DEFAULT_FONT))
+        prefs.edit()
+                .remove("pref_font")
+                .remove("pref_device_theme")
+                .remove("pref_theme")
                 .putString(KEY_DOCK_SEARCH, prefs.getString(KEY_DOCK_SEARCH,
                         getRecommendedSearchProvider()))
                 .apply();

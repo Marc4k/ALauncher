@@ -15,56 +15,6 @@
     <!-- String representing the fragment class for settings activity.-->
     <string name="settings_fragment_name" translatable="false">amirz.shade.ShadeSettings$ShadeSettingsFragment</string>
 
-    <string-array name="theme_entries">
-        <item>@string/pref_value_default</item>
-        <item>@string/theme_campfire</item> <!-- Red -->
-        <item>@string/theme_sunset</item> <!-- Yellow -->
-        <item>@string/theme_sunrise</item> <!-- Yellow -->
-        <item>@string/theme_forest</item> <!-- Green -->
-        <item>@string/theme_ocean</item> <!-- Blue -->
-        <item>@string/theme_twilight</item> <!-- Purple -->
-        <item>@string/theme_blossom</item> <!-- Pink -->
-        <item>@string/theme_midnight</item> <!-- Black -->
-        <item>@string/theme_transparent</item> <!-- Transparent -->
-    </string-array>
-
-    <string-array translatable="false" name="theme_entry_values">
-        <item>""</item>
-        <item>"campfire"</item>
-        <item>"sunset"</item>
-        <item>"sunrise"</item>
-        <item>"forest"</item>
-        <item>"ocean"</item>
-        <item>"twilight"</item>
-        <item>"blossom"</item>
-        <item>"midnight"</item>
-        <item>"transparent"</item>
-    </string-array>
-
-    <string-array name="device_theme_entries">
-        <item>@string/device_theme_default</item>
-        <item>@string/device_theme_wallpaper</item>
-        <item>@string/device_theme_light</item>
-        <item>@string/device_theme_dark</item>
-    </string-array>
-
-    <string-array name="device_theme_entry_values">
-        <item>"system"</item>
-        <item>"wallpaper"</item>
-        <item>"light"</item>
-        <item>"dark"</item>
-    </string-array>
-
-    <string-array name="font_entries">
-        <item>@string/pref_value_default</item>
-        <item>@string/font_google_sans</item>
-    </string-array>
-
-    <string-array name="font_entry_values">
-        <item>""</item>
-        <item>"google_sans"</item>
-    </string-array>
-
     <string name="about_contact_url" translatable="false">https://t.me/OneHaKr</string>
 
     <integer name="shade_all_apps_light_alpha">25</integer>

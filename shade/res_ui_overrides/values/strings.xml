@@ -9,12 +9,6 @@
     <string name="category_basic" translatable="false">"Basic"</string>
     <string name="category_search" translatable="false">"Search"</string>
     <string name="close_task" translatable="false">Close</string>
-    <string name="theme_transparent" translatable="false">"Transparent"</string>
-    <string name="theme_sunrise" translatable="false">Sunrise</string>
-    <string name="theme_midnight" translatable="false">Midnight</string>
-
-    <string name="device_theme_default" translatable="false">"Use system default"</string>
-
     <string name="widget_search_bar_hint" translatable="false">Search widgets</string>
     <string name="lock_app_label" translatable="false">Lock</string>
     <string name="unlock_app_label" translatable="false">Unlock</string>

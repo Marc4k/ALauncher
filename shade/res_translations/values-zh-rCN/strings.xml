@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"应用推荐"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"所有应用"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"您的预测应用"</string>
-	<string name="device_theme_tone">"⾊调"</string>
-	<string name="device_theme_wallpaper">"自动（根据壁纸）"</string>
-	<string name="device_theme_light">"浅色"</string>
-	<string name="device_theme_dark">"深色"</string>
 	<string name="category_general">"常规"</string>
-	<string name="category_style">"主题模式"</string>
 	<string name="category_customization">"个性化"</string>
 	<string name="category_about">"关于"</string>
 	<string name="pref_value_default">"默认应用"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"更多"</string>
 	<string name="app_info_version">"版本"</string>
 	<string name="app_info_source_unknown">"未知"</string>
-	<string name="font">"字体"</string>
 	<string name="loading">"正在开启..."</string>
 	<string name="about_donate">"捐"</string>
 	<string name="any_activity_shortcut">"选择活动"</string>

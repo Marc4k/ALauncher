@@ -6,13 +6,6 @@
     <string name="app_info_source">Fuente</string>
     <string name="app_info_last_update">Última actualización</string>
     <string name="item_hidden">Escondido</string>
-    <string name="theme_title">Acento</string>
-    <string name="theme_campfire">Hoguera</string>
-    <string name="theme_sunset">Atardecer</string>
-    <string name="theme_forest">Bosque</string>
-    <string name="theme_ocean">Océano</string>
-    <string name="theme_twilight">Crepúsculo</string>
-    <string name="theme_blossom">Floración</string>
     <string name="dock_search">Widget de búsqueda</string>
     <string name="fading_transition">Transición</string>
     <string name="fading_transition_desc">Al abrir aplicaciones</string>

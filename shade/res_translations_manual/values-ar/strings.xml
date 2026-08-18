@@ -6,13 +6,6 @@
     <string name="app_info_source">المصدر</string>
     <string name="app_info_last_update">آخر تحديث</string>
     <string name="item_hidden">عنصر مخفي</string>
-    <string name="theme_title">الطابع اللوني</string>
-    <string name="theme_campfire">نار المخيم</string>
-    <string name="theme_sunset">غروب</string>
-    <string name="theme_forest">غابة</string>
-    <string name="theme_ocean">محيط</string>
-    <string name="theme_twilight">شفق</string>
-    <string name="theme_blossom">زهري</string>
     <string name="dock_search">تطبيق مصغر للبحث</string>
     <string name="fading_transition">تأثير التلاشي</string>
     <string name="fading_transition_desc">عند فتح التطبيقات</string>

@@ -6,13 +6,6 @@
     <string name="app_info_source">Πηγή</string>
     <string name="app_info_last_update">Τελευταία ενημέρωση</string>
     <string name="item_hidden">Το στοιχείο είναι κρυφό</string>
-    <string name="theme_title">Απόχρωση</string>
-    <string name="theme_campfire">Φωτιά Κατασκήνωσης</string>
-    <string name="theme_sunset">Ηλιοβασίλεμα</string>
-    <string name="theme_forest">Δάσος</string>
-    <string name="theme_ocean">Ωκεανός</string>
-    <string name="theme_twilight">Λυκόφως</string>
-    <string name="theme_blossom">Άνθος</string>
     <string name="dock_search">Γραφικό στοιχείο αναζήτησης</string>
     <string name="fading_transition">Εφέ σβησίματος</string>
     <string name="fading_transition_desc">Κατά το άνοιγμα των εφαρμογών</string>

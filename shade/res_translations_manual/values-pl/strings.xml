@@ -6,13 +6,6 @@
     <string name="app_info_source">Źródło</string>
     <string name="app_info_last_update">Ostatnia aktualizacja</string>
     <string name="item_hidden">Ukryto element</string>
-    <string name="theme_title">Akcent</string>
-    <string name="theme_campfire">Ognisko</string>
-    <string name="theme_sunset">Zachód</string>
-    <string name="theme_forest">Las</string>
-    <string name="theme_ocean">Ocean</string>
-    <string name="theme_twilight">Zmierzch</string>
-    <string name="theme_blossom">Rozkwit</string>
     <string name="dock_search">Widżet wyszukiwarki</string>
     <string name="fading_transition">Animacja przenikania</string>
     <string name="fading_transition_desc">W trakcie otwierania aplikacji</string>

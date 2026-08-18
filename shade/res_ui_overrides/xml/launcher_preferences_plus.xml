@@ -46,39 +46,6 @@
 
         </PreferenceScreen>
 
-        <PreferenceScreen
-            android:icon="@drawable/ic_theme"
-            android:key="pref_screen_style"
-            android:title="@string/category_style">
-
-            <amirz.shade.settings.ListPreference
-                android:key="pref_device_theme"
-                android:title="@string/device_theme_tone"
-                android:summary="%s"
-                android:entries="@array/device_theme_entries"
-                android:entryValues="@array/device_theme_entry_values"
-                android:defaultValue="system"
-                android:persistent="true" />
-
-            <amirz.shade.settings.ColorListPreference
-                android:key="pref_theme"
-                android:title="@string/theme_title"
-                android:summary="%s"
-                android:entries="@array/theme_entries"
-                android:entryValues="@array/theme_entry_values"
-                android:defaultValue=""
-                android:persistent="true" />
-
-            <ListPreference
-                android:key="pref_font"
-                android:title="@string/font"
-                android:summary="%s"
-                android:entries="@array/font_entries"
-                android:entryValues="@array/font_entry_values"
-                android:defaultValue="google_sans"
-                android:persistent="true" />
-        </PreferenceScreen>
-
     </PreferenceCategory>
 
     <androidx.preference.PreferenceScreen

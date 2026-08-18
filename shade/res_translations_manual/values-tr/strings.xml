@@ -6,13 +6,6 @@
     <string name="app_info_source">Kaynak</string>
     <string name="app_info_last_update">Son güncelleme</string>
     <string name="item_hidden">Öğe gizlendi</string>
-    <string name="theme_title">Vurgu rengi</string>
-    <string name="theme_campfire">Kamp ateşi</string>
-    <string name="theme_sunset">Gün batımı</string>
-    <string name="theme_forest">Orman</string>
-    <string name="theme_ocean">Okyanus</string>
-    <string name="theme_twilight">Alacakaranlık</string>
-    <string name="theme_blossom">Çiçek</string>
     <string name="dock_search">Arama çubuğu</string>
     <string name="fading_transition">Solarak geçiş</string>
     <string name="fading_transition_desc">Uygulamaları açarken</string>

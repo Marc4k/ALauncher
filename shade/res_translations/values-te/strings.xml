@@ -34,12 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"యాప్ సూచనలు"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"అన్ని యాప్‌లు"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"మీ సూచించబడిన యాప్‌లు"</string>
-	<string name="device_theme_tone">"టోన్"</string>
-	<string name="device_theme_wallpaper">"ఆటోమేటిక్ (వాల్‌పేపర్ ఆధారంగా)"</string>
-	<string name="device_theme_light">"లేత రంగు"</string>
-	<string name="device_theme_dark">"ముదురు రంగు"</string>
 	<string name="category_general">"సాధారణం"</string>
-	<string name="category_style">"థీమ్"</string>
 	<string name="category_customization">"కస్టమైజేషన్"</string>
 	<string name="category_about">"పరిచయం"</string>
 	<string name="pref_value_default">"డిఫాల్ట్"</string>
@@ -49,7 +44,6 @@
 	<string name="app_info_more">"మరిన్ని"</string>
 	<string name="app_info_version">"వెర్షన్"</string>
 	<string name="app_info_source_unknown">"తెలియదు"</string>
-	<string name="font">"ఫాంట్"</string>
 	<string name="loading">"లోడింగ్ చేస్తోంది..."</string>
 	<string name="about_donate">"దానం"</string>
 	<string name="any_activity_shortcut">"కార్యాచరణను ఎంచుకోండి"</string>

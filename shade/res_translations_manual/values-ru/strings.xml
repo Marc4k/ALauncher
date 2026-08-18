@@ -6,13 +6,6 @@
     <string name="app_info_source">Исходный код</string>
     <string name="app_info_last_update">Последнее обновление</string>
     <string name="item_hidden">Скрытый объект</string>
-    <string name="theme_title">Акцент</string>
-    <string name="theme_campfire">Костер</string>
-    <string name="theme_sunset">Закат</string>
-    <string name="theme_forest">Лес</string>
-    <string name="theme_ocean">Океан</string>
-    <string name="theme_twilight">Сумерки</string>
-    <string name="theme_blossom">Цветение</string>
     <string name="dock_search">Виджет поиска</string>
     <string name="fading_transition">Затухающий переход</string>
     <string name="fading_transition_desc">При открытии приложений</string>

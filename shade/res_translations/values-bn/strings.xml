@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"অ্যাপের সাজেশন"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"সব অ্যাপ"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"আপনার প্রয়োজন হতে পারে এমন অ্যাপ"</string>
-	<string name="device_theme_wallpaper">"অটোমেটিক (ওয়ালপেপারের উপর ভিত্তি করে)"</string>
-	<string name="device_theme_light">"হালকা"</string>
-	<string name="device_theme_dark">"গাঢ়"</string>
 	<string name="category_general">"সাধারণ"</string>
 	<string name="category_about">"সম্পর্কে"</string>
 	<string name="pref_value_default">"ডিফল্ট"</string>
