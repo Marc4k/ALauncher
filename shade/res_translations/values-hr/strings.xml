@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Predložene aplikacije"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Sve aplikacije"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Vaše predviđene aplikacije"</string>
-	<string name="icon_shape_override_label">"Promijeni oblik ikona"</string>
-	<string name="icon_shape_override_progress">"Primjena promjena oblika ikona"</string>
-	<string name="icon_shape_square">"Kvadrat"</string>
-	<string name="icon_shape_squircle">"Zaobljeni kvadrat"</string>
-	<string name="icon_shape_circle">"Krug"</string>
-	<string name="icon_shape_teardrop">"Suza"</string>
-	<string name="icon_shape_rounded_square">"Kvadrat zaobljenih kutova"</string>
-	<string name="icon_shape_cylinder">"Valjak"</string>
 	<string name="device_theme_tone">"Ton"</string>
 	<string name="device_theme_wallpaper">"Automatski (na temelju pozadine)"</string>
 	<string name="device_theme_light">"Svijetlo"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Verzija"</string>
 	<string name="app_info_source_unknown">"Nepoznato"</string>
 	<string name="font">"Font"</string>
-	<string name="icon_shape">"Oblik"</string>
 	<string name="loading">"Učitavanje..."</string>
 	<string name="about_donate">"Darovati"</string>
 	<string name="any_activity_shortcut">"Odabir aktivnosti"</string>

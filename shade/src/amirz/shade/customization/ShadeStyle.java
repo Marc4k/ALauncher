@@ -48,8 +48,7 @@ public class ShadeStyle {
 
     public static void overrideShape(Activity activity) {
         if (Utilities.ATLEAST_Q) {
-            int curveTheme = IconShapeOverride.curveTheme(activity);
-            activity.getTheme().applyStyle(curveTheme, true);
+            activity.getTheme().applyStyle(R.style.Curvature_Circle, true);
         }
     }
 

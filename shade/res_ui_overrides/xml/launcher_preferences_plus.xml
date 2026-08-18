@@ -80,22 +80,6 @@
         </PreferenceScreen>
 
         <PreferenceScreen
-            android:icon="@drawable/ic_apps"
-            android:key="pref_screen_apps"
-            android:title="@string/category_apps">
-
-            <amirz.shade.settings.ListPreference
-                android:key="pref_override_icon_shape"
-                android:title="@string/icon_shape"
-                android:summary="%s"
-                android:entries="@array/icon_shape_override_paths_names"
-                android:entryValues="@array/icon_shape_override_paths_values"
-                android:defaultValue="@string/icon_shape_override_path_circle"
-                android:persistent="true" />
-
-        </PreferenceScreen>
-
-        <PreferenceScreen
             android:icon="@drawable/ic_customization"
             android:key="pref_screen_customization"
             android:title="@string/category_customization">

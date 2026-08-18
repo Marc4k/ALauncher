@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Alkalmazásjavaslatok"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Az összes alkalmazás"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Várható alkalmazások"</string>
-	<string name="icon_shape_override_label">"Ikon formájának módosítása"</string>
-	<string name="icon_shape_override_progress">"Ikonforma módosításainak alkalmazása…"</string>
-	<string name="icon_shape_square">"Négyzet"</string>
-	<string name="icon_shape_squircle">"Squircle"</string>
-	<string name="icon_shape_circle">"Kör"</string>
-	<string name="icon_shape_teardrop">"Könnycsepp"</string>
-	<string name="icon_shape_rounded_square">"Lekerekített négyzet"</string>
-	<string name="icon_shape_cylinder">"Henger"</string>
 	<string name="device_theme_tone">"Tónus"</string>
 	<string name="device_theme_wallpaper">"Automatikus (a háttérkép alapján)"</string>
 	<string name="device_theme_light">"Világos"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Verzió"</string>
 	<string name="app_info_source_unknown">"Ismeretlen"</string>
 	<string name="font">"Betűtípus"</string>
-	<string name="icon_shape">"Forma"</string>
 	<string name="loading">"Betöltés..."</string>
 	<string name="about_donate">"Adományoz"</string>
 	<string name="any_activity_shortcut">"Válassza ki a tevékenységet"</string>

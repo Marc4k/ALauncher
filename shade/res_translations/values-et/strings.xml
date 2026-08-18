@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Rakenduste soovitused"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Kõik rakendused"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Teie ennustatud rakendused"</string>
-	<string name="icon_shape_override_label">"Ikooni kuju muutmine"</string>
-	<string name="icon_shape_override_progress">"Ikooni kuju muudatuste rakendamine"</string>
-	<string name="icon_shape_square">"Ruut"</string>
-	<string name="icon_shape_squircle">"Ümarate nurkadega ruut"</string>
-	<string name="icon_shape_circle">"Ring"</string>
-	<string name="icon_shape_teardrop">"Tilk"</string>
-	<string name="icon_shape_rounded_square">"Ümmarguste nurkadega nelinurk"</string>
-	<string name="icon_shape_cylinder">"Silinder"</string>
 	<string name="device_theme_wallpaper">"Automaatne (taustapildi põhjal)"</string>
 	<string name="device_theme_light">"Hele"</string>
 	<string name="device_theme_dark">"Tume"</string>

@@ -34,12 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Sugjerimet e aplikacioneve"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Të gjitha aplikacionet"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Aplikacionet e tua të parashikuara"</string>
-	<string name="icon_shape_override_label">"Ndrysho formën e ikonës"</string>
-	<string name="icon_shape_override_progress">"Po zbatohen ndryshimet e formës së ikonës"</string>
-	<string name="icon_shape_square">"Katror"</string>
-	<string name="icon_shape_squircle">"Katror me kënde të rrumbullakëta"</string>
-	<string name="icon_shape_circle">"Rreth"</string>
-	<string name="icon_shape_teardrop">"Pikë loti"</string>
 	<string name="category_about">"Informacione"</string>
 	<string name="pref_value_default">"Të parazgjedhura"</string>
 	<string name="show_drop_target_label">"Shfaq"</string>

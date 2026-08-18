@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Sugerowane aplikacje"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Wszystkie aplikacje"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Przewidywane aplikacje"</string>
-	<string name="icon_shape_override_label">"Zmień kształt ikon"</string>
-	<string name="icon_shape_override_progress">"Zmieniam kształt ikon"</string>
-	<string name="icon_shape_square">"Kwadrat"</string>
-	<string name="icon_shape_squircle">"Zaokrąglony kwadrat"</string>
-	<string name="icon_shape_circle">"Okrąg"</string>
-	<string name="icon_shape_teardrop">"Łza"</string>
-	<string name="icon_shape_rounded_square">"Zaokrąglony kwadrat"</string>
-	<string name="icon_shape_cylinder">"Cylinder"</string>
 	<string name="device_theme_tone">"Ton"</string>
 	<string name="device_theme_wallpaper">"Automatyczny (na podstawie tapety)"</string>
 	<string name="device_theme_light">"Jasny"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Wersja"</string>
 	<string name="app_info_source_unknown">"Nieznany"</string>
 	<string name="font">"Czcionka"</string>
-	<string name="icon_shape">"Kształt"</string>
 	<string name="loading">"Ładowanie..."</string>
 	<string name="about_donate">"Wspomóż"</string>
 	<string name="any_activity_shortcut">"Wybierz działanie"</string>

@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ಆ್ಯಪ್ ಸಲಹೆಗಳು"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"ನಿಮ್ಮ ಸಂಭವನೀಯ ಆ್ಯಪ್‌ಗಳು"</string>
-	<string name="icon_shape_override_label">"ಐಕಾನ್ ಆಕಾರವನ್ನು ಬದಲಿಸಿ"</string>
-	<string name="icon_shape_override_progress">"ಐಕಾನ್ ಆಕಾರ ಬದಲಾವಣೆಯನ್ನು ಅನ್ವಯಿಸಲಾಗುತ್ತಿದೆ"</string>
-	<string name="icon_shape_square">"ಚೌಕ"</string>
-	<string name="icon_shape_squircle">"ಚೌಕವೃತ್ತ"</string>
-	<string name="icon_shape_circle">"ವೃತ್ತ"</string>
-	<string name="icon_shape_teardrop">"ಕಂಬನಿ"</string>
-	<string name="icon_shape_rounded_square">"ದುಂಡಾದ ಚೌಕ"</string>
-	<string name="icon_shape_cylinder">"ಸಿಲಿಂಡರ್"</string>
 	<string name="device_theme_tone">"ಟೋನ್"</string>
 	<string name="device_theme_wallpaper">"ಸ್ವಯಂಚಾಲಿತ (ವಾಲ್‌ಪೇಪರ್‌ ಅನ್ನು ಆಧರಿಸಿ)"</string>
 	<string name="device_theme_light">"ಹಗುರ"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"ಆವೃತ್ತಿ"</string>
 	<string name="app_info_source_unknown">"ಅಪರಿಚಿತ"</string>
 	<string name="font">"ಫಾಂಟ್"</string>
-	<string name="icon_shape">"ಆಕಾರ"</string>
 	<string name="loading">"ಲೋಡ್ ಆಗುತ್ತಿದೆ..."</string>
 	<string name="about_donate">"ದಾನ"</string>
 	<string name="any_activity_shortcut">"ಚಟುವಟಿಕೆಯನ್ನು ಆರಿಸಿ"</string>

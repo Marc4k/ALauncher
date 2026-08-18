@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Návrhy aplikácií"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Všetky aplikácie"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Vaše predpovedané aplikácie"</string>
-	<string name="icon_shape_override_label">"Zmeniť tvar ikony"</string>
-	<string name="icon_shape_override_progress">"Tvar ikony sa mení"</string>
-	<string name="icon_shape_square">"Štvorec"</string>
-	<string name="icon_shape_squircle">"Okrúhly štvorec"</string>
-	<string name="icon_shape_circle">"Kruh"</string>
-	<string name="icon_shape_teardrop">"Slza"</string>
-	<string name="icon_shape_rounded_square">"Zaoblený štvorec"</string>
-	<string name="icon_shape_cylinder">"Valec"</string>
 	<string name="device_theme_tone">"Odtieň"</string>
 	<string name="device_theme_wallpaper">"Automatický (podľa tapety)"</string>
 	<string name="device_theme_light">"Svetlý"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Verzia"</string>
 	<string name="app_info_source_unknown">"Neznáme"</string>
 	<string name="font">"Písmo"</string>
-	<string name="icon_shape">"Tvar"</string>
 	<string name="loading">"Prebieha načítavanie..."</string>
 	<string name="about_donate">"Darovať"</string>
 	<string name="any_activity_shortcut">"Zvoliť aktivitu"</string>

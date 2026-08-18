@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Appförslag"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alla appar"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Föreslagna appar"</string>
-	<string name="icon_shape_override_label">"Ändra form på ikoner"</string>
-	<string name="icon_shape_override_progress">"Ikonernas form ändras"</string>
-	<string name="icon_shape_square">"Kvadrat"</string>
-	<string name="icon_shape_squircle">"Kvirkel"</string>
-	<string name="icon_shape_circle">"Cirkel"</string>
-	<string name="icon_shape_teardrop">"Droppe"</string>
-	<string name="icon_shape_rounded_square">"Kvadrat med rundade hörn"</string>
-	<string name="icon_shape_cylinder">"Cylinder"</string>
 	<string name="device_theme_tone">"Färgton"</string>
 	<string name="device_theme_wallpaper">"Automatiskt (utifrån bakgrunden)"</string>
 	<string name="device_theme_light">"Ljust"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Version"</string>
 	<string name="app_info_source_unknown">"Okänd"</string>
 	<string name="font">"Teckensnitt"</string>
-	<string name="icon_shape">"Form"</string>
 	<string name="loading">"Läser in..."</string>
 	<string name="about_donate">"Donera"</string>
 	<string name="any_activity_shortcut">"Välj aktivitet"</string>

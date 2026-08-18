@@ -34,12 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"アプリの候補"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"すべてのアプリ"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"予測されたアプリ"</string>
-	<string name="icon_shape_override_label">"アイコンの形の変更"</string>
-	<string name="icon_shape_override_progress">"アイコンの形の変更を適用しています"</string>
-	<string name="icon_shape_square">"スクエア"</string>
-	<string name="icon_shape_squircle">"スクワークル"</string>
-	<string name="icon_shape_circle">"サークル"</string>
-	<string name="icon_shape_teardrop">"ティアドロップ"</string>
 	<string name="device_theme_tone">"トーン"</string>
 	<string name="device_theme_wallpaper">"自動（壁紙に基づく）"</string>
 	<string name="device_theme_light">"ライト"</string>
@@ -56,7 +50,6 @@
 	<string name="app_info_version">"バージョン"</string>
 	<string name="app_info_source_unknown">"不明"</string>
 	<string name="font">"フォント"</string>
-	<string name="icon_shape">"シェイプ"</string>
 	<string name="loading">"読み込み中..."</string>
 	<string name="about_donate">"寄付する"</string>
 	<string name="any_activity_shortcut">"操作の選択"</string>

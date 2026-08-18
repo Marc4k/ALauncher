@@ -34,13 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Appforslag"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alle apps"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Dine foreslåede apps"</string>
-	<string name="icon_shape_override_label">"Skift ikonform"</string>
-	<string name="icon_shape_override_progress">"Anvender ændringer af ikonform"</string>
-	<string name="icon_shape_square">"Kvadrat"</string>
-	<string name="icon_shape_squircle">"Kvadrat med runde hjørner"</string>
-	<string name="icon_shape_circle">"Cirkel"</string>
-	<string name="icon_shape_teardrop">"Dråbeform"</string>
-	<string name="icon_shape_cylinder">"Cylinder"</string>
 	<string name="device_theme_tone">"Tone"</string>
 	<string name="device_theme_wallpaper">"Automatisk (baseret på baggrunden)"</string>
 	<string name="device_theme_light">"Lyst"</string>
@@ -57,7 +50,6 @@
 	<string name="app_info_version">"Version"</string>
 	<string name="app_info_source_unknown">"Ukendt"</string>
 	<string name="font">"Skrifttype"</string>
-	<string name="icon_shape">"Form"</string>
 	<string name="loading">"Indlæser..."</string>
 	<string name="about_donate">"Doner"</string>
 	<string name="any_activity_shortcut">"Vælg aktivitet"</string>

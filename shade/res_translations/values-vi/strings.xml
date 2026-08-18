@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Các ứng dụng đề xuất"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Tất cả ứng dụng"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Các ứng dụng gợi ý của bạn"</string>
-	<string name="icon_shape_override_label">"Thay đổi hình dạng biểu tượng"</string>
-	<string name="icon_shape_override_progress">"Đang áp dụng các thay đổi hình dạng biểu tượng"</string>
-	<string name="icon_shape_square">"Hình vuông"</string>
-	<string name="icon_shape_squircle">"Hình vuông cạnh bo tròn"</string>
-	<string name="icon_shape_circle">"Hình tròn"</string>
-	<string name="icon_shape_teardrop">"Hình giọt nước"</string>
-	<string name="icon_shape_rounded_square">"Hình vuông góc bo tròn"</string>
-	<string name="icon_shape_cylinder">"Hình trụ"</string>
 	<string name="device_theme_tone">"Tông màu"</string>
 	<string name="device_theme_wallpaper">"Tự động (dựa trên hình nền)"</string>
 	<string name="device_theme_light">"Sáng"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Phiên bản"</string>
 	<string name="app_info_source_unknown">"Không xác định"</string>
 	<string name="font">"Phông chữ"</string>
-	<string name="icon_shape">"Hình dạng"</string>
 	<string name="loading">"Đang tải..."</string>
 	<string name="about_donate">"Đóng góp"</string>
 	<string name="any_activity_shortcut">"Chọn hoạt động"</string>

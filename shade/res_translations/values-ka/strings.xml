@@ -34,12 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"აპების შემოთავაზებები"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ყველა აპი"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"თქვენი პროგნოზირებული აპები"</string>
-	<string name="icon_shape_override_label">"ხატულას ფორმის შეცვლა"</string>
-	<string name="icon_shape_override_progress">"მიმდინარეობს ხატულას ფორმის ცვლილებების მიყენება"</string>
-	<string name="icon_shape_square">"კვადრატი"</string>
-	<string name="icon_shape_squircle">"წრეკუთხედი"</string>
-	<string name="icon_shape_circle">"წრე"</string>
-	<string name="icon_shape_teardrop">"წვეთი"</string>
 	<string name="category_about">"ინფორმაცია"</string>
 	<string name="pref_value_default">"ნაგულისხმევი"</string>
 	<string name="show_drop_target_label">"ჩვენება"</string>

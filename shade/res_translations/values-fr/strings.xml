@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Suggestions d\'applications"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Toutes les applications"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Applications prévues pour vous"</string>
-	<string name="icon_shape_override_label">"Modifier la forme des icônes"</string>
-	<string name="icon_shape_override_progress">"Application des modifications de forme des icônes…"</string>
-	<string name="icon_shape_square">"Carré"</string>
-	<string name="icon_shape_squircle">"Squircle"</string>
-	<string name="icon_shape_circle">"Cercle"</string>
-	<string name="icon_shape_teardrop">"Goutte"</string>
-	<string name="icon_shape_rounded_square">"Rectangle arrondi"</string>
-	<string name="icon_shape_cylinder">"Cylindre"</string>
 	<string name="device_theme_tone">"Tonalité"</string>
 	<string name="device_theme_wallpaper">"Automatique (en fonction du fond d\'écran)"</string>
 	<string name="device_theme_light">"Clair"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Version"</string>
 	<string name="app_info_source_unknown">"Inconnu"</string>
 	<string name="font">"Police"</string>
-	<string name="icon_shape">"Forme"</string>
 	<string name="loading">"Chargement..."</string>
 	<string name="about_donate">"Faire un don"</string>
 	<string name="any_activity_shortcut">"Sélectionner une activité"</string>

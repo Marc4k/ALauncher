@@ -10,7 +10,6 @@ import android.view.View;
 
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
@@ -20,7 +19,6 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.util.SystemUiController;
 
-import amirz.shade.customization.IconShapeOverride;
 import amirz.shade.customization.ShadeStyle;
 import amirz.shade.settings.ColorListPreference;
 import amirz.shade.settings.DockSearchPrefSetter;
@@ -28,7 +26,6 @@ import amirz.shade.settings.ReloadingListPreference;
 
 import static amirz.shade.ShadeFont.KEY_FONT;
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
-import static amirz.shade.customization.IconShapeOverride.KEY_ICON_SHAPE;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static com.android.launcher3.util.Themes.KEY_DEVICE_THEME;
 
@@ -56,8 +53,6 @@ public class ShadeSettings extends SettingsActivity {
             implements Preference.OnPreferenceChangeListener {
         private static final String CATEGORY_STYLE = "pref_screen_style";
         private static final String CATEGORY_SEARCH = "pref_screen_search";
-        private static final String CATEGORY_APPS = "pref_screen_apps";
-
         private Activity context;
 
         @Override
@@ -88,18 +83,6 @@ public class ShadeSettings extends SettingsActivity {
                         (ReloadingListPreference) findPreference(KEY_DOCK_SEARCH);
                 if (null != search) {
                     search.setOnReloadListener(DockSearchPrefSetter::new);
-                }
-            } else if(rootKey.equals(CATEGORY_APPS)) {
-                PreferenceScreen style = (PreferenceScreen) findPreference(CATEGORY_APPS);
-                if (null != style) {
-                    Preference iconShapeOverride = findPreference(KEY_ICON_SHAPE);
-                    if (iconShapeOverride != null) {
-                        if (Utilities.ATLEAST_OREO) {
-                            IconShapeOverride.handlePreferenceUi((ListPreference) iconShapeOverride);
-                        } else {
-                            style.removePreference(iconShapeOverride);
-                        }
-                    }
                 }
             }
         }

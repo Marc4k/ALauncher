@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"应用推荐"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"所有应用"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"您的预测应用"</string>
-	<string name="icon_shape_override_label">"更改图标形状"</string>
-	<string name="icon_shape_override_progress">"正在应用图标形状更改"</string>
-	<string name="icon_shape_square">"方形"</string>
-	<string name="icon_shape_squircle">"方圆形"</string>
-	<string name="icon_shape_circle">"圆形"</string>
-	<string name="icon_shape_teardrop">"泪珠形"</string>
-	<string name="icon_shape_rounded_square">"圆角正方形"</string>
-	<string name="icon_shape_cylinder">"圆柱形"</string>
 	<string name="device_theme_tone">"⾊调"</string>
 	<string name="device_theme_wallpaper">"自动（根据壁纸）"</string>
 	<string name="device_theme_light">"浅色"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"版本"</string>
 	<string name="app_info_source_unknown">"未知"</string>
 	<string name="font">"字体"</string>
-	<string name="icon_shape">"形状"</string>
 	<string name="loading">"正在开启..."</string>
 	<string name="about_donate">"捐"</string>
 	<string name="any_activity_shortcut">"选择活动"</string>

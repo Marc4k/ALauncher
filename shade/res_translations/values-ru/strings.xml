@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Рекомендуемые приложения"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Все приложения"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Ваши рекомендуемые приложения"</string>
-	<string name="icon_shape_override_label">"Изменить форму значков"</string>
-	<string name="icon_shape_override_progress">"Применение изменений…"</string>
-	<string name="icon_shape_square">"Квадрат"</string>
-	<string name="icon_shape_squircle">"Квадрат с закругленными краями"</string>
-	<string name="icon_shape_circle">"Круг"</string>
-	<string name="icon_shape_teardrop">"Капля"</string>
-	<string name="icon_shape_rounded_square">"Скругленный квадрат"</string>
-	<string name="icon_shape_cylinder">"Цилиндр"</string>
 	<string name="device_theme_tone">"Оттенок"</string>
 	<string name="device_theme_wallpaper">"Автоматический выбор (в зависимости от обоев)"</string>
 	<string name="device_theme_light">"Светлая"</string>
@@ -58,7 +50,6 @@
 	<string name="app_info_version">"Версия"</string>
 	<string name="app_info_source_unknown">"Неизвестно"</string>
 	<string name="font">"Шрифт"</string>
-	<string name="icon_shape">"Форма"</string>
 	<string name="loading">"Загрузка..."</string>
 	<string name="about_donate">"Жертвовать"</string>
 	<string name="any_activity_shortcut">"Выбор действия"</string>

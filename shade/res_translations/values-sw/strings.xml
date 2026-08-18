@@ -34,14 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Mapendekezo ya programu"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Programu zote"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Programu zako zinazopendekezwa"</string>
-	<string name="icon_shape_override_label">"Badilisha umbo la aikoni"</string>
-	<string name="icon_shape_override_progress">"Inabadilisha umbo la aikoni"</string>
-	<string name="icon_shape_square">"Mraba"</string>
-	<string name="icon_shape_squircle">"Mstatili wenye pembe duara"</string>
-	<string name="icon_shape_circle">"Mduara"</string>
-	<string name="icon_shape_teardrop">"Umbo la chozi"</string>
-	<string name="icon_shape_rounded_square">"Mraba mviringo"</string>
-	<string name="icon_shape_cylinder">"Silinda"</string>
 	<string name="category_about">"Kuhusu"</string>
 	<string name="pref_value_default">"Chaguomsingi"</string>
 	<string name="show_drop_target_label">"Onyesha"</string>
