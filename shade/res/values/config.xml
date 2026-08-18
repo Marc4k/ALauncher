@@ -10,7 +10,7 @@
     <string name="app_transition_manager_class" translatable="false">amirz.shade.animations.TransitionManager</string>
     <string name="system_shortcut_factory_class" translatable="false">amirz.shade.customization.ShadeShortcutFactory</string>
     <string name="main_process_initializer_class" translatable="false">amirz.shade.ShadeProcessInitializer</string>
-    <string name="app_launch_tracker_class" translatable="false">amirz.shade.appprediction.ShadeTracker</string>
+    <string name="app_launch_tracker_class" translatable="false"></string>
 
     <!-- String representing the fragment class for settings activity.-->
     <string name="settings_fragment_name" translatable="false">amirz.shade.ShadeSettings$ShadeSettingsFragment</string>

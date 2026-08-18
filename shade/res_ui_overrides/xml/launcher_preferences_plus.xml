@@ -31,13 +31,6 @@
         </intent>
     </com.android.launcher3.settings.NotificationDotsPreference>
 
-    <amirz.shade.settings.PredictionPreference
-        android:icon="@drawable/ic_predict"
-        android:key="pref_predictions"
-        android:title="@string/title_app_suggestions"
-        android:defaultValue="true"
-        android:persistent="true" />
-
     <PreferenceCategory android:key="category_general"
         android:title="@string/category_general">
         <PreferenceScreen
