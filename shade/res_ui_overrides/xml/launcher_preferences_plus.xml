@@ -156,11 +156,6 @@
                 android:defaultValue="false"
                 android:persistent="true" />
 
-            <Preference
-                android:key="pref_default_launcher"
-                android:summary="@string/change_launcher_desc"
-                android:title="@string/change_launcher" />
-
         </PreferenceScreen>
 
     </PreferenceCategory>

@@ -20,7 +20,6 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.util.SystemUiController;
 
-import amirz.helpers.DefaultLauncher;
 import amirz.shade.customization.IconDatabase;
 import amirz.shade.customization.IconShapeOverride;
 import amirz.shade.customization.ShadeStyle;
@@ -58,14 +57,12 @@ public class ShadeSettings extends SettingsActivity {
 
     @SuppressWarnings("unused")
     public static class ShadeSettingsFragment extends SettingsActivity.LauncherSettingsFragment
-            implements Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
+            implements Preference.OnPreferenceChangeListener {
         private static final String CATEGORY_STYLE = "pref_screen_style";
         private static final String CATEGORY_SEARCH = "pref_screen_search";
         private static final String CATEGORY_APPS = "pref_screen_apps";
-        private static final String CATEGORY_MISC = "pref_screen_misc";
 
         private static final String KEY_ICON_PACK = "pref_icon_pack";
-        private static final String KEY_DEFAULT_LAUNCHER = "pref_default_launcher";
         private Activity context;
 
         @Override
@@ -118,11 +115,6 @@ public class ShadeSettings extends SettingsActivity {
                         }
                     }
                 }
-            } else if(rootKey.equals(CATEGORY_MISC)) {
-                Preference defaultLauncher = findPreference(KEY_DEFAULT_LAUNCHER);
-                if (null != defaultLauncher) {
-                    defaultLauncher.setOnPreferenceClickListener(this);
-                }
             }
         }
 
@@ -173,15 +165,6 @@ public class ShadeSettings extends SettingsActivity {
             return true;
         }
 
-        @Override
-        public boolean onPreferenceClick(Preference preference) {
-            switch (preference.getKey()) {
-                case KEY_DEFAULT_LAUNCHER:
-                    new DefaultLauncher(getActivity()).launchHomeOrClearDefaultsDialog();
-                    break;
-            }
-            return false;
-        }
         private static final String DIALOG_FRAGMENT_TAG =
                 "androidx.preference.PreferenceFragment.DIALOG";
         @Override
