@@ -36,8 +36,6 @@
     <string name="lock_setup" translatable="false">Setup</string>
 
     <string name="home_action" translatable="false">Home button action</string>
-    <string name="swipe_down" translatable="false">Swipe down action</string>
-    <string name="swipe_down_desc" translatable="false">For notifications &amp; quick settings</string>
     <string name="double_tap_lock" translatable="false">Double tap to lock</string>
     <string name="double_tap_lock_desc" translatable="false">On your home screen</string>
 

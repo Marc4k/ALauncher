@@ -115,13 +115,6 @@
             android:title="@string/category_gestures">
 
             <SwitchPreference
-                android:defaultValue="true"
-                android:key="pref_swipe_down"
-                android:persistent="true"
-                android:summary="@string/swipe_down_desc"
-                android:title="@string/swipe_down" />
-
-            <SwitchPreference
                 android:defaultValue="false"
                 android:icon="@drawable/ic_dummy_icon"
                 android:key="pref_double_tap_lock"

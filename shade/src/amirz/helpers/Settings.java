@@ -47,7 +47,6 @@ public class Settings {
     private static final String GOOGLE_QSB = "com.google.android.googlequicksearchbox";
 
     public static final String KEY_HOME_ACTION = "pref_home_action";
-    public static final String KEY_SWIPE_DOWN = "pref_swipe_down";
     public static final String KEY_DOUBLE_TAP_LOCK = "pref_double_tap_lock";
 
     public static final String SUPPORT_EMAIL = "support@dworks.io";
@@ -83,10 +82,6 @@ public class Settings {
 
     public static String getHomeAction(Context context) {
         return prefs(context).getString(KEY_HOME_ACTION, "");
-    }
-
-    public static boolean isSwipeDownEnabled(Context context) {
-        return prefs(context).getBoolean(KEY_SWIPE_DOWN, true);
     }
 
     public static boolean isDoubleTapLockEnabled(Context context) {
