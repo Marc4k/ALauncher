@@ -38,8 +38,5 @@
 	<string name="pref_value_default">"Стандартныя"</string>
 	<string name="show_drop_target_label">"Паказаць"</string>
 	<string name="hide_drop_target_label">"Схаваць"</string>
-	<string name="app_info_more">"Яшчэ"</string>
-	<string name="app_info_version">"Версія"</string>
-	<string name="app_info_source_unknown">"Невядома"</string>
 	<string name="about_donate">"Ахвяраваць"</string>
 </resources>

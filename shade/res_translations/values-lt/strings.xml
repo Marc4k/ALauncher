@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"Neleidžiama"</string>
 	<string name="show_drop_target_label">"Rodyti"</string>
 	<string name="hide_drop_target_label">"Slėpti"</string>
-	<string name="app_info_more">"Daugiau"</string>
-	<string name="app_info_version">"Versija"</string>
-	<string name="app_info_source_unknown">"Nežinomas"</string>
 	<string name="about_donate">"Donate"</string>
 	<string name="any_activity_shortcut">"Pasirinkti veiklą"</string>
 </resources>

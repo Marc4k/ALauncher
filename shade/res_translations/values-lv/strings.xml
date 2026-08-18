@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"Atspējots"</string>
 	<string name="show_drop_target_label">"Rādīt"</string>
 	<string name="hide_drop_target_label">"Paslēpt"</string>
-	<string name="app_info_more">"Vairāk"</string>
-	<string name="app_info_version">"Versija"</string>
-	<string name="app_info_source_unknown">"Nezināms"</string>
 	<string name="about_donate">"Ziedot"</string>
 	<string name="any_activity_shortcut">"Darbības izvēle"</string>
 </resources>

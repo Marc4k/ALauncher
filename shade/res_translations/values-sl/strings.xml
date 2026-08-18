@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Onemogočeno"</string>
 	<string name="show_drop_target_label">"Prikaz"</string>
 	<string name="hide_drop_target_label">"Skrivanje"</string>
-	<string name="app_info_more">"Več"</string>
-	<string name="app_info_version">"Različica"</string>
-	<string name="app_info_source_unknown">"Neznano"</string>
 	<string name="loading">"Nalaganje..."</string>
 	<string name="about_donate">"Doniraj"</string>
 	<string name="any_activity_shortcut">"Izberite dejavnost"</string>

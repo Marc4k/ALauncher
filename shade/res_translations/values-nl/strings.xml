@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Uitgeschakeld"</string>
 	<string name="show_drop_target_label">"Weergeven"</string>
 	<string name="hide_drop_target_label">"Verbergen"</string>
-	<string name="app_info_more">"Meer"</string>
-	<string name="app_info_version">"Versie"</string>
-	<string name="app_info_source_unknown">"Onbekend"</string>
 	<string name="loading">"Laden..."</string>
 	<string name="about_donate">"Doneer"</string>
 	<string name="any_activity_shortcut">"Een activiteit kiezen"</string>

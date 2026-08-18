@@ -38,8 +38,5 @@
 	<string name="pref_value_default">"पूर्वनिर्धारित"</string>
 	<string name="show_drop_target_label">"देखाउनुहोस्"</string>
 	<string name="hide_drop_target_label">"लुकाउनुहोस्"</string>
-	<string name="app_info_more">"बढी"</string>
-	<string name="app_info_version">"संस्करण"</string>
-	<string name="app_info_source_unknown">"अज्ञात"</string>
 	<string name="about_donate">"दान गर्नुहोस्"</string>
 </resources>

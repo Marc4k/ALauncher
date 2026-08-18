@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"無効"</string>
 	<string name="show_drop_target_label">"表示"</string>
 	<string name="hide_drop_target_label">"非表示"</string>
-	<string name="app_info_more">"その他"</string>
-	<string name="app_info_version">"バージョン"</string>
-	<string name="app_info_source_unknown">"不明"</string>
 	<string name="loading">"読み込み中..."</string>
 	<string name="about_donate">"寄付する"</string>
 	<string name="any_activity_shortcut">"操作の選択"</string>

@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"నిలిపివేయబడింది"</string>
 	<string name="show_drop_target_label">"చూపుతుంది"</string>
 	<string name="hide_drop_target_label">"దాస్తుంది"</string>
-	<string name="app_info_more">"మరిన్ని"</string>
-	<string name="app_info_version">"వెర్షన్"</string>
-	<string name="app_info_source_unknown">"తెలియదు"</string>
 	<string name="loading">"లోడింగ్ చేస్తోంది..."</string>
 	<string name="about_donate">"దానం"</string>
 	<string name="any_activity_shortcut">"కార్యాచరణను ఎంచుకోండి"</string>

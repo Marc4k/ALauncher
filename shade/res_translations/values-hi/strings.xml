@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"बंद किया गया"</string>
 	<string name="show_drop_target_label">"दिखाएं"</string>
 	<string name="hide_drop_target_label">"छिपाएं"</string>
-	<string name="app_info_more">"ज़्यादा"</string>
-	<string name="app_info_version">"वर्शन"</string>
-	<string name="app_info_source_unknown">"अनजान"</string>
 	<string name="loading">"लोड हो रहा है..."</string>
 	<string name="about_donate">"उपहार देना"</string>
 	<string name="any_activity_shortcut">"गतिविधि चुनें"</string>

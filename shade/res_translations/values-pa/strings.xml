@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"ਅਯੋਗ ਬਣਾਇਆ"</string>
 	<string name="show_drop_target_label">" ਦਿਖਾਓ"</string>
 	<string name="hide_drop_target_label">"ਲੁਕਾਓ"</string>
-	<string name="app_info_more">"ਹੋਰ"</string>
-	<string name="app_info_version">"ਵਰਜਨ"</string>
-	<string name="app_info_source_unknown">"ਅਗਿਆਤ"</string>
 	<string name="about_donate">"ਦਾਨ ਕਰੋ"</string>
 	<string name="any_activity_shortcut">"ਗਤੀਵਿਧੀ ਚੁਣੋ"</string>
 </resources>

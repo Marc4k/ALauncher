@@ -38,8 +38,5 @@
 	<string name="pref_value_default">"По подразбиране"</string>
 	<string name="show_drop_target_label">"Показване"</string>
 	<string name="hide_drop_target_label">"Скриване"</string>
-	<string name="app_info_more">"Още"</string>
-	<string name="app_info_version">"Версия"</string>
-	<string name="app_info_source_unknown">"Неизвестно"</string>
 	<string name="about_donate">"Дарете"</string>
 </resources>

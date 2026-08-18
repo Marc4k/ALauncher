@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Dezactivată"</string>
 	<string name="show_drop_target_label">"Afișați"</string>
 	<string name="hide_drop_target_label">"Ascundeți"</string>
-	<string name="app_info_more">"Mai multe"</string>
-	<string name="app_info_version">"Versiune"</string>
-	<string name="app_info_source_unknown">"Necunoscut"</string>
 	<string name="loading">"Se încarcă..."</string>
 	<string name="about_donate">"Dona"</string>
 	<string name="any_activity_shortcut">"Alegeți activitatea"</string>

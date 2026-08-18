@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Pois käytöstä"</string>
 	<string name="show_drop_target_label">"Näytä"</string>
 	<string name="hide_drop_target_label">"Piilota"</string>
-	<string name="app_info_more">"Lisää"</string>
-	<string name="app_info_version">"Versio"</string>
-	<string name="app_info_source_unknown">"Tuntematon"</string>
 	<string name="loading">"Ladataan..."</string>
 	<string name="about_donate">"Lahjoittaa"</string>
 	<string name="any_activity_shortcut">"Valitse toiminto"</string>

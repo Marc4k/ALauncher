@@ -2,9 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="needs_usage_access">Gebruikstoegang vereist</string>
     <string name="msg_missing_usage_access">Als je app-suggesties wilt weergeven, schakel je gebruikstoegang in voor <xliff:g id="name" example="My App">%1$s</xliff:g></string>
-    <string name="app_info_subtext">Veeg omlaag om app-info te sluiten.</string>
-    <string name="app_info_source">Oorsprong</string>
-    <string name="app_info_last_update">Laatste update</string>
     <string name="item_hidden">Item verborgen</string>
     <string name="dock_search">Zoekbalk</string>
     <string name="fading_transition">Vloeiende overgang</string>

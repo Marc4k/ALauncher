@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Disattivato"</string>
 	<string name="show_drop_target_label">"Mostra"</string>
 	<string name="hide_drop_target_label">"Nascondi"</string>
-	<string name="app_info_more">"Altro"</string>
-	<string name="app_info_version">"Versione"</string>
-	<string name="app_info_source_unknown">"Sconosciuto"</string>
 	<string name="loading">"Caricamento..."</string>
 	<string name="about_donate">"Dona"</string>
 	<string name="any_activity_shortcut">"Scegli attività"</string>

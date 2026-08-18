@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Отключено"</string>
 	<string name="show_drop_target_label">"Показать"</string>
 	<string name="hide_drop_target_label">"Скрыть"</string>
-	<string name="app_info_more">"Ещё"</string>
-	<string name="app_info_version">"Версия"</string>
-	<string name="app_info_source_unknown">"Неизвестно"</string>
 	<string name="loading">"Загрузка..."</string>
 	<string name="about_donate">"Жертвовать"</string>
 	<string name="any_activity_shortcut">"Выбор действия"</string>

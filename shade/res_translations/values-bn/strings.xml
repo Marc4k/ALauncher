@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"অক্ষম হয়েছে"</string>
 	<string name="show_drop_target_label">"দেখান"</string>
 	<string name="hide_drop_target_label">"লুকান"</string>
-	<string name="app_info_more">"আরো"</string>
-	<string name="app_info_version">"ভার্সন"</string>
-	<string name="app_info_source_unknown">"অজানা"</string>
 	<string name="about_donate">"দান করা"</string>
 	<string name="any_activity_shortcut">"অ্যাক্টিভিটি বেছে নিন"</string>
 </resources>

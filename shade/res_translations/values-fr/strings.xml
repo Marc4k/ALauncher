@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Désactivée"</string>
 	<string name="show_drop_target_label">"Afficher"</string>
 	<string name="hide_drop_target_label">"Masquer"</string>
-	<string name="app_info_more">"Plus"</string>
-	<string name="app_info_version">"Version"</string>
-	<string name="app_info_source_unknown">"Inconnu"</string>
 	<string name="loading">"Chargement..."</string>
 	<string name="about_donate">"Faire un don"</string>
 	<string name="any_activity_shortcut">"Sélectionner une activité"</string>

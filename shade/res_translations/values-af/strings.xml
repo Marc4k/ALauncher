@@ -38,8 +38,5 @@
 	<string name="pref_value_default">"Verstek"</string>
 	<string name="show_drop_target_label">"Wys"</string>
 	<string name="hide_drop_target_label">"Versteek"</string>
-	<string name="app_info_more">"Nog"</string>
-	<string name="app_info_version">"Weergawe"</string>
-	<string name="app_info_source_unknown">"Onbekend"</string>
 	<string name="about_donate">"Skenk"</string>
 </resources>

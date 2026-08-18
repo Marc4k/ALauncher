@@ -38,7 +38,5 @@
 	<string name="pref_value_default">"លំនាំដើម"</string>
 	<string name="show_drop_target_label">"បង្ហាញ"</string>
 	<string name="hide_drop_target_label">"លាក់"</string>
-	<string name="app_info_more">"ច្រើន​ទៀត"</string>
-	<string name="app_info_version">"កំណែ"</string>
 	<string name="about_donate">"បរិច្ចាគ"</string>
 </resources>

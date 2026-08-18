@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Απενεργοποιημένο"</string>
 	<string name="show_drop_target_label">"Εμφάνιση"</string>
 	<string name="hide_drop_target_label">"Απόκρυψη"</string>
-	<string name="app_info_more">"Περισσότερα"</string>
-	<string name="app_info_version">"Έκδοση"</string>
-	<string name="app_info_source_unknown">"Άγνωστο"</string>
 	<string name="loading">"Φόρτωση..."</string>
 	<string name="about_donate">"Δωρεά"</string>
 	<string name="any_activity_shortcut">"Επιλογή δραστηριότητας"</string>

@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"अक्षम"</string>
 	<string name="show_drop_target_label">"दर्शवा"</string>
 	<string name="hide_drop_target_label">"लपवा"</string>
-	<string name="app_info_more">"अधिक"</string>
-	<string name="app_info_version">"आवृत्ती"</string>
-	<string name="app_info_source_unknown">"अज्ञात"</string>
 	<string name="about_donate">"देणगी द्या"</string>
 	<string name="any_activity_shortcut">"अॅक्टिव्हिटी निवडा"</string>
 </resources>

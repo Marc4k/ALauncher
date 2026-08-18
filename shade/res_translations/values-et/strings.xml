@@ -40,9 +40,6 @@
 	<string name="pref_value_disabled">"Keelatud"</string>
 	<string name="show_drop_target_label">"Kuva"</string>
 	<string name="hide_drop_target_label">"Peida"</string>
-	<string name="app_info_more">"Rohkem"</string>
-	<string name="app_info_version">"Versioon"</string>
-	<string name="app_info_source_unknown">"Tundmatu"</string>
 	<string name="about_donate">"Annetada"</string>
 	<string name="any_activity_shortcut">"Tegevuse valimine"</string>
 </resources>

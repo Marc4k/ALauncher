@@ -11,5 +11,4 @@
     <string name="close_task" translatable="false">Close</string>
     <string name="widget_search_bar_hint" translatable="false">Search widgets</string>
 
-    <string name="app_info_share" translatable="false">Share</string>
 </resources>

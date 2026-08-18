@@ -2,9 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="needs_usage_access">Требуется доступ к использованию</string>
     <string name="msg_missing_usage_access">Чтобы показать предлагаемые приложения, включите доступ к использованию для <xliff:g id="name" example="My App">%1$s</xliff:g></string>
-    <string name="app_info_subtext">Смахните вниз, чтобы закрыть информацию о приложении.</string>
-    <string name="app_info_source">Исходный код</string>
-    <string name="app_info_last_update">Последнее обновление</string>
     <string name="item_hidden">Скрытый объект</string>
     <string name="dock_search">Виджет поиска</string>
     <string name="fading_transition">Затухающий переход</string>

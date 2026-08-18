@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Deaktivované"</string>
 	<string name="show_drop_target_label">"Zobraziť"</string>
 	<string name="hide_drop_target_label">"Skryť"</string>
-	<string name="app_info_more">"Ďalšie"</string>
-	<string name="app_info_version">"Verzia"</string>
-	<string name="app_info_source_unknown">"Neznáme"</string>
 	<string name="loading">"Prebieha načítavanie..."</string>
 	<string name="about_donate">"Darovať"</string>
 	<string name="any_activity_shortcut">"Zvoliť aktivitu"</string>

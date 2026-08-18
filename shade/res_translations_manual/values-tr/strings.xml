@@ -2,9 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="needs_usage_access">Kullanım erişimi gerekli</string>
     <string name="msg_missing_usage_access">Uygulama Önerilerini göstermek için <xliff:g id="name" example="My App">%1$s</xliff:g> kullanım erişimini açın</string>
-    <string name="app_info_subtext">Uygulama bilgilerini kapatmak için aşağı kaydırın.</string>
-    <string name="app_info_source">Kaynak</string>
-    <string name="app_info_last_update">Son güncelleme</string>
     <string name="item_hidden">Öğe gizlendi</string>
     <string name="dock_search">Arama çubuğu</string>
     <string name="fading_transition">Solarak geçiş</string>

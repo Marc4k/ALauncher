@@ -41,9 +41,6 @@
 	<string name="pref_value_disabled">"Letiltva"</string>
 	<string name="show_drop_target_label">"Megjelenítés"</string>
 	<string name="hide_drop_target_label">"Elrejtés"</string>
-	<string name="app_info_more">"Egyebek"</string>
-	<string name="app_info_version">"Verzió"</string>
-	<string name="app_info_source_unknown">"Ismeretlen"</string>
 	<string name="loading">"Betöltés..."</string>
 	<string name="about_donate">"Adományoz"</string>
 	<string name="any_activity_shortcut">"Válassza ki a tevékenységet"</string>

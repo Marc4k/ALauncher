@@ -38,8 +38,5 @@
 	<string name="pref_value_default">"Sjálfgefið"</string>
 	<string name="show_drop_target_label">"Sýna"</string>
 	<string name="hide_drop_target_label">"Fela"</string>
-	<string name="app_info_more">"Meira"</string>
-	<string name="app_info_version">"Útgáfa"</string>
-	<string name="app_info_source_unknown">"Óþekkt"</string>
 	<string name="about_donate">"Donate"</string>
 </resources>
