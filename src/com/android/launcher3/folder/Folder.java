@@ -84,8 +84,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import amirz.helpers.Settings;
-
 import static com.android.launcher3.LauncherAnimUtils.SPRING_LOADED_EXIT_DELAY;
 import static com.android.launcher3.LauncherState.NORMAL;
 import static com.android.launcher3.compat.AccessibilityManagerCompat.sendCustomAccessibilityEvent;
@@ -1340,10 +1338,6 @@ public class Folder extends AbstractFloatingView implements ClipPathView, DragSo
     public void onFocusChange(View v, boolean hasFocus) {
         if (v == mFolderName) {
             if (hasFocus) {
-                if (Settings.isDesktopLocked(v.getContext())) {
-                    v.clearFocus();
-                    return;
-                }
                 startEditingFolderName();
             } else {
                 mFolderName.dispatchBackKey();

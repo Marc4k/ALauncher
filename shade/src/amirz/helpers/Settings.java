@@ -46,7 +46,6 @@ public class Settings {
 
     private static final String GOOGLE_QSB = "com.google.android.googlequicksearchbox";
 
-    public static final String KEY_LOCK_DESKTOP = "pref_lock_desktop";
     public static final String KEY_HOME_ACTION = "pref_home_action";
     public static final String KEY_SWIPE_DOWN = "pref_swipe_down";
     public static final String KEY_DOUBLE_TAP_LOCK = "pref_double_tap_lock";
@@ -80,10 +79,6 @@ public class Settings {
 
     public static int getNotificationColor(Context context) {
         return IconPalette.getMutedColor(Themes.getShadeColorAccent(context), 0.2f);
-    }
-
-    public static boolean isDesktopLocked(Context context) {
-        return prefs(context).getBoolean(KEY_LOCK_DESKTOP, false);
     }
 
     public static String getHomeAction(Context context) {

@@ -44,8 +44,6 @@ import com.android.launcher3.widget.WidgetsFullSheet;
 import java.util.ArrayList;
 import java.util.List;
 
-import amirz.helpers.Settings;
-
 import static com.android.launcher3.Utilities.EXTRA_WALLPAPER_FLAVOR;
 import static com.android.launcher3.Utilities.EXTRA_WALLPAPER_OFFSET;
 
@@ -74,9 +72,6 @@ public class OptionsPopupView extends ArrowPopup
 
     @Override
     public boolean onLongClick(View view) {
-        if(Settings.isDesktopLocked(view.getContext())) {
-            return false;
-        }
         return handleViewClick(view, Action.Touch.LONGPRESS);
     }
 
@@ -163,7 +158,7 @@ public class OptionsPopupView extends ArrowPopup
                 R.drawable.ic_palette : R.drawable.ic_wallpaper;
         options.add(new OptionItem(resString, resDrawable,
                 ControlType.WALLPAPER_BUTTON, OptionsPopupView::startWallpaperPicker));
-        if (!FeatureFlags.GO_DISABLE_WIDGETS && !Settings.isDesktopLocked(launcher)) {
+        if (!FeatureFlags.GO_DISABLE_WIDGETS) {
             options.add(new OptionItem(R.string.widget_button_text, R.drawable.ic_widget,
                     ControlType.WIDGETS_BUTTON, OptionsPopupView::onWidgetsClicked));
         }

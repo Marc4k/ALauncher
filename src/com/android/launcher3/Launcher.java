@@ -325,6 +325,8 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         initDeviceProfile(idp);
         idp.addOnChangeListener(this);
         mSharedPrefs = Utilities.getPrefs(this);
+        // Remove the obsolete desktop-lock value from existing installations.
+        mSharedPrefs.edit().remove("pref_lock_desktop").apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
 

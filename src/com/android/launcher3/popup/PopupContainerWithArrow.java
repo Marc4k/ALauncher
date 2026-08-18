@@ -68,8 +68,6 @@ import java.util.List;
 import java.util.Map;
 import androidx.core.util.Predicate;
 
-import amirz.helpers.Settings;
-
 import static com.android.launcher3.Utilities.squaredHypot;
 import static com.android.launcher3.Utilities.squaredTouchSlop;
 import static com.android.launcher3.notification.NotificationMainView.NOTIFICATION_ITEM_INFO;
@@ -599,9 +597,6 @@ public class PopupContainerWithArrow extends ArrowPopup implements DragSource,
 
     @Override
     public boolean onLongClick(View v) {
-        if(Settings.isDesktopLocked(v.getContext())) {
-            return false;
-        }
         if (!ItemLongClickListener.canStartDrag(mLauncher)) return false;
         // Return early if not the correct view
         if (!(v.getParent() instanceof DeepShortcutView)) return false;

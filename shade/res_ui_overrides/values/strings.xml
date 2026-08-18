@@ -13,8 +13,6 @@
     <string name="category_search" translatable="false">"Search"</string>
     <string name="category_apps" translatable="false">"Apps"</string>
     <string name="category_gestures" translatable="false">"Gestures"</string>
-    <string name="lock_desktop" translatable="false">"Lock Desktop"</string>
-    <string name="lock_desktop_desc" translatable="false">Prevents change of icons &amp; widgets</string>
 
     <string name="launcher_is_already_default" translatable="false">ALauncher is already your default launcher</string>
     <string name="change_default_home_dialog_body" translatable="false">%s is currently your default launcher. To try the ALauncher, go to Settings, tap Clear Defaults, and press the Home button.</string>

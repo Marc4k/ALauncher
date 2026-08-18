@@ -186,13 +186,6 @@
                 android:defaultValue="false"
                 android:persistent="true" />
 
-            <SwitchPreference
-                android:key="pref_lock_desktop"
-                android:title="@string/lock_desktop"
-                android:summary="@string/lock_desktop_desc"
-                android:defaultValue="false"
-                android:persistent="true" />
-
             <Preference
                 android:key="pref_default_launcher"
                 android:summary="@string/change_launcher_desc"
