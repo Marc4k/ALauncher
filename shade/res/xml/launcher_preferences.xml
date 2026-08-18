@@ -33,13 +33,6 @@
             </intent>
         </com.android.launcher3.settings.NotificationDotsPreference>
 
-        <SwitchPreference
-            android:key="pref_smartspace"
-            android:title="@string/smartspace_preferences_in_settings"
-            android:summary="@string/smartspace_preferences_in_settings_desc"
-            android:defaultValue="true"
-            android:persistent="true" />
-
         <amirz.shade.settings.PredictionPreference
             android:key="pref_predictions"
             android:title="@string/title_app_suggestions"
@@ -126,12 +119,6 @@
             android:defaultValue=""
             android:persistent="true" />
 
-        <amirz.shade.settings.ReloadingListPreference
-            android:key="pref_feed_provider"
-            android:title="@string/feed_provider"
-            android:summary="@string/loading"
-            android:defaultValue=""
-            android:persistent="true" />
 
         <ListPreference
             android:key="idp_grid_name"

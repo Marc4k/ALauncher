@@ -10,7 +10,6 @@ import com.android.launcher3.LauncherAppWidgetProviderInfo;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.compat.AppWidgetManagerCompat;
-import com.android.searchlauncher.SmartspaceQsbWidget;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +18,7 @@ public class DockSearch {
     public static final String KEY_DOCK_SEARCH = "pref_dock_search";
     public static final String DEFAULT_PROVIDER = "com.google.android.googlequicksearchbox/.SearchWidgetProvider";
     private static final String WIDGET_CLASS_NAME = "com.google.android.googlequicksearchbox.SearchWidgetProvider";
+    private static final String WIDGET_PACKAGE_NAME = "com.google.android.googlequicksearchbox";
 
 
     public static String getDockSearch(Context context) {
@@ -55,7 +55,7 @@ public class DockSearch {
     public static String getRecommendedProvider(Context context) {
         for (AppWidgetProviderInfo next : AppWidgetManager.getInstance(context).getInstalledProviders()) {
             if (next.getProfile().equals(Process.myUserHandle())
-                    && SmartspaceQsbWidget.WIDGET_PACKAGE_NAME.equals(next.provider.getPackageName())
+                    && WIDGET_PACKAGE_NAME.equals(next.provider.getPackageName())
             && WIDGET_CLASS_NAME.equals(next.provider.getClassName())) {
                 return next.provider.flattenToShortString();
             }

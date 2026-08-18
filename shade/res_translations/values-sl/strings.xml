@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Predlogi za aplikacije"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Vse aplikacije"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Predvidene aplikacije"</string>
-	<string name="smartspace_preferences">"Nastavitve"</string>
-	<string name="smartspace_preferences_in_settings">"Hitri pregled"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Na vrhu začetnega zaslona"</string>
 	<string name="icon_shape_override_label">"Spremeni obliko ikon"</string>
 	<string name="icon_shape_override_progress">"Uveljavljanje spremenjene oblike ikon"</string>
 	<string name="icon_shape_square">"Kvadrat"</string>

@@ -14,7 +14,6 @@
     <string name="theme_twilight">Mitternacht</string>
     <string name="theme_blossom">Blühend</string>
     <string name="dock_search">Such-Widget</string>
-    <string name="feed_provider">Nachrichtenfeed</string>
     <string name="grid_division">Gitterabstand</string>
     <string name="grid_division_dense">Dicht (6 mal 6)</string>
     <string name="grid_division_normal">Normal (5 mal 5)</string>

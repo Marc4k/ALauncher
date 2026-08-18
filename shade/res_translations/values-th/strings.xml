@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"คำแนะนำเกี่ยวกับแอป"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"แอปทั้งหมด"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"แอปที่คาดการณ์ไว้"</string>
-	<string name="smartspace_preferences">"ค่ากำหนด"</string>
-	<string name="smartspace_preferences_in_settings">"ข้อมูลโดยย่อ"</string>
-	<string name="smartspace_preferences_in_settings_desc">"ที่ด้านบนของหน้าจอหลัก"</string>
 	<string name="icon_shape_override_label">"เปลี่ยนรูปร่างไอคอน"</string>
 	<string name="icon_shape_override_progress">"กำลังนำการเปลี่ยนรูปร่างไอคอนไปใช้"</string>
 	<string name="icon_shape_square">"สี่เหลี่ยมจัตุรัส"</string>

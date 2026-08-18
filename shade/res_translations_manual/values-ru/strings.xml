@@ -14,7 +14,6 @@
     <string name="theme_twilight">Сумерки</string>
     <string name="theme_blossom">Цветение</string>
     <string name="dock_search">Виджет поиска</string>
-    <string name="feed_provider">Лента новостей</string>
     <string name="grid_division">Размер сетки</string>
     <string name="grid_division_dense">Компактный (6 на 6)</string>
     <string name="grid_division_normal">Нормальный (5 к 5)</string>

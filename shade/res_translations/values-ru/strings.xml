@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Рекомендуемые приложения"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Все приложения"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Ваши рекомендуемые приложения"</string>
-	<string name="smartspace_preferences">"Настройки"</string>
-	<string name="smartspace_preferences_in_settings">"Самое главное"</string>
-	<string name="smartspace_preferences_in_settings_desc">"В верхней части главного экрана"</string>
 	<string name="icon_shape_override_label">"Изменить форму значков"</string>
 	<string name="icon_shape_override_progress">"Применение изменений…"</string>
 	<string name="icon_shape_square">"Квадрат"</string>

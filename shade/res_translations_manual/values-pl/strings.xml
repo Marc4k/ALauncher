@@ -14,7 +14,6 @@
     <string name="theme_twilight">Zmierzch</string>
     <string name="theme_blossom">Rozkwit</string>
     <string name="dock_search">Widżet wyszukiwarki</string>
-    <string name="feed_provider">Panel wiadomości</string>
     <string name="grid_division">Siatka</string>
     <string name="grid_division_dense">Gęsta (6 na 6)</string>
     <string name="grid_division_normal">Normalna (5 na 5)</string>

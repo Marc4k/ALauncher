@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.DialogFragment;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -27,9 +26,6 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.util.SystemUiController;
 
-import java.util.List;
-
-import amirz.aidlbridge.LauncherClientIntent;
 import amirz.helpers.DefaultLauncher;
 import amirz.helpers.Settings;
 import amirz.shade.customization.IconDatabase;
@@ -38,14 +34,11 @@ import amirz.shade.customization.ShadeStyle;
 import amirz.shade.icons.pack.IconPackManager;
 import amirz.shade.settings.ColorListPreference;
 import amirz.shade.settings.DockSearchPrefSetter;
-import amirz.shade.settings.FeedProviderPrefSetter;
 import amirz.shade.settings.IconPackPrefSetter;
 import amirz.shade.settings.ReloadingListPreference;
 import amirz.shade.util.AppReloader;
 
 import static amirz.shade.ShadeFont.KEY_FONT;
-import static amirz.shade.ShadeLauncherCallbacks.KEY_ENABLE_MINUS_ONE;
-import static amirz.shade.ShadeLauncherCallbacks.KEY_FEED_PROVIDER;
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static amirz.shade.customization.IconShapeOverride.KEY_ICON_SHAPE;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
@@ -155,16 +148,6 @@ public class ShadeSettings extends SettingsActivity {
                 if (null != search) {
                     search.setOnReloadListener(DockSearchPrefSetter::new);
                 }
-                ReloadingListPreference feed =
-                        (ReloadingListPreference) findPreference(KEY_FEED_PROVIDER);
-                if (null != feed) {
-                    feed.setOnReloadListener(FeedProviderPrefSetter::new);
-                    feed.setOnPreferenceChangeListener(this);
-                    List<ApplicationInfo> aiList = LauncherClientIntent.query(context);
-                    if (aiList.isEmpty()){
-                        Settings.showSnackBar(context, R.string.bridge_missing_message);
-                    }
-                }
             } else if(rootKey.equals(CATEGORY_APPS)) {
                 ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
                 if (null != icons) {
@@ -258,11 +241,6 @@ public class ShadeSettings extends SettingsActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {
             switch (preference.getKey()) {
-                case KEY_FEED_PROVIDER:
-                    Utilities.getPrefs(context).edit()
-                            .putBoolean(KEY_ENABLE_MINUS_ONE, !TextUtils.isEmpty((String) newValue))
-                            .apply();
-                    break;
                 case KEY_ICON_PACK:
                     IconDatabase.clearAll(context);
                     IconDatabase.setGlobal(context, (String) newValue);

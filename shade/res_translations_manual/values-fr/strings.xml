@@ -14,7 +14,6 @@
     <string name="theme_twilight">Crépuscule</string>
     <string name="theme_blossom">Floraison</string>
     <string name="dock_search">Recherche de widget</string>
-    <string name="feed_provider">Fil d\'actualité</string>
     <string name="grid_division">Espacement de la grille</string>
     <string name="grid_division_dense">Dense (6 par 6)</string>
     <string name="grid_division_normal">Normal (5 par 5)</string>

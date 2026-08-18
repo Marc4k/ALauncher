@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ஆப்ஸ் பரிந்துரைகள்"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"அனைத்து ஆப்ஸும்"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"நீங்கள் கணித்த ஆப்ஸ்"</string>
-	<string name="smartspace_preferences">"விருப்பத்தேர்வுகள்"</string>
-	<string name="smartspace_preferences_in_settings">"முகப்புத் தகவல்"</string>
-	<string name="smartspace_preferences_in_settings_desc">"முகப்புத் திரையின் மேற்புறம்"</string>
 	<string name="icon_shape_override_label">"ஐகான் வடிவத்தை மாற்று"</string>
 	<string name="icon_shape_override_progress">"ஐகான் வடிவத்தை மாற்றுகிறது"</string>
 	<string name="icon_shape_square">"சதுரம்"</string>

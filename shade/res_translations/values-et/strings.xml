@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Rakenduste soovitused"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Kõik rakendused"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Teie ennustatud rakendused"</string>
-	<string name="smartspace_preferences">"Eelistused"</string>
-	<string name="smartspace_preferences_in_settings">"Ülevaade"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Avaekraani ülaosas"</string>
 	<string name="icon_shape_override_label">"Ikooni kuju muutmine"</string>
 	<string name="icon_shape_override_progress">"Ikooni kuju muudatuste rakendamine"</string>
 	<string name="icon_shape_square">"Ruut"</string>

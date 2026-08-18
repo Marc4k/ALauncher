@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ایپ کی تجاویز"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"تمام ایپس"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"آپ کی پیشن گوئی کردہ ایپس"</string>
-	<string name="smartspace_preferences">"ترجیحات"</string>
-	<string name="smartspace_preferences_in_settings">"ایک نظر میں"</string>
-	<string name="smartspace_preferences_in_settings_desc">"آپ کی ہوم اسکرین کے سب سے اوپری حصے میں"</string>
 	<string name="icon_shape_override_label">"آئیکن کی شکل تبدیل کریں"</string>
 	<string name="icon_shape_override_progress">"آئيکن کی شکل کی تبدیلیاں لاگو ہو رہی ہیں"</string>
 	<string name="icon_shape_square">"مربع"</string>
