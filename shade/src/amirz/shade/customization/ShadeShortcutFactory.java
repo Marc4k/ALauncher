@@ -28,8 +28,6 @@ public class ShadeShortcutFactory extends SystemShortcutFactory {
     public ShadeShortcutFactory(Context context) {
         super(new SystemShortcut.AppInfo(),
                 new SystemShortcut.Widgets(),
-                new SystemShortcut.Install(),
-                new SystemShortcut.DismissPrediction(),
                 new UnInstall());
     }
 
