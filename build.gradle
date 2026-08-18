@@ -62,7 +62,9 @@ android {
         }
 
         release {
-            signingConfig signingConfigs.release
+            if (keystoreProperties.exists()) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard.flags'
@@ -186,7 +188,6 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        jcenter()
     }
 
     gradle.projectsEvaluated {
@@ -252,9 +253,11 @@ protobuf {
     }
 }
 
-android.signingConfigs.release.storeFile file(props.keyStore)
-android.signingConfigs.release.storePassword props.keyStorePassword
-android.signingConfigs.release.keyAlias props.keyAlias
-android.signingConfigs.release.keyPassword props.keyAliasPassword
+if (keystoreProperties.exists()) {
+    android.signingConfigs.release.storeFile file(props.keyStore)
+    android.signingConfigs.release.storePassword props.keyStorePassword
+    android.signingConfigs.release.keyAlias props.keyAlias
+    android.signingConfigs.release.keyPassword props.keyAliasPassword
+}
 
 apply from: 'shade/shade.gradle'

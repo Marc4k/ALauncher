@@ -38,7 +38,7 @@ task 'buildShadeSmali' {
             task "dex_to_jar_${name}"(type: JavaExec) {
                 dependsOn "smali_to_dex_${name}"
                 classpath = fileTree(dir: file('buildSrc/dex2jar'), include: '*.jar')
-                main = "com.googlecode.dex2jar.tools.Dex2jarCmd"
+                mainClass = "com.googlecode.dex2jar.tools.Dex2jarCmd"
                 args = [
                         intermediateFile,
                         "--output", jarFile,
