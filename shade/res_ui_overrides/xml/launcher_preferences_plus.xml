@@ -110,21 +110,6 @@
         </PreferenceScreen>
 
         <PreferenceScreen
-            android:icon="@drawable/ic_gesture"
-            android:key="pref_screen_gestures"
-            android:title="@string/category_gestures">
-
-            <amirz.shade.settings.ListPreference
-                android:defaultValue="nothing"
-                android:entries="@array/home_action_names"
-                android:entryValues="@array/home_action_values"
-                android:key="pref_home_action"
-                android:persistent="true"
-                android:summary="%s"
-                android:title="@string/home_action" />
-        </PreferenceScreen>
-
-        <PreferenceScreen
             android:icon="@drawable/ic_customization"
             android:key="pref_screen_customization"
             android:title="@string/category_customization">

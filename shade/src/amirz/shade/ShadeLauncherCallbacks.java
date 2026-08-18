@@ -21,7 +21,6 @@ import com.android.launcher3.compat.UserManagerCompat;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-import amirz.helpers.Settings;
 import amirz.shade.animations.TransitionManager;
 import amirz.shade.customization.DockSearch;
 import amirz.shade.hidden.HiddenAppsDrawerState;
@@ -36,7 +35,6 @@ import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static android.content.Context.SEARCH_SERVICE;
 import static com.android.launcher3.LauncherState.ALL_APPS;
-import static com.android.launcher3.LauncherState.NORMAL;
 import static com.android.launcher3.allapps.PersonalWorkSlidingTabStrip.KEY_SHOWED_PEEK_WORK_TAB;
 import static com.android.launcher3.settings.SettingsActivity.GRID_OPTIONS_PREFERENCE_KEY;
 import static com.android.launcher3.util.Themes.KEY_DEVICE_THEME;
@@ -47,7 +45,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     private final ShadeLauncher mLauncher;
     private final Handler mHandler = new Handler();
-    private boolean mNoFloatingView;
 
     ShadeLauncherCallbacks(ShadeLauncher launcher) {
         mLauncher = launcher;
@@ -127,7 +124,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
     @Override
     public void onPause() {
         UnreadSession.getInstance(mLauncher).onPause(mLauncher);
-        mNoFloatingView = AbstractFloatingView.getTopOpenView(mLauncher) == null;
     }
 
     @Override
@@ -165,17 +161,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onHomeIntent(boolean internalStateHandled) {
-        if(mLauncher.isInState(NORMAL) && !Settings.getHomeAction(mLauncher).equals("nothing")) {
-            Settings.handleHomeAction(mLauncher);
-        } else if (mLauncher.hasWindowFocus()
-                && mLauncher.isInState(NORMAL)
-                && mLauncher.getWorkspace().getNextPage() == 0
-                && mNoFloatingView) {
-            AllAppsQsb search =
-                    (AllAppsQsb) mLauncher.getAppsView().getSearchView();
-            search.requestSearch();
-            mLauncher.getStateManager().goToState(ALL_APPS, true);
-        }
     }
 
     @Override

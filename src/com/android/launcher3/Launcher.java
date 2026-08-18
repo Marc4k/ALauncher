@@ -330,6 +330,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 .remove("pref_lock_desktop")
                 .remove("pref_swipe_down")
                 .remove("pref_double_tap_lock")
+                .remove("pref_home_action")
                 .apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
