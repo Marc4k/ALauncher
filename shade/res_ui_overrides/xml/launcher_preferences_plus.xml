@@ -161,9 +161,6 @@
                 android:summary="@string/change_launcher_desc"
                 android:title="@string/change_launcher" />
 
-            <Preference
-                android:key="pref_restart_launcher"
-                android:title="@string/restart_launcher" />
         </PreferenceScreen>
 
     </PreferenceCategory>

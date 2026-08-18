@@ -65,7 +65,6 @@ public class ShadeSettings extends SettingsActivity {
         private static final String CATEGORY_MISC = "pref_screen_misc";
 
         private static final String KEY_ICON_PACK = "pref_icon_pack";
-        private static final String KEY_RESTART_LAUNCHER = "pref_restart_launcher";
         private static final String KEY_DEFAULT_LAUNCHER = "pref_default_launcher";
         private Activity context;
 
@@ -120,11 +119,6 @@ public class ShadeSettings extends SettingsActivity {
                     }
                 }
             } else if(rootKey.equals(CATEGORY_MISC)) {
-                Preference restartLauncher = findPreference(KEY_RESTART_LAUNCHER);
-                if (null != restartLauncher) {
-                    restartLauncher.setOnPreferenceClickListener(this);
-                }
-
                 Preference defaultLauncher = findPreference(KEY_DEFAULT_LAUNCHER);
                 if (null != defaultLauncher) {
                     defaultLauncher.setOnPreferenceClickListener(this);
@@ -182,9 +176,6 @@ public class ShadeSettings extends SettingsActivity {
         @Override
         public boolean onPreferenceClick(Preference preference) {
             switch (preference.getKey()) {
-                case KEY_RESTART_LAUNCHER:
-                    ShadeRestarter.initiateRestart(context);
-                    break;
                 case KEY_DEFAULT_LAUNCHER:
                     new DefaultLauncher(getActivity()).launchHomeOrClearDefaultsDialog();
                     break;

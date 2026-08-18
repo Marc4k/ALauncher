@@ -6,7 +6,6 @@
     <string name="about_review_desc" translatable="false">Review on app store</string>
     <string name="about_info" translatable="false">Info</string>
     <string name="about_info_desc" translatable="false">@string/derived_app_name</string>
-    <string name="restart_launcher"  translatable="false">Restart ALauncher</string>
     <string name="category_basic" translatable="false">"Basic"</string>
     <string name="category_misc" translatable="false">"Misc"</string>
     <string name="category_misc_desc" translatable="false">"Misc"</string>
