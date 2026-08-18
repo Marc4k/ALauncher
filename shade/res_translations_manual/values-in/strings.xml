@@ -14,12 +14,6 @@
     <string name="theme_twilight">Senja</string>
     <string name="theme_blossom">Bermekaran</string>
     <string name="dock_search">Widget pencarian</string>
-    <string name="grid_division">Jarak kisi</string>
-    <string name="grid_division_dense">Padat (6×6)</string>
-    <string name="grid_division_normal">Biasa (5×5)</string>
-    <string name="grid_division_reasonable">Jarang (4×5)</string>
-    <string name="grid_division_big">Besar (4×4)</string>
-    <string name="grid_division_crazybig">Raksasa (3×3)</string>
     <string name="fading_transition">Transisi luntur</string>
     <string name="fading_transition_desc">Ketika membuka apl</string>
     <string name="about_contact">Kontak</string>

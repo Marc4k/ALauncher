@@ -14,12 +14,6 @@
     <string name="theme_twilight">सांझ</string>
     <string name="theme_blossom">पुष्पणकाल</string>
     <string name="dock_search">खोज विजेट</string>
-    <string name="grid_division">ग्रिड रिक्ति</string>
-    <string name="grid_division_dense">घना (6 बाय 6)</string>
-    <string name="grid_division_normal">सामान्य (5 बाय 5)</string>
-    <string name="grid_division_reasonable">विरल (4 बाय 5)</string>
-    <string name="grid_division_big">बड़ा (4 बाय 4)</string>
-    <string name="grid_division_crazybig">विशाल (3 बाय 3)</string>
     <string name="fading_transition">लुप्त होती संक्रमण</string>
     <string name="fading_transition_desc">एप खोलते समय</string>
     <string name="about_contact">संपर्क</string>

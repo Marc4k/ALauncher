@@ -27,13 +27,10 @@ import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static android.content.Context.SEARCH_SERVICE;
 import static com.android.launcher3.LauncherState.ALL_APPS;
-import static com.android.launcher3.settings.SettingsActivity.GRID_OPTIONS_PREFERENCE_KEY;
 import static com.android.launcher3.util.Themes.KEY_DEVICE_THEME;
 
 public class ShadeLauncherCallbacks implements LauncherCallbacks,
         SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String KEY_IDP_GRID_NAME = "idp_grid_name";
-
     private final ShadeLauncher mLauncher;
     private final Handler mHandler = new Handler();
 
@@ -44,7 +41,11 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         SharedPreferences prefs = Utilities.getPrefs(mLauncher);
-        prefs.edit().remove("pref_icon_pack").apply();
+        prefs.edit()
+                .remove("pref_icon_pack")
+                .remove("pref_grid_options")
+                .remove("idp_grid_name")
+                .apply();
         if (Utilities.ATLEAST_NOUGAT) {
             mLauncher.deleteSharedPreferences(
                     mLauncher.getPackageName() + ".ICON_DATABASE");
@@ -69,7 +70,7 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (KEY_DEVICE_THEME.equals(key) || KEY_THEME.equals(key) || KEY_FONT.equals(key)) {
             mLauncher.recreate();
-        } else if (KEY_IDP_GRID_NAME.equals(key) || KEY_DOCK_SEARCH.equals(key)) {
+        } else if (KEY_DOCK_SEARCH.equals(key)) {
             mLauncher.kill();
         }
     }
@@ -78,8 +79,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
         prefs.edit().putString(KEY_FONT, prefs.getString(KEY_FONT, DEFAULT_FONT))
                 .putString(KEY_DOCK_SEARCH, prefs.getString(KEY_DOCK_SEARCH,
                         getRecommendedSearchProvider()))
-                .putString(KEY_IDP_GRID_NAME, prefs.getString(KEY_IDP_GRID_NAME, null))
-                .putBoolean(GRID_OPTIONS_PREFERENCE_KEY, true)
                 .apply();
 
     }

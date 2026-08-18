@@ -14,12 +14,6 @@
     <string name="theme_twilight">Zmierzch</string>
     <string name="theme_blossom">Rozkwit</string>
     <string name="dock_search">Widżet wyszukiwarki</string>
-    <string name="grid_division">Siatka</string>
-    <string name="grid_division_dense">Gęsta (6 na 6)</string>
-    <string name="grid_division_normal">Normalna (5 na 5)</string>
-    <string name="grid_division_reasonable">Luźna (4 na 5)</string>
-    <string name="grid_division_big">Duża (4 na 4)</string>
-    <string name="grid_division_crazybig">Wielka (3 na 3)</string>
     <string name="fading_transition">Animacja przenikania</string>
     <string name="fading_transition_desc">W trakcie otwierania aplikacji</string>
     <string name="about_contact">Kontakt</string>

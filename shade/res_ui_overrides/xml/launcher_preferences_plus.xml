@@ -84,15 +84,6 @@
             android:key="pref_screen_customization"
             android:title="@string/category_customization">
 
-            <ListPreference
-                android:key="idp_grid_name"
-                android:title="@string/grid_division"
-                android:summary="%s"
-                android:entries="@array/grid_division_names"
-                android:entryValues="@array/grid_division_values"
-                android:defaultValue="normal"
-                android:persistent="true" />
-
         </PreferenceScreen>
 
         <PreferenceScreen
@@ -105,12 +96,6 @@
                 android:title="@string/allow_rotation_title"
                 android:summary="@string/allow_rotation_desc"
                 android:defaultValue="@bool/allow_rotation"
-                android:persistent="true" />
-
-            <SwitchPreference
-                android:key="pref_grid_options"
-                android:title="Enable grid options"
-                android:defaultValue="false"
                 android:persistent="true" />
 
         </PreferenceScreen>

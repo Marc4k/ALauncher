@@ -14,12 +14,6 @@
     <string name="theme_twilight">Crépuscule</string>
     <string name="theme_blossom">Floraison</string>
     <string name="dock_search">Recherche de widget</string>
-    <string name="grid_division">Espacement de la grille</string>
-    <string name="grid_division_dense">Dense (6 par 6)</string>
-    <string name="grid_division_normal">Normal (5 par 5)</string>
-    <string name="grid_division_reasonable">Peu espacé (4 par 5)</string>
-    <string name="grid_division_big">Large (4 par 4)</string>
-    <string name="grid_division_crazybig">Très large (3 par 3)</string>
     <string name="fading_transition">Transition de fondu</string>
     <string name="fading_transition_desc">Lors de l\'ouverture des applications</string>
     <string name="about_contact">Contact</string>

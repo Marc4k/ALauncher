@@ -40,12 +40,6 @@
             android:defaultValue="@bool/allow_rotation"
             android:persistent="true" />
 
-        <SwitchPreference
-            android:key="pref_grid_options"
-            android:title="Enable grid options"
-            android:defaultValue="false"
-            android:persistent="true" />
-
     </PreferenceCategory>
 
     <PreferenceCategory android:key="category_style"
@@ -90,15 +84,6 @@
             android:defaultValue=""
             android:persistent="true" />
 
-
-        <ListPreference
-            android:key="idp_grid_name"
-            android:title="@string/grid_division"
-            android:summary="%s"
-            android:entries="@array/grid_division_names"
-            android:entryValues="@array/grid_division_values"
-            android:defaultValue="normal"
-            android:persistent="true" />
 
     </PreferenceCategory>
 

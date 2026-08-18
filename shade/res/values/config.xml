@@ -41,22 +41,6 @@
         <item>"transparent"</item>
     </string-array>
 
-    <string-array translatable="false" name="grid_division_names">
-        <item>@string/grid_division_dense</item>
-        <item>@string/grid_division_normal</item>
-        <item>@string/grid_division_reasonable</item>
-        <item>@string/grid_division_big</item>
-        <item>@string/grid_division_crazybig</item>
-    </string-array>
-
-    <string-array translatable="false" name="grid_division_values">
-        <item>"dense"</item>
-        <item>"normal"</item>
-        <item>"reasonable"</item>
-        <item>"big"</item>
-        <item>"crazybig"</item>
-    </string-array>
-
     <string-array name="device_theme_entries">
         <item>@string/device_theme_default</item>
         <item>@string/device_theme_wallpaper</item>

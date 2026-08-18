@@ -14,12 +14,6 @@
     <string name="theme_twilight">Crepúsculo</string>
     <string name="theme_blossom">Florido</string>
     <string name="dock_search">Widget de pesquisa</string>
-    <string name="grid_division">Espaçamento da grade</string>
-    <string name="grid_division_dense">Denso (6 por 6)</string>
-    <string name="grid_division_normal">Normal (5 por 5)</string>
-    <string name="grid_division_reasonable">Esparso (4 por 5)</string>
-    <string name="grid_division_big">Grande (4 por 4)</string>
-    <string name="grid_division_crazybig">Gigantesco (3 por 3)</string>
     <string name="fading_transition">Transição de desvanecimento</string>
     <string name="fading_transition_desc">Ao abrir apps</string>
     <string name="about_contact">Contato</string>

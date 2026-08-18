@@ -14,12 +14,6 @@
     <string name="theme_twilight">Crepuscolo</string>
     <string name="theme_blossom">Bocciolo</string>
     <string name="dock_search">Widget di ricerca</string>
-    <string name="grid_division">Spaziatura griglia</string>
-    <string name="grid_division_dense">Densa (6 per 6)</string>
-    <string name="grid_division_normal">Normale (5 per 5)</string>
-    <string name="grid_division_reasonable">Sparsa (4 per 5)</string>
-    <string name="grid_division_big">Grande (4 per 4)</string>
-    <string name="grid_division_crazybig">Gigantesca (3 per 3)</string>
     <string name="fading_transition">Transizione di dissolvenza</string>
     <string name="fading_transition_desc">Quando si aprono le app</string>
     <string name="about_contact">Contatta</string>

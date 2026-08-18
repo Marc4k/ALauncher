@@ -14,12 +14,6 @@
     <string name="theme_twilight">Twilight</string>
     <string name="theme_blossom">Blossom</string>
     <string name="dock_search">Search widget</string>
-    <string name="grid_division">Grid spacing</string>
-    <string name="grid_division_dense">Dense (6 by 6)</string>
-    <string name="grid_division_normal">Normal (5 by 5)</string>
-    <string name="grid_division_reasonable">Sparse (4 by 5)</string>
-    <string name="grid_division_big">Big (4 by 4)</string>
-    <string name="grid_division_crazybig">Gigantic (3 by 3)</string>
     <string name="fading_transition">Fading transition</string>
     <string name="fading_transition_desc">When opening apps</string>
     <string name="about_contact">Contact</string>

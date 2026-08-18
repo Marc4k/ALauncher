@@ -14,12 +14,6 @@
     <string name="theme_twilight">Alacakaranlık</string>
     <string name="theme_blossom">Çiçek</string>
     <string name="dock_search">Arama çubuğu</string>
-    <string name="grid_division">Kılavuz aralığı</string>
-    <string name="grid_division_dense">Sıkışık (6\'ya 6)</string>
-    <string name="grid_division_normal">Normal (5\'e 5)</string>
-    <string name="grid_division_reasonable">Seyrek (4\'e 5)</string>
-    <string name="grid_division_big">Büyük (4\'e 4)</string>
-    <string name="grid_division_crazybig">Devasa (3\'e 3)</string>
     <string name="fading_transition">Solarak geçiş</string>
     <string name="fading_transition_desc">Uygulamaları açarken</string>
     <string name="about_contact">İletişim</string>

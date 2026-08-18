@@ -14,12 +14,6 @@
     <string name="theme_twilight">Λυκόφως</string>
     <string name="theme_blossom">Άνθος</string>
     <string name="dock_search">Γραφικό στοιχείο αναζήτησης</string>
-    <string name="grid_division">Αναλογία πλέγματος</string>
-    <string name="grid_division_dense">Πυκνό (6×6)</string>
-    <string name="grid_division_normal">Νορμάλ (5×5)</string>
-    <string name="grid_division_reasonable">Αραιό (4×5)</string>
-    <string name="grid_division_big">Μεγάλο (4×4)</string>
-    <string name="grid_division_crazybig">Γιγάντιο (3×3)</string>
     <string name="fading_transition">Εφέ σβησίματος</string>
     <string name="fading_transition_desc">Κατά το άνοιγμα των εφαρμογών</string>
     <string name="about_contact">Επικοινωνία</string>

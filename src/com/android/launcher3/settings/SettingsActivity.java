@@ -19,10 +19,7 @@ package com.android.launcher3.settings;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.Fragment;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -47,7 +44,6 @@ import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
-import com.android.launcher3.graphics.GridOptionsProvider;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
@@ -76,8 +72,6 @@ public class SettingsActivity extends Activity
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
-
-    public static final String GRID_OPTIONS_PREFERENCE_KEY = "pref_grid_options";
 
     public static int topInset;
     public static int bottomInset;
@@ -145,24 +139,6 @@ public class SettingsActivity extends Activity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (GRID_OPTIONS_PREFERENCE_KEY.equals(key)) {
-
-            final ComponentName cn = new ComponentName(getApplicationContext(),
-                    GridOptionsProvider.class);
-            Context c = getApplicationContext();
-            int oldValue = c.getPackageManager().getComponentEnabledSetting(cn);
-            int newValue;
-            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)) {
-                newValue = PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
-            } else {
-                newValue = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
-            }
-
-            if (oldValue != newValue) {
-                c.getPackageManager().setComponentEnabledSetting(cn, newValue,
-                        PackageManager.DONT_KILL_APP);
-            }
-        }
     }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
@@ -310,10 +286,6 @@ public class SettingsActivity extends Activity
                     // Show if plugins are enabled or flag UI is enabled.
                     return FeatureFlags.showFlagTogglerUi(getActivity()) ||
                             PluginManagerWrapper.hasPlugins(getActivity());
-                case GRID_OPTIONS_PREFERENCE_KEY:
-                    return Utilities.isDevelopersOptionsEnabled(getActivity()) &&
-                            Utilities.IS_DEBUG_DEVICE &&
-                            Utilities.existsStyleWallpapers(getActivity());
             }
 
             return true;

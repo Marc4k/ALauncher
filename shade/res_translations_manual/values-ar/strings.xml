@@ -14,12 +14,6 @@
     <string name="theme_twilight">شفق</string>
     <string name="theme_blossom">زهري</string>
     <string name="dock_search">تطبيق مصغر للبحث</string>
-    <string name="grid_division">أبعاد الأيقونات</string>
-    <string name="grid_division_dense">كثيف (٦x٦)</string>
-    <string name="grid_division_normal">عادي (٥x٥)</string>
-    <string name="grid_division_reasonable">متناثر (٥x٤)</string>
-    <string name="grid_division_big">كبير (٤x٤)</string>
-    <string name="grid_division_crazybig">ضخم (٣x٣)</string>
     <string name="fading_transition">تأثير التلاشي</string>
     <string name="fading_transition_desc">عند فتح التطبيقات</string>
     <string name="about_contact">تواصل معي</string>
