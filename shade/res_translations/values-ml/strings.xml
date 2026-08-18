@@ -39,8 +39,6 @@
 	<string name="category_about">"ആമുഖം"</string>
 	<string name="pref_value_default">"ഡിഫോൾട്ട്"</string>
 	<string name="pref_value_disabled">"പ്രവർത്തനരഹിതമാക്കി"</string>
-	<string name="show_drop_target_label">"കാണിക്കുക"</string>
-	<string name="hide_drop_target_label">"മറയ്ക്കുക"</string>
 	<string name="loading">"ലോഡ് ചെയ്യുന്നു..."</string>
 	<string name="about_donate">"സംഭാവനചെയ്യുക"</string>
 	<string name="any_activity_shortcut">"പ്രവർത്തനം തിരഞ്ഞെടുക്കുക"</string>

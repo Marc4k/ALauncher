@@ -39,8 +39,6 @@
 	<string name="category_about">"Про додаток"</string>
 	<string name="pref_value_default">"За умовчанням"</string>
 	<string name="pref_value_disabled">"Вимкнено"</string>
-	<string name="show_drop_target_label">"Показати"</string>
-	<string name="hide_drop_target_label">"Сховати"</string>
 	<string name="loading">"Завантаження..."</string>
 	<string name="about_donate">"Пожертвувати"</string>
 	<string name="any_activity_shortcut">"Вибрати дію"</string>

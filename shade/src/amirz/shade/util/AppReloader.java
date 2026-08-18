@@ -18,8 +18,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import amirz.shade.hidden.HiddenAppsDatabase;
-
 public class AppReloader {
     private static AppReloader sInstance;
 
@@ -30,36 +28,16 @@ public class AppReloader {
         return sInstance;
     }
 
-    private final Context mContext;
     private final LauncherModel mModel;
     private final UserManagerCompat mUsers;
     private final DeepShortcutManager mShortcuts;
     private final LauncherAppsCompat mApps;
 
     private AppReloader(Context context) {
-        mContext = context;
         mModel = LauncherAppState.getInstance(context).getModel();
         mUsers = UserManagerCompat.getInstance(context);
         mShortcuts = DeepShortcutManager.getInstance(context);
         mApps = LauncherAppsCompat.getInstance(context);
-    }
-
-    public Set<ComponentKey> hiddenApps() {
-        return matchFilter(
-                key -> HiddenAppsDatabase.isHidden(mContext, key.componentName, key.user));
-    }
-
-    private Set<ComponentKey> matchFilter(ReloadFilter filter) {
-        Set<ComponentKey> reloadKeys = new HashSet<>();
-        for (UserHandle user : mUsers.getUserProfiles()) {
-            for (LauncherActivityInfo info : mApps.getActivityList(null, user)) {
-                ComponentKey key = new ComponentKey(info.getComponentName(), info.getUser());
-                if (filter.shouldReload(key)) {
-                    reloadKeys.add(key);
-                }
-            }
-        }
-        return reloadKeys;
     }
 
     public void reload() {
@@ -96,7 +74,4 @@ public class AppReloader {
         }
     }
 
-    private interface ReloadFilter {
-        boolean shouldReload(ComponentKey key);
-    }
 }

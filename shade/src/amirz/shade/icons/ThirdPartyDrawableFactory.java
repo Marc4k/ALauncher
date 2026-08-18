@@ -7,7 +7,6 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.graphics.DrawableFactory;
 import com.android.launcher3.util.ComponentKey;
 
-import amirz.shade.hidden.HiddenAppsDatabase;
 import amirz.shade.icons.calendar.DateChangeReceiver;
 import amirz.shade.icons.calendar.DynamicCalendar;
 import amirz.shade.icons.clock.DynamicClock;
@@ -38,7 +37,6 @@ public class ThirdPartyDrawableFactory extends DrawableFactory {
                     info.getTargetComponent().getPackageName().equals(DynamicCalendar.CALENDAR));
 
             if (Utilities.ATLEAST_OREO
-                    && !HiddenAppsDatabase.isHidden(context, key.componentName, key.user)
                     && info.getTargetComponent().equals(DynamicClock.DESK_CLOCK)) {
                     return mDynamicClockDrawer.drawIcon(info);
             }

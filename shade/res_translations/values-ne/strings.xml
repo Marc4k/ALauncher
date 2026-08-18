@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"तपाईंका पूर्वानुमानित अनुप्रयोगहरू"</string>
 	<string name="category_about">"बारेमा"</string>
 	<string name="pref_value_default">"पूर्वनिर्धारित"</string>
-	<string name="show_drop_target_label">"देखाउनुहोस्"</string>
-	<string name="hide_drop_target_label">"लुकाउनुहोस्"</string>
 	<string name="about_donate">"दान गर्नुहोस्"</string>
 </resources>

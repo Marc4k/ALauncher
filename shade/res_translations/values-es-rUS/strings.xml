@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Predicción de tus apps"</string>
 	<string name="category_about">"Acerca de"</string>
 	<string name="pref_value_default">"Predeterminada"</string>
-	<string name="show_drop_target_label">"Mostrar"</string>
-	<string name="hide_drop_target_label">"Ocultar"</string>
 	<string name="about_donate">"Donar"</string>
 </resources>

@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Предвидени приложения"</string>
 	<string name="category_about">"Информация"</string>
 	<string name="pref_value_default">"По подразбиране"</string>
-	<string name="show_drop_target_label">"Показване"</string>
-	<string name="hide_drop_target_label">"Скриване"</string>
 	<string name="about_donate">"Дарете"</string>
 </resources>

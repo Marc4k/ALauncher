@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"កម្មវិធី​ដែលបាន​ព្យាករ​របស់អ្នក"</string>
 	<string name="category_about">"អំពី"</string>
 	<string name="pref_value_default">"លំនាំដើម"</string>
-	<string name="show_drop_target_label">"បង្ហាញ"</string>
-	<string name="hide_drop_target_label">"លាក់"</string>
 	<string name="about_donate">"បរិច្ចាគ"</string>
 </resources>

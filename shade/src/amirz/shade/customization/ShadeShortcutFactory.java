@@ -16,12 +16,8 @@ import com.android.launcher3.R;
 import com.android.launcher3.popup.SystemShortcut;
 import com.android.launcher3.popup.SystemShortcutFactory;
 import com.android.launcher3.util.PackageManagerHelper;
-import com.android.launcher3.views.Snackbar;
 
 import java.net.URISyntaxException;
-
-import amirz.shade.hidden.HiddenAppsDatabase;
-import amirz.shade.util.AppReloader;
 
 import static android.content.Context.USER_SERVICE;
 
@@ -34,14 +30,7 @@ public class ShadeShortcutFactory extends SystemShortcutFactory {
                 new SystemShortcut.Widgets(),
                 new SystemShortcut.Install(),
                 new SystemShortcut.DismissPrediction(),
-                new HideApp(),
-                new UnhideApp(),
                 new UnInstall());
-    }
-
-    private static boolean canHide(ItemInfo item) {
-        return (item instanceof com.android.launcher3.AppInfo
-                || item instanceof com.android.launcher3.WorkspaceItemInfo);  //&& item.id == ItemInfo.NO_ID;
     }
 
 
@@ -78,76 +67,6 @@ public class ShadeShortcutFactory extends SystemShortcutFactory {
                 } catch (URISyntaxException e) {
                     Log.e(TAG, "Failed to parse intent to start uninstall activity for item=" + itemInfo);
                 }
-            };
-        }
-    }
-
-    public static class HideApp extends SystemShortcut<Launcher> {
-        public HideApp() {
-            super(R.drawable.ic_eye_hide, R.string.hide_drop_target_label);
-        }
-
-        @Override
-        public View.OnClickListener getOnClickListener(
-                Launcher launcher, ItemInfo itemInfo) {
-            boolean canHide = canHide(itemInfo);
-            boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
-            if (isHidden || !canHide) {
-                return null;
-            }
-            return createOnClickListener(launcher, itemInfo);
-        }
-
-        public View.OnClickListener createOnClickListener(
-                Launcher launcher, ItemInfo itemInfo) {
-            return view -> {
-                boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
-                HiddenAppsDatabase.setHidden(launcher, itemInfo, !isHidden);
-                AppReloader.get(launcher).reload(itemInfo);
-
-                if (!isHidden) {
-                    Runnable onUndoClicked = () -> {
-                        HiddenAppsDatabase.setHidden(launcher, itemInfo, false);
-                        AppReloader.get(launcher).reload(itemInfo);
-                    };
-                    Snackbar.show(launcher, R.string.item_hidden, R.string.undo, null, onUndoClicked);
-                }
-                AbstractFloatingView.closeAllOpenViews(launcher);
-            };
-        }
-    }
-
-    public static class UnhideApp extends SystemShortcut<Launcher> {
-        public UnhideApp() {
-            super(R.drawable.ic_eye_unhide, R.string.show_drop_target_label);
-        }
-
-        @Override
-        public View.OnClickListener getOnClickListener(
-                Launcher launcher, ItemInfo itemInfo) {
-            boolean canHide = canHide(itemInfo);
-            boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
-            if (!isHidden || !canHide) {
-                return null;
-            }
-            return createOnClickListener(launcher, itemInfo);
-        }
-
-        public View.OnClickListener createOnClickListener(
-                Launcher launcher, ItemInfo itemInfo) {
-            return view -> {
-                boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
-                HiddenAppsDatabase.setHidden(launcher, itemInfo, !isHidden);
-                AppReloader.get(launcher).reload(itemInfo);
-
-                if (!isHidden) {
-                    Runnable onUndoClicked = () -> {
-                        HiddenAppsDatabase.setHidden(launcher, itemInfo, false);
-                        AppReloader.get(launcher).reload(itemInfo);
-                    };
-                    Snackbar.show(launcher, R.string.item_hidden, R.string.undo, null, onUndoClicked);
-                }
-                AbstractFloatingView.closeAllOpenViews(launcher);
             };
         }
     }

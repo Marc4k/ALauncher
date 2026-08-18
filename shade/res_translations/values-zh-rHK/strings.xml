@@ -39,8 +39,6 @@
 	<string name="category_about">"關於"</string>
 	<string name="pref_value_default">"預設"</string>
 	<string name="pref_value_disabled">"已停用"</string>
-	<string name="show_drop_target_label">"顯示"</string>
-	<string name="hide_drop_target_label">"隱藏"</string>
 	<string name="loading">"正在開啟..."</string>
 	<string name="about_donate">"捐"</string>
 	<string name="any_activity_shortcut">"選擇活動"</string>

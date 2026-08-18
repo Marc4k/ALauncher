@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Təklif edilən tətbiqlər"</string>
 	<string name="category_about">"Haqqında"</string>
 	<string name="pref_value_default">"Defolt"</string>
-	<string name="show_drop_target_label">"Göstərin"</string>
-	<string name="hide_drop_target_label">"Gizlədin"</string>
 	<string name="about_donate">"Bağışlayın"</string>
 </resources>

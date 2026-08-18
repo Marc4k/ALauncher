@@ -39,8 +39,6 @@
 	<string name="category_about">"Info"</string>
 	<string name="pref_value_default">"Standard"</string>
 	<string name="pref_value_disabled">"Slått av"</string>
-	<string name="show_drop_target_label">"Vis"</string>
-	<string name="hide_drop_target_label">"Skjul"</string>
 	<string name="loading">"Laster inn..."</string>
 	<string name="about_donate">"Donere"</string>
 	<string name="any_activity_shortcut">"Velg aktivitet"</string>

@@ -36,6 +36,4 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"ଆପଣ ପୂର୍ବାନୁମାନ କରିଥିବା ଆପ୍ସ"</string>
 	<string name="category_about">"ବିଷୟରେ"</string>
 	<string name="pref_value_default">"ଡିଫଲ୍ଟ"</string>
-	<string name="show_drop_target_label">"ଦେଖାନ୍ତୁ"</string>
-	<string name="hide_drop_target_label">"ଲୁଚାନ୍ତୁ"</string>
 </resources>

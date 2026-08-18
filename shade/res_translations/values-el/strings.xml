@@ -39,8 +39,6 @@
 	<string name="category_about">"Σχετικά με"</string>
 	<string name="pref_value_default">"Προεπιλογή"</string>
 	<string name="pref_value_disabled">"Απενεργοποιημένο"</string>
-	<string name="show_drop_target_label">"Εμφάνιση"</string>
-	<string name="hide_drop_target_label">"Απόκρυψη"</string>
 	<string name="loading">"Φόρτωση..."</string>
 	<string name="about_donate">"Δωρεά"</string>
 	<string name="any_activity_shortcut">"Επιλογή δραστηριότητας"</string>

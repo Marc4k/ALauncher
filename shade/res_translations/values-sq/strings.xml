@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Aplikacionet e tua të parashikuara"</string>
 	<string name="category_about">"Informacione"</string>
 	<string name="pref_value_default">"Të parazgjedhura"</string>
-	<string name="show_drop_target_label">"Shfaq"</string>
-	<string name="hide_drop_target_label">"Fshih"</string>
 	<string name="about_donate">"Dhuroj"</string>
 </resources>

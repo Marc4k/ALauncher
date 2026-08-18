@@ -2,11 +2,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="needs_usage_access">Acesso ao uso necessário</string>
     <string name="msg_missing_usage_access">Para exibir sugestões de apps, habilite o acesso ao uso para <xliff:g id="name" example="My App">%1$s</xliff:g></string>
-    <string name="item_hidden">Item oculto</string>
     <string name="dock_search">Widget de pesquisa</string>
     <string name="fading_transition">Transição de desvanecimento</string>
     <string name="fading_transition_desc">Ao abrir apps</string>
     <string name="about_contact">Contato</string>
     <string name="about_donate_desc">Usando o saldo da Google Play</string>
-    <string name="search_hidden">Ocultos</string>
 </resources>

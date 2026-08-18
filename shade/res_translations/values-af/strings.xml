@@ -36,7 +36,5 @@
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Jou voorspelde programme"</string>
 	<string name="category_about">"Meer oor"</string>
 	<string name="pref_value_default">"Verstek"</string>
-	<string name="show_drop_target_label">"Wys"</string>
-	<string name="hide_drop_target_label">"Versteek"</string>
 	<string name="about_donate">"Skenk"</string>
 </resources>

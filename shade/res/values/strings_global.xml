@@ -3,5 +3,4 @@
     <string name="placeholder_string" translatable="false">@string/loading</string> <!-- Used for preference height loading. -->
     <string name="dock_search_value" translatable="false">%1$s %2$s</string>
     <string name="about_contact_desc" translatable="false">Give us your suggestions</string>
-    <string name="search_hidden_global" translatable="false">Hidden</string>
 </resources>

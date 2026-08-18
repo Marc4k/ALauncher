@@ -17,7 +17,6 @@ import java.io.PrintWriter;
 
 import amirz.shade.animations.TransitionManager;
 import amirz.shade.customization.DockSearch;
-import amirz.shade.hidden.HiddenAppsDrawerState;
 import amirz.shade.search.AllAppsQsb;
 
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
@@ -41,6 +40,7 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
                 .remove("pref_grid_options")
                 .remove("idp_grid_name")
                 .remove("pref_locked_apps")
+                .remove("pref_hidden_apps")
                 .apply();
         if (Utilities.ATLEAST_NOUGAT) {
             mLauncher.deleteSharedPreferences(
@@ -81,9 +81,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onResume() {
-        if (!mLauncher.getAppsView().getApps().hasFilter()) {
-            HiddenAppsDrawerState.getInstance(mLauncher).setRevealed(false);
-        }
     }
 
     @Override
