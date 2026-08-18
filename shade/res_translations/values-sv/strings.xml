@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Appförslag"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alla appar"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Föreslagna appar"</string>
-	<string name="smartspace_preferences">"Inställningar"</string>
-	<string name="smartspace_preferences_in_settings">"Snabböversikt"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Högst upp på startskärmen"</string>
 	<string name="icon_shape_override_label">"Ändra form på ikoner"</string>
 	<string name="icon_shape_override_progress">"Ikonernas form ändras"</string>
 	<string name="icon_shape_square">"Kvadrat"</string>

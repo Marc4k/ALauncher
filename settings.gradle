@@ -1,2 +1,2 @@
-include ':IconLoader', ':companion'
+include ':IconLoader'
 project(':IconLoader').projectDir = new File(rootDir, 'iconloaderlib')

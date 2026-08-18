@@ -2,7 +2,10 @@ import smali.SmaliTask
 
 tasks.whenTaskAdded { task ->
     def name = task.name
-    if (name.startsWith('preShade') && name.endsWith('Build')) {
+    if (name.startsWith('preApp') && name.endsWith('Build')) {
+        task.dependsOn 'buildShadeSmali'
+    }
+    if (name.startsWith('extractIncludeApp') && name.endsWith('Proto')) {
         task.dependsOn 'buildShadeSmali'
     }
 }

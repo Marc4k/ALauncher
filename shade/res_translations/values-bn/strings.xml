@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"অ্যাপের সাজেশন"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"সব অ্যাপ"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"আপনার প্রয়োজন হতে পারে এমন অ্যাপ"</string>
-	<string name="smartspace_preferences">"পছন্দগুলি"</string>
-	<string name="smartspace_preferences_in_settings">"এক ঝলকে"</string>
-	<string name="smartspace_preferences_in_settings_desc">"আপনার হোম স্ক্রিনের উপরের দিকে"</string>
 	<string name="icon_shape_override_label">"আইকনের আকৃতি পরিবর্তন করুন"</string>
 	<string name="icon_shape_override_progress">"আইকনের আকৃতি পরিবর্তন করা হচ্ছে"</string>
 	<string name="icon_shape_square">"চৌকো"</string>

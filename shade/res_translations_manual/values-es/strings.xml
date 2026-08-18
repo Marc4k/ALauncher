@@ -14,7 +14,6 @@
     <string name="theme_twilight">Crepúsculo</string>
     <string name="theme_blossom">Floración</string>
     <string name="dock_search">Widget de búsqueda</string>
-    <string name="feed_provider">Feed de noticias</string>
     <string name="grid_division">Espaciado de cuadrícula</string>
     <string name="grid_division_dense">Denso (6 por 6)</string>
     <string name="grid_division_normal">Normal (5 por 5)</string>

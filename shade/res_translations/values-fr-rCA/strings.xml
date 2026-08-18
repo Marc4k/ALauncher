@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Suggestions d\'applications"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Toutes les applications"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Vos prédictions d\'applications"</string>
-	<string name="smartspace_preferences">"Préférences"</string>
-	<string name="smartspace_preferences_in_settings">"Aperçu"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Dans le haut de votre écran d\'accueil"</string>
 	<string name="icon_shape_override_label">"Modifier la forme de l\'icône"</string>
 	<string name="icon_shape_override_progress">"Application des changements à la forme de l\'icône en cours…"</string>
 	<string name="icon_shape_square">"Carré"</string>

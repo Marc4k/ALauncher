@@ -14,7 +14,6 @@
     <string name="theme_twilight">شفق</string>
     <string name="theme_blossom">زهري</string>
     <string name="dock_search">تطبيق مصغر للبحث</string>
-    <string name="feed_provider">موجز الأخبار</string>
     <string name="grid_division">أبعاد الأيقونات</string>
     <string name="grid_division_dense">كثيف (٦x٦)</string>
     <string name="grid_division_normal">عادي (٥x٥)</string>

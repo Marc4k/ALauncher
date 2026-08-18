@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Mapendekezo ya programu"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Programu zote"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Programu zako zinazopendekezwa"</string>
-	<string name="smartspace_preferences">"Mapendeleo"</string>
-	<string name="smartspace_preferences_in_settings">"Kwa Muhtasari"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Juu ya Skrini ya kwanza"</string>
 	<string name="icon_shape_override_label">"Badilisha umbo la aikoni"</string>
 	<string name="icon_shape_override_progress">"Inabadilisha umbo la aikoni"</string>
 	<string name="icon_shape_square">"Mraba"</string>

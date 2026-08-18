@@ -37,14 +37,6 @@
         </intent>
     </com.android.launcher3.settings.NotificationDotsPreference>
 
-    <SwitchPreference
-        android:icon="@drawable/ic_smart"
-        android:key="pref_smartspace"
-        android:title="@string/smartspace_preferences_in_settings"
-        android:summary="@string/smartspace_preferences_in_settings_desc"
-        android:defaultValue="true"
-        android:persistent="true" />
-
     <amirz.shade.settings.PredictionPreference
         android:icon="@drawable/ic_predict"
         android:key="pref_predictions"
@@ -66,13 +58,6 @@
                 app:showPro="true"
                 android:persistent="true" />
 
-            <amirz.shade.settings.ReloadingListPreference
-                android:icon="@drawable/ic_google_discover"
-                android:key="pref_feed_provider"
-                android:title="@string/feed_provider"
-                android:summary="@string/loading"
-                android:defaultValue=""
-                android:persistent="true" />
         </PreferenceScreen>
 
         <PreferenceScreen
