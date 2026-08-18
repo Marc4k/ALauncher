@@ -45,7 +45,7 @@
                 android:layout_gravity="center_horizontal|top"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
-                android:paddingTop="@dimen/hidden_apps_action_bar_height"
+                android:paddingTop="@dimen/widgets_action_bar_height"
                 android:descendantFocusability="afterDescendants"
                 android:focusable="true" />
 

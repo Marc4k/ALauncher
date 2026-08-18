@@ -34,27 +34,9 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ஆப்ஸ் பரிந்துரைகள்"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"அனைத்து ஆப்ஸும்"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"நீங்கள் கணித்த ஆப்ஸ்"</string>
-	<string name="icon_shape_override_label">"ஐகான் வடிவத்தை மாற்று"</string>
-	<string name="icon_shape_override_progress">"ஐகான் வடிவத்தை மாற்றுகிறது"</string>
-	<string name="icon_shape_square">"சதுரம்"</string>
-	<string name="icon_shape_squircle">"சதுரவட்டம்"</string>
-	<string name="icon_shape_circle">"வட்டம்"</string>
-	<string name="icon_shape_teardrop">"கண்ணீர்துளி"</string>
-	<string name="icon_shape_rounded_square">"வட்டமிட்ட சதுரம்"</string>
-	<string name="icon_shape_cylinder">"உருளை"</string>
-	<string name="device_theme_wallpaper">"தானியங்கு தீம் (வால்பேப்பர் அடிப்படையில்)"</string>
-	<string name="device_theme_light">"லைட்"</string>
-	<string name="device_theme_dark">"டார்க்"</string>
 	<string name="category_general">"பொதுவானவை"</string>
 	<string name="category_about">"அறிமுகம்"</string>
 	<string name="pref_value_default">"இயல்பு"</string>
 	<string name="pref_value_disabled">"முடக்கப்பட்டது"</string>
-	<string name="show_drop_target_label">"காட்டு"</string>
-	<string name="hide_drop_target_label">"மறை"</string>
-	<string name="app_info_more">"மேலும்"</string>
-	<string name="app_info_version">"பதிப்பு"</string>
-	<string name="app_info_icon_pack_none">"ஏதுமில்லை"</string>
-	<string name="app_info_source_unknown">"தெரியவில்லை"</string>
 	<string name="about_donate">"நன்கொடை"</string>
-	<string name="any_activity_shortcut">"செயல்பாட்டைத் தேர்வுசெய்யவும்"</string>
 </resources>

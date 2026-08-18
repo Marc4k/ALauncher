@@ -37,7 +37,6 @@ import com.android.launcher3.graphics.RotationMode;
 
 import java.io.PrintWriter;
 
-import amirz.shade.hidden.HiddenAppsDrawerState;
 
 import static com.android.launcher3.AbstractFloatingView.TYPE_ALL;
 import static com.android.launcher3.AbstractFloatingView.TYPE_HIDE_BACK_BUTTON;
@@ -75,10 +74,6 @@ public class UiFactory extends RecentsUiFactory {
     public static void onEnterAnimationComplete(Context context) {}
 
     public static void onLauncherStateOrResumeChanged(Launcher launcher) {
-        if (launcher.getStateManager().getState() == LauncherState.NORMAL
-                && launcher.getAllAppsController().getProgress() == 1f) {
-            HiddenAppsDrawerState.getInstance(launcher).setRevealed(false);
-        }
         updateDisallowBackGesture(launcher);
     }
 

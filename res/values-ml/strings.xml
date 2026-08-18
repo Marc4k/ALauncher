@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"അൺഇൻസ്റ്റാളുചെയ്യുക"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"ആപ്പ് വിവരം"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"ഇൻസ്‌റ്റാൾ ചെയ്യുക"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"കുറുക്കുവഴികൾ ഇൻസ്റ്റാളുചെയ്യുക"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"ഉപയോക്തൃ ഇടപെടൽ ഇല്ലാതെ കുറുക്കുവഴികൾ ചേർക്കാൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"ഹോം ക്രമീകരണങ്ങളും കുറുക്കുവഴികളും റീഡുചെയ്യുക"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"ഹോമിലെ ക്രമീകരണങ്ങളും കുറുക്കുവഴികളും റീഡുചെയ്യാൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"ഹോം ക്രമീകരണങ്ങളും കുറുക്കുവഴികളും റൈറ്റുചെയ്യുക"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"ഹോമിലെ ക്രമീകരണങ്ങളും കുറുക്കുവഴികളും മാറ്റാൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"ഫോൺ കോൾ ചെയ്യാൻ <xliff:g id="APP_NAME">%1$s</xliff:g> എന്നതിനെ അനുവദിച്ചിട്ടില്ല"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"വിജറ്റ് ലോഡുചെയ്യുന്നതിൽ പ്രശ്നമുണ്ട്"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"സജ്ജീകരിക്കുക"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"ഇതൊരു സിസ്‌റ്റം അപ്ലിക്കേഷനായതിനാൽ അൺഇൻസ്‌റ്റാളുചെയ്യാനാവില്ല."</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"സ്‌റ്റൈലുകളും വാൾപേപ്പറുകളും"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"ഹോം ക്രമീകരണം"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"അഡ്മിൻ പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"ഹോം സ്ക്രീൻ തിരിക്കൽ അനുവദിക്കുക"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"ഫോൺ തിരിച്ച നിലയിലായിരിക്കുമ്പോൾ"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"അറിയിപ്പ് ഡോട്ടുകൾ"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"ഓണാണ്"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"ഓഫാണ്"</string>

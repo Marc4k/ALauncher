@@ -181,7 +181,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public static final int REQUEST_BIND_PENDING_APPWIDGET = 12;
     public static final int REQUEST_RECONFIGURE_APPWIDGET = 13;
 
-    private static final int REQUEST_PERMISSION_CALL_PHONE = 14;
 
     private static final float BOUNCE_ANIMATION_TENSION = 1.3f;
 
@@ -325,6 +324,21 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         initDeviceProfile(idp);
         idp.addOnChangeListener(this);
         mSharedPrefs = Utilities.getPrefs(this);
+        // Remove obsolete feature values from existing installations.
+        mSharedPrefs.edit()
+                .remove("pref_lock_desktop")
+                .remove("pref_swipe_down")
+                .remove("pref_double_tap_lock")
+                .remove("pref_home_action")
+                .remove("pref_add_icon_to_home")
+                .remove("pref_add_icon_to_home_initialized")
+                .remove("promise_icon_ids")
+                .remove("pref_transition")
+                .remove("pref_predictions")
+                .remove("showed_peek_work_tab")
+                .remove("showed_bottom_user_education")
+                .remove("pref_smartspace")
+                .apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
 
@@ -421,7 +435,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onEnterAnimationComplete() {
         super.onEnterAnimationComplete();
         UiFactory.onEnterAnimationComplete(this);
-        mAllAppsController.highlightWorkTabIfNecessary();
         mRotationHelper.setCurrentTransitionRequest(REQUEST_NONE);
     }
 
@@ -806,27 +819,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions,
             int[] grantResults) {
-        PendingRequestArgs pendingArgs = mPendingRequestArgs;
-        if (requestCode == REQUEST_PERMISSION_CALL_PHONE && pendingArgs != null
-                && pendingArgs.getRequestCode() == REQUEST_PERMISSION_CALL_PHONE) {
-            setWaitingForResult(null);
-
-            View v = null;
-            CellLayout layout = getCellLayout(pendingArgs.container, pendingArgs.screenId);
-            if (layout != null) {
-                v = layout.getChildAt(pendingArgs.cellX, pendingArgs.cellY);
-            }
-            Intent intent = pendingArgs.getPendingIntent();
-
-            if (grantResults.length > 0
-                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startActivitySafely(v, intent, null, null);
-            } else {
-                // TODO: Show a snack bar with link to settings
-                Settings.showSnackBar(this, getString(R.string.msg_no_phone_permission,
-                        getString(R.string.derived_app_name)));
-            }
-        }
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onRequestPermissionsResult(requestCode, permissions,
                     grantResults);
@@ -1794,18 +1786,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected boolean onErrorStartingShortcut(Intent intent, ItemInfo info) {
-        // Due to legacy reasons, direct call shortcuts require Launchers to have the
-        // corresponding permission. Show the appropriate permission prompt if that
-        // is the case.
         if (intent.getComponent() == null
-                && Intent.ACTION_CALL.equals(intent.getAction())
-                && checkSelfPermission(android.Manifest.permission.CALL_PHONE) !=
-                PackageManager.PERMISSION_GRANTED) {
-
-            setWaitingForResult(PendingRequestArgs
-                    .forIntent(REQUEST_PERMISSION_CALL_PHONE, intent, info));
-            requestPermissions(new String[]{android.Manifest.permission.CALL_PHONE},
-                    REQUEST_PERMISSION_CALL_PHONE);
+                && Intent.ACTION_CALL.equals(intent.getAction())) {
+            intent.setAction(Intent.ACTION_DIAL);
+            startActivitySafely(null, intent, info, null);
             return true;
         } else {
             return false;

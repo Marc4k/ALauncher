@@ -178,60 +178,6 @@ public abstract class SystemShortcut<T extends BaseDraggingActivity>
         }
     }
 
-    public static class Install extends SystemShortcut {
-        public Install() {
-            super(R.drawable.ic_install_no_shadow, R.string.install_drop_target_label);
-        }
-
-        @Override
-        public View.OnClickListener getOnClickListener(
-                BaseDraggingActivity activity, ItemInfo itemInfo) {
-            boolean supportsWebUI = (itemInfo instanceof WorkspaceItemInfo) &&
-                    ((WorkspaceItemInfo) itemInfo).hasStatusFlag(WorkspaceItemInfo.FLAG_SUPPORTS_WEB_UI);
-            boolean isInstantApp = false;
-            if (itemInfo instanceof com.android.launcher3.AppInfo) {
-                com.android.launcher3.AppInfo appInfo = (com.android.launcher3.AppInfo) itemInfo;
-                isInstantApp = InstantAppResolver.newInstance(activity).isInstantApp(appInfo);
-            }
-            boolean enabled = supportsWebUI || isInstantApp;
-            if (!enabled) {
-                return null;
-            }
-            return createOnClickListener(activity, itemInfo);
-        }
-
-        public View.OnClickListener createOnClickListener(
-                BaseDraggingActivity activity, ItemInfo itemInfo) {
-            return view -> {
-                Intent intent = new PackageManagerHelper(view.getContext()).getMarketIntent(
-                        itemInfo.getTargetComponent().getPackageName());
-                activity.startActivitySafely(view, intent, itemInfo, null);
-                AbstractFloatingView.closeAllOpenViews(activity);
-            };
-        }
-    }
-
-    public static class DismissPrediction extends SystemShortcut<Launcher> {
-        public DismissPrediction() {
-            super(R.drawable.ic_remove_no_shadow, R.string.dismiss_prediction_label);
-        }
-
-        @Override
-        public View.OnClickListener getOnClickListener(Launcher activity, ItemInfo itemInfo) {
-            if (!FeatureFlags.ENABLE_PREDICTION_DISMISS.get()) return null;
-            if (itemInfo.container != LauncherSettings.Favorites.CONTAINER_PREDICTION) return null;
-            return (view) -> {
-                PopupContainerWithArrow.closeAllOpenViews(activity);
-                activity.getUserEventDispatcher().logActionOnControl(Action.Touch.TAP,
-                        ControlType.DISMISS_PREDICTION, ContainerType.DEEPSHORTCUTS);
-                AppLaunchTracker.INSTANCE.get(view.getContext())
-                        .onDismissApp(itemInfo.getTargetComponent(),
-                                itemInfo.user,
-                                AppLaunchTracker.CONTAINER_PREDICTIONS);
-            };
-        }
-    }
-
     protected static void dismissTaskMenuView(BaseDraggingActivity activity) {
         AbstractFloatingView.closeOpenViews(activity, true,
             AbstractFloatingView.TYPE_ALL & ~AbstractFloatingView.TYPE_REBIND_SAFE);

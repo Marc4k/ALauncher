@@ -19,5 +19,4 @@
 <resources>
     <bool name="notification_dots_enabled">true</bool>
 
-    <bool name="enable_install_shortcut_api">false</bool>
 </resources>

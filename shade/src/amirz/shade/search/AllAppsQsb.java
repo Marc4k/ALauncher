@@ -32,6 +32,7 @@ import com.android.launcher3.allapps.AllAppsStore;
 import com.android.launcher3.allapps.AlphabeticalAppsList;
 import com.android.launcher3.allapps.SearchUiManager;
 import com.android.launcher3.allapps.search.AllAppsSearchBarController;
+import com.android.launcher3.allapps.search.DefaultAppSearchAlgorithm;
 import com.android.launcher3.anim.PropertySetter;
 import com.android.launcher3.qsb.QsbContainerView;
 import com.android.launcher3.qsb.QsbWidgetHostView;
@@ -39,9 +40,9 @@ import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.Themes;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import amirz.shade.customization.DockSearch;
-import amirz.shade.hidden.HiddenAppsSearchAlgorithm;
 
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static android.view.View.MeasureSpec.EXACTLY;
@@ -285,7 +286,7 @@ public class AllAppsQsb extends QsbContainerView
         mApps = appsView.getApps();
         mAppsView = appsView;
         mSearchBarController.initialize(
-                new HiddenAppsSearchAlgorithm(mLauncher, appsView.getAppsStore()),
+                new DefaultAppSearchAlgorithm(Arrays.asList(appsView.getAppsStore().getApps())),
                 mFallbackSearchViewText, mLauncher, this);
     }
 

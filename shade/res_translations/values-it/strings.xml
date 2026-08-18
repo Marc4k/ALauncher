@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"App suggerite"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Tutte le app"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Le app previste"</string>
-	<string name="icon_shape_override_label">"Cambia la forma delle icone"</string>
-	<string name="icon_shape_override_progress">"Applicazione delle modifiche alla forma delle icone"</string>
-	<string name="icon_shape_square">"Quadrato"</string>
-	<string name="icon_shape_squircle">"Supercerchio"</string>
-	<string name="icon_shape_circle">"Cerchio"</string>
-	<string name="icon_shape_teardrop">"Goccia"</string>
-	<string name="icon_shape_rounded_square">"Quadrato smussato"</string>
-	<string name="icon_shape_cylinder">"Cilindro"</string>
-	<string name="device_theme_tone">"Tono"</string>
-	<string name="device_theme_wallpaper">"Automatico (in base allo sfondo)"</string>
-	<string name="device_theme_light">"Chiaro"</string>
-	<string name="device_theme_dark">"Scuro"</string>
 	<string name="category_general">"Generali"</string>
-	<string name="category_style">"Tema"</string>
 	<string name="category_customization">"Personalizzazione"</string>
 	<string name="category_about">"Informazioni"</string>
 	<string name="pref_value_default">"Predefinito"</string>
 	<string name="pref_value_disabled">"Disattivato"</string>
-	<string name="show_drop_target_label">"Mostra"</string>
-	<string name="hide_drop_target_label">"Nascondi"</string>
-	<string name="app_info_more">"Altro"</string>
-	<string name="app_info_version">"Versione"</string>
-	<string name="app_info_icon_pack">"Pacchetto icone"</string>
-	<string name="app_info_icon_pack_none">"Nessuno"</string>
-	<string name="app_info_source_unknown">"Sconosciuto"</string>
-	<string name="font">"Carattere"</string>
-	<string name="icon_shape">"Forma"</string>
 	<string name="loading">"Caricamento..."</string>
 	<string name="about_donate">"Dona"</string>
-	<string name="any_activity_shortcut">"Scegli attività"</string>
 </resources>

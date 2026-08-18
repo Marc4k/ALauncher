@@ -26,8 +26,6 @@ import com.android.launcher3.util.ResourceBasedOverride;
 import java.util.ArrayList;
 import java.util.List;
 
-import amirz.helpers.Settings;
-
 import static com.android.launcher3.util.MainThreadInitializedObject.forOverride;
 
 public class SystemShortcutFactory implements ResourceBasedOverride {
@@ -41,9 +39,7 @@ public class SystemShortcutFactory implements ResourceBasedOverride {
     @SuppressWarnings("unused")
     public SystemShortcutFactory() {
         this(new SystemShortcut.AppInfo(),
-                new SystemShortcut.Widgets(),
-                new SystemShortcut.Install(),
-                new SystemShortcut.DismissPrediction());
+                new SystemShortcut.Widgets());
     }
 
     protected SystemShortcutFactory(SystemShortcut... shortcuts) {
@@ -52,9 +48,6 @@ public class SystemShortcutFactory implements ResourceBasedOverride {
 
     public @NonNull List<SystemShortcut> getEnabledShortcuts(Launcher launcher, ItemInfo info) {
         List<SystemShortcut> systemShortcuts = new ArrayList<>();
-        if(Settings.isDesktopLocked(launcher)) {
-            return systemShortcuts;
-        }
         for (SystemShortcut systemShortcut : mAllShortcuts) {
             if (systemShortcut.getOnClickListener(launcher, info) != null) {
                 systemShortcuts.add(systemShortcut);

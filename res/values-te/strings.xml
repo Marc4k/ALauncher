@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"అన్ఇన్‌స్టాల్ చేయి"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"యాప్ సమాచారం"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"ఇన్‌స్టాల్ చేయండి"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"షార్ట్‌కట్‌లను ఇన్‌స్టాల్ చేయడం"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"వినియోగదారు ప్రమేయం లేకుండా సత్వరమార్గాలను జోడించడానికి అనువర్తనాన్ని అనుమతిస్తుంది."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"హోమ్ సెట్టింగ్‌లు మరియు సత్వరమార్గాలను చదవడం"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"హోమ్‌లో సెట్టింగ్‌లు మరియు సత్వరమార్గాలను చదవడానికి అనువర్తనాన్ని అనుమతిస్తుంది."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"హోమ్ సెట్టింగ్‌లు మరియు సత్వరమార్గాలను వ్రాయడం"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"హోమ్‌లో సెట్టింగ్‌లు మరియు సత్వరమార్గాలను మార్చడానికి అనువర్తనాన్ని అనుమతిస్తుంది."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"ఫోన్ కాల్‌లను చేసేందుకు <xliff:g id="APP_NAME">%1$s</xliff:g>కి అనుమతి లేదు"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"విడ్జెట్‌ను లోడ్ చేయడంలో సమస్య"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"సెటప్ చేయి"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"ఇది సిస్టమ్ యాప్ మరియు దీన్ని అన్‌ఇన్‌స్టాల్ చేయడం సాధ్యపడదు."</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"స్ట‌యిల్స్‌ &amp; వాల్‌పేపర్‌లు"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"హోమ్ సెట్టింగ్‌లు"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"మీ నిర్వాహకులు నిలిపివేసారు"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"హోమ్ స్క్రీన్ భ్రమణాన్ని అనుమతించండి"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"ఫోన్‌‌ను తిప్పినప్పుడు"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"నోటిఫికేషన్ డాట్‌లు"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"ఆన్"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"ఆఫ్"</string>

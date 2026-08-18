@@ -16,14 +16,9 @@
 package com.android.launcher3.allapps;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
-
-import androidx.core.content.ContextCompat;
 
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.Launcher;
-import com.android.launcher3.Utilities;
-import com.android.launcher3.shortcuts.DeepShortcutManager;
 import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.util.ItemInfoMatcher;
 import com.android.launcher3.util.LabelComparator;
@@ -119,12 +114,6 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
             return item;
         }
 
-        public static AdapterItem asWorkTabFooter(int pos) {
-            AdapterItem item = new AdapterItem();
-            item.viewType = AllAppsGridAdapter.VIEW_TYPE_WORK_TAB_FOOTER;
-            item.position = pos;
-            return item;
-        }
     }
 
     private final Launcher mLauncher;
@@ -139,8 +128,6 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
     private final ArrayList<AdapterItem> mAdapterItems = new ArrayList<>();
     // The set of sections that we allow fast-scrolling to (includes non-merged sections)
     private final List<FastScrollSectionInfo> mFastScrollerSections = new ArrayList<>();
-    // Is it the work profile app list.
-    private final boolean mIsWork;
 
     // The of ordered component names as a result of a search query
     private ArrayList<ComponentKey> mSearchResults;
@@ -150,11 +137,10 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
     private int mNumAppRowsInAdapter;
     private ItemInfoMatcher mItemFilter;
 
-    public AlphabeticalAppsList(Context context, AllAppsStore appsStore, boolean isWork) {
+    public AlphabeticalAppsList(Context context, AllAppsStore appsStore) {
         mAllAppsStore = appsStore;
         mLauncher = Launcher.getLauncher(context);
         mAppNameComparator = new AppInfoComparator(context);
-        mIsWork = isWork;
         mNumAppsPerRow = mLauncher.getDeviceProfile().inv.numColumns;
         mAllAppsStore.addUpdateListener(this);
     }
@@ -399,17 +385,6 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
             }
         }
 
-        // Add the work profile footer if required.
-        if (shouldShowWorkFooter()) {
-            mAdapterItems.add(AdapterItem.asWorkTabFooter(position++));
-        }
-    }
-
-    private boolean shouldShowWorkFooter() {
-        return mIsWork && Utilities.ATLEAST_P &&
-                (DeepShortcutManager.getInstance(mLauncher).hasHostPermission()
-                        || ContextCompat.checkSelfPermission(mLauncher,"android.permission.MODIFY_QUIET_MODE")
-                        == PackageManager.PERMISSION_GRANTED);
     }
 
     private List<AppInfo> getFiltersAppInfos() {

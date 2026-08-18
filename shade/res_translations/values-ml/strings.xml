@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ആപ്പ് നിർദ്ദേശങ്ങൾ"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"എല്ലാ ആപ്പുകളും"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"നിങ്ങളുടെ പ്രവചിക്കപ്പെട്ട ആപ്പുകൾ"</string>
-	<string name="icon_shape_override_label">"ഐക്കണിന്റെ ആകാരം മാറ്റുക"</string>
-	<string name="icon_shape_override_progress">"ഐക്കൺ ആകാര മാറ്റങ്ങൾ പ്രയോഗിക്കുന്നു"</string>
-	<string name="icon_shape_square">"ചതുരം"</string>
-	<string name="icon_shape_squircle">"ചതുരവൃത്തം"</string>
-	<string name="icon_shape_circle">"വൃത്തം"</string>
-	<string name="icon_shape_teardrop">"കണ്ണുനീര്‍ തുള്ളി"</string>
-	<string name="icon_shape_rounded_square">"ഉരുണ്ട ചതുരം"</string>
-	<string name="icon_shape_cylinder">"സിലിണ്ടർ"</string>
-	<string name="device_theme_tone">"ടോൺ"</string>
-	<string name="device_theme_wallpaper">"സ്വമേധയാ (വാൾപേപ്പറിനെ അടിസ്ഥാനമാക്കി)"</string>
-	<string name="device_theme_light">"ഇളം"</string>
-	<string name="device_theme_dark">"ഇരുണ്ട"</string>
 	<string name="category_general">"പൊതുവായ കാര്യങ്ങൾ"</string>
-	<string name="category_style">"തീം"</string>
 	<string name="category_customization">"ഇച്ഛാനുസൃതമാക്കല്‍"</string>
 	<string name="category_about">"ആമുഖം"</string>
 	<string name="pref_value_default">"ഡിഫോൾട്ട്"</string>
 	<string name="pref_value_disabled">"പ്രവർത്തനരഹിതമാക്കി"</string>
-	<string name="show_drop_target_label">"കാണിക്കുക"</string>
-	<string name="hide_drop_target_label">"മറയ്ക്കുക"</string>
-	<string name="app_info_more">"കൂടുതൽ"</string>
-	<string name="app_info_version">"പതിപ്പ്"</string>
-	<string name="app_info_icon_pack">"ഐക്കൺ പായ്ക്ക്"</string>
-	<string name="app_info_icon_pack_none">"ഒന്നുമില്ല"</string>
-	<string name="app_info_source_unknown">"അജ്ഞാതം"</string>
-	<string name="font">"ഫോണ്ട്"</string>
-	<string name="icon_shape">"ആകൃതി"</string>
 	<string name="loading">"ലോഡ് ചെയ്യുന്നു..."</string>
 	<string name="about_donate">"സംഭാവനചെയ്യുക"</string>
-	<string name="any_activity_shortcut">"പ്രവർത്തനം തിരഞ്ഞെടുക്കുക"</string>
 </resources>

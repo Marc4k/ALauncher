@@ -41,17 +41,4 @@ public class UserManagerCompatVN extends UserManagerCompatVM {
         return mUserManager.isUserUnlocked(user);
     }
 
-    @Override
-    public boolean isAnyProfileQuietModeEnabled() {
-        List<UserHandle> userProfiles = getUserProfiles();
-        for (UserHandle userProfile : userProfiles) {
-            if (Process.myUserHandle().equals(userProfile)) {
-                continue;
-            }
-            if (isQuietModeEnabled(userProfile)) {
-                return true;
-            }
-        }
-        return false;
-    }
 }

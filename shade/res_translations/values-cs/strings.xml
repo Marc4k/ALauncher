@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Návrhy aplikací"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Všechny aplikace"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Vaše předpovídané aplikace"</string>
-	<string name="icon_shape_override_label">"Změnit tvar ikony"</string>
-	<string name="icon_shape_override_progress">"Tvar ikony se mění"</string>
-	<string name="icon_shape_square">"Čtverec"</string>
-	<string name="icon_shape_squircle">"Kruh/čtverec"</string>
-	<string name="icon_shape_circle">"Kruh"</string>
-	<string name="icon_shape_teardrop">"Slza"</string>
-	<string name="icon_shape_rounded_square">"Zaoblený čtvereček"</string>
-	<string name="icon_shape_cylinder">"Váleček"</string>
-	<string name="device_theme_tone">"Odstín"</string>
-	<string name="device_theme_wallpaper">"Automatický (podle tapety)"</string>
-	<string name="device_theme_light">"Světlý"</string>
-	<string name="device_theme_dark">"Tmavý"</string>
 	<string name="category_general">"Obecné"</string>
-	<string name="category_style">"Téma"</string>
 	<string name="category_customization">"Vlastní nastavení"</string>
 	<string name="category_about">"Informace"</string>
 	<string name="pref_value_default">"Výchozí"</string>
 	<string name="pref_value_disabled">"Deaktivováno"</string>
-	<string name="show_drop_target_label">"Zobrazit"</string>
-	<string name="hide_drop_target_label">"Skrýt"</string>
-	<string name="app_info_more">"Další"</string>
-	<string name="app_info_version">"Verze"</string>
-	<string name="app_info_icon_pack">"Balíček ikon"</string>
-	<string name="app_info_icon_pack_none">"Žádná"</string>
-	<string name="app_info_source_unknown">"Neznámé"</string>
-	<string name="font">"Písmo"</string>
-	<string name="icon_shape">"Tvar"</string>
 	<string name="loading">"Načítání..."</string>
 	<string name="about_donate">"Darovat"</string>
-	<string name="any_activity_shortcut">"Vybrat aktivitu"</string>
 </resources>

@@ -26,6 +26,5 @@ public class ListPreference extends androidx.preference.ListPreference {
 
     public ListPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-
     }
 }

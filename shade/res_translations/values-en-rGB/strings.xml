@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"App suggestions"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"All apps"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Your predicted apps"</string>
-	<string name="icon_shape_override_label">"Change icon shape"</string>
-	<string name="icon_shape_override_progress">"Applying icon shape changes"</string>
-	<string name="icon_shape_square">"Square"</string>
-	<string name="icon_shape_squircle">"Squircle"</string>
-	<string name="icon_shape_circle">"Circle"</string>
-	<string name="icon_shape_teardrop">"Teardrop"</string>
-	<string name="icon_shape_rounded_square">"Rounded square"</string>
-	<string name="icon_shape_cylinder">"Cylinder"</string>
-	<string name="device_theme_tone">"Tone"</string>
-	<string name="device_theme_wallpaper">"Automatic (based on wallpaper)"</string>
-	<string name="device_theme_light">"Light"</string>
-	<string name="device_theme_dark">"Dark"</string>
 	<string name="category_general">"General"</string>
-	<string name="category_style">"Theme"</string>
 	<string name="category_customization">"Customisation"</string>
 	<string name="category_about">"About"</string>
 	<string name="pref_value_default">"Default"</string>
 	<string name="pref_value_disabled">"Disabled"</string>
-	<string name="show_drop_target_label">"Show"</string>
-	<string name="hide_drop_target_label">"Hide"</string>
-	<string name="app_info_more">"More"</string>
-	<string name="app_info_version">"Version"</string>
-	<string name="app_info_icon_pack">"Icon pack"</string>
-	<string name="app_info_icon_pack_none">"None"</string>
-	<string name="app_info_source_unknown">"Unknown"</string>
-	<string name="font">"Font"</string>
-	<string name="icon_shape">"Shape"</string>
 	<string name="loading">"Loading..."</string>
 	<string name="about_donate">"Donate"</string>
-	<string name="any_activity_shortcut">"Choose activity"</string>
 </resources>

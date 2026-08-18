@@ -132,6 +132,8 @@
     </style>
 
     <style name="HomeSettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 

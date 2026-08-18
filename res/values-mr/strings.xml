@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"अनइंस्टॉल करा"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"अ‍ॅप माहिती"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"इंस्टॉल करा"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"शॉर्टकट स्‍थापित करा"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"वापरकर्ता हस्तक्षेपाशिवाय शॉर्टकट जोडण्यास अ‍ॅप ला अनुमती देते."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"होम सेटिंग्ज आणि शॉर्टकट वाचा"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"मुख्यपृष्ठातील सेटिंग्ज आणि शॉर्टकट वाचण्यास अ‍ॅप ला अनुमती देते."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"होम सेटिंग्ज आणि शॉर्टकट लिहा"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"मुख्यपृष्ठातील सेटिंग्ज आणि शॉर्टकट बदलण्यास अ‍ॅप ला अनुमती देते."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> ला फोन कॉल करण्याची अनुमती नाही"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"विजेट लोड करण्यात समस्या"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"सेटअप"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"हा सिस्टम अ‍ॅप आहे आणि अनइंस्टॉल केला जाऊ शकत नाही."</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"शैली आणि वॉलपेपर"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"होम सेटिंग्‍ज"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"आपल्या प्रशासकाने अक्षम केले"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"मुख्य स्क्रीन फिरविण्‍यास अनुमती द्या"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"फोन फिरविला जातो तेव्हा"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"सूचना बिंदू"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"सुरू"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"बंद"</string>

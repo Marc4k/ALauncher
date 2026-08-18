@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"App-suggesties"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Alle apps"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Je voorspelde apps"</string>
-	<string name="icon_shape_override_label">"Vorm van pictogram wijzigen"</string>
-	<string name="icon_shape_override_progress">"Wijzigingen in vorm van pictogram toepassen"</string>
-	<string name="icon_shape_square">"Vierkant"</string>
-	<string name="icon_shape_squircle">"Squircle"</string>
-	<string name="icon_shape_circle">"Cirkel"</string>
-	<string name="icon_shape_teardrop">"Traan"</string>
-	<string name="icon_shape_rounded_square">"Afgerond vierkant"</string>
-	<string name="icon_shape_cylinder">"Cylinder"</string>
-	<string name="device_theme_tone">"Toon"</string>
-	<string name="device_theme_wallpaper">"Automatisch (op basis van achtergrond)"</string>
-	<string name="device_theme_light">"Licht"</string>
-	<string name="device_theme_dark">"Donker"</string>
 	<string name="category_general">"Algemeen"</string>
-	<string name="category_style">"Thema"</string>
 	<string name="category_customization">"Aanpassing"</string>
 	<string name="category_about">"Over"</string>
 	<string name="pref_value_default">"Standaard"</string>
 	<string name="pref_value_disabled">"Uitgeschakeld"</string>
-	<string name="show_drop_target_label">"Weergeven"</string>
-	<string name="hide_drop_target_label">"Verbergen"</string>
-	<string name="app_info_more">"Meer"</string>
-	<string name="app_info_version">"Versie"</string>
-	<string name="app_info_icon_pack">"Pictogrampakket"</string>
-	<string name="app_info_icon_pack_none">"Geen"</string>
-	<string name="app_info_source_unknown">"Onbekend"</string>
-	<string name="font">"Lettertype"</string>
-	<string name="icon_shape">"Vorm"</string>
 	<string name="loading">"Laden..."</string>
 	<string name="about_donate">"Doneer"</string>
-	<string name="any_activity_shortcut">"Een activiteit kiezen"</string>
 </resources>

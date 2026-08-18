@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Sugestões de apps"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Todos os apps"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Suas predições de apps"</string>
-	<string name="icon_shape_override_label">"Alterar forma de ícones"</string>
-	<string name="icon_shape_override_progress">"Aplicando alterações na forma dos ícones"</string>
-	<string name="icon_shape_square">"Quadrado"</string>
-	<string name="icon_shape_squircle">"Arredondado"</string>
-	<string name="icon_shape_circle">"Círculo"</string>
-	<string name="icon_shape_teardrop">"Lágrima"</string>
-	<string name="icon_shape_rounded_square">"Quadrado arredondado"</string>
-	<string name="icon_shape_cylinder">"Cilindro"</string>
-	<string name="device_theme_tone">"Tom"</string>
-	<string name="device_theme_wallpaper">"Automático (baseado no plano de fundo)"</string>
-	<string name="device_theme_light">"Claro"</string>
-	<string name="device_theme_dark">"Escuro"</string>
 	<string name="category_general">"Gerais"</string>
-	<string name="category_style">"Tema"</string>
 	<string name="category_customization">"Personalização"</string>
 	<string name="category_about">"Sobre"</string>
 	<string name="pref_value_default">"Padrão"</string>
 	<string name="pref_value_disabled">"Desativado"</string>
-	<string name="show_drop_target_label">"Mostrar"</string>
-	<string name="hide_drop_target_label">"Ocultar"</string>
-	<string name="app_info_more">"Mais"</string>
-	<string name="app_info_version">"Versão"</string>
-	<string name="app_info_icon_pack">"Conjunto de ícones"</string>
-	<string name="app_info_icon_pack_none">"Nenhum"</string>
-	<string name="app_info_source_unknown">"Desconhecido"</string>
-	<string name="font">"Fonte"</string>
-	<string name="icon_shape">"Formato"</string>
 	<string name="loading">"A carregar..."</string>
 	<string name="about_donate">"Doar"</string>
-	<string name="any_activity_shortcut">"Selecione a atividade"</string>
 </resources>

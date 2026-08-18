@@ -28,14 +28,11 @@ import com.android.launcher3.AbstractFloatingView;
 import com.android.launcher3.CellLayout;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Launcher;
-import com.android.launcher3.LauncherState;
 import com.android.launcher3.Workspace;
 import com.android.launcher3.dragndrop.DragLayer;
 import com.android.launcher3.userevent.nano.LauncherLogProto.Action;
 import com.android.launcher3.userevent.nano.LauncherLogProto.ContainerType;
 import com.android.launcher3.views.OptionsPopupView;
-
-import amirz.helpers.Settings;
 
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
@@ -78,26 +75,6 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
         // likely to cause movement.
         mTouchSlop = 2 * ViewConfiguration.get(launcher).getScaledTouchSlop();
         mGestureDetector = new GestureDetector(workspace.getContext(), this);
-        mGestureDetector.setOnDoubleTapListener(new GestureDetector.OnDoubleTapListener() {
-            @Override
-            public boolean onSingleTapConfirmed(MotionEvent e) {
-                return false;
-            }
-
-            @Override
-            public boolean onDoubleTap(MotionEvent e) {
-                if (!mLauncher.isInState(LauncherState.NORMAL)) {
-                    return false;
-                }
-                Settings.handleWorkspaceTouchEvent(mLauncher);
-                return false;
-            }
-
-            @Override
-            public boolean onDoubleTapEvent(MotionEvent e) {
-                return false;
-            }
-        });
     }
 
     @Override

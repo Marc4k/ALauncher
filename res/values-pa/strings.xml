@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"ਅਣਸਥਾਪਤ ਕਰੋ"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"ਐਪ ਜਾਣਕਾਰੀ"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"ਸਥਾਪਤ ਕਰੋ"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"ਸ਼ਾਰਟਕੱਟ ਸਥਾਪਤ ਕਰੋ"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"ਇੱਕ ਐਪ ਨੂੰ ਵਰਤੋਂਕਾਰ ਦੇ ਦਖ਼ਲ ਤੋਂ ਬਿਨਾਂ ਸ਼ਾਰਟਕੱਟ ਸ਼ਾਮਲ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।"</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"ਹੋਮ ਸੈਟਿੰਗਾਂ ਅਤੇ ਸ਼ਾਰਟਕੱਟ ਪੜ੍ਹੋ"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"ਐਪ ਨੂੰ ਹੋਮ ਵਿੱਚ ਸੈਟਿੰਗਾਂ ਅਤੇ ਸ਼ਾਰਟਕੱਟ ਪੜ੍ਹਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।"</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"ਹੋਮ ਸੈਟਿੰਗਾਂ ਅਤੇ ਸ਼ਾਰਟਕੱਟ ਲਿਖੋ"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"ਐਪ ਨੂੰ ਹੋਮ ਵਿੱਚ ਸੈਟਿੰਗਾਂ ਅਤੇ ਸ਼ਾਰਟਕੱਟ ਬਦਲਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ।"</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> ਨੂੰ ਫ਼ੋਨ ਕਾਲਾਂ ਕਰਨ ਦੀ ਆਗਿਆ ਨਹੀਂ ਹੈ"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"ਵਿਜੇਟ ਲੋਡ ਕਰਨ ਵਿੱਚ ਸਮੱਸਿਆ"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"ਸਥਾਪਤ ਕਰੋ"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"ਇਹ ਇੱਕ ਸਿਸਟਮ ਐਪ ਹੈ ਅਤੇ ਇਸਨੂੰ ਅਣਇੰਸਟੌਲ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।"</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"ਸ਼ੈਲੀਆਂ ਅਤੇ ਵਾਲਪੇਪਰ"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"ਹੋਮ ਸੈਟਿੰਗਾਂ"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"ਤੁਹਾਡੇ ਪ੍ਰਸ਼ਾਸਕ ਦੁਆਰਾ ਅਯੋਗ ਬਣਾਈ ਗਈ"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"ਹੋਮ ਸਕ੍ਰੀਨ ਨੂੰ ਘੁੰਮਾਉਣ ਦੀ ਆਗਿਆ ਦਿਓ"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"ਜਦੋਂ ਫ਼ੋਨ ਘੁੰਮਾਇਆ ਜਾਂਦਾ ਹੈ"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"ਸੂਚਨਾ ਬਿੰਦੂ"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"ਚਾਲੂ"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"ਬੰਦ"</string>

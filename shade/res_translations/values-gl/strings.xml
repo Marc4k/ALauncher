@@ -34,19 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Suxestións de aplicacións"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Todas as aplicacións"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"As túas aplicacións preditas"</string>
-	<string name="icon_shape_override_label">"Cambiar forma das iconas"</string>
-	<string name="icon_shape_override_progress">"Aplicando cambios na forma das iconas"</string>
-	<string name="icon_shape_square">"Cadrado"</string>
-	<string name="icon_shape_squircle">"Cadrado de bordos redondeados"</string>
-	<string name="icon_shape_circle">"Círculo"</string>
-	<string name="icon_shape_teardrop">"Bágoa"</string>
 	<string name="category_about">"Acerca de"</string>
 	<string name="pref_value_default">"Predeterminado"</string>
-	<string name="show_drop_target_label">"Mostrar"</string>
-	<string name="hide_drop_target_label">"Ocultar"</string>
-	<string name="app_info_more">"Máis"</string>
-	<string name="app_info_version">"Versión"</string>
-	<string name="app_info_icon_pack_none">"Ningún"</string>
-	<string name="app_info_source_unknown">"Descoñecido"</string>
 	<string name="about_donate">"Doar"</string>
 </resources>

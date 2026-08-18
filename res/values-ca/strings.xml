@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Desinstal·la"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"Informació de l\'aplicació"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"Instal·la"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"instal·la dreceres"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Permet que una aplicació afegeixi dreceres sense la intervenció de l\'usuari."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"llegeix la configuració i les dreceres de la pantalla d\'inici"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"Permet que l\'aplicació llegeixi la configuració i les dreceres de la pantalla d\'inici."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"escriu la configuració i les dreceres de la pantalla d\'inici"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"Permet que l\'aplicació canviï la configuració i les dreceres de la pantalla d\'inici."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> no té permís per fer trucades telefòniques"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"S\'ha produït un problema en carregar el widget"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"Configuració"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"Aquesta aplicació és una aplicació del sistema i no es pot desinstal·lar."</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"Estils i fons de pantalla"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"Config. pantalla d\'inici"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Desactivada per l\'administrador"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"Permet la rotació de la pantalla d\'inici"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"En girar el telèfon"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"Punts de notificació"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"Activats"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"Desactivats"</string>

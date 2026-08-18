@@ -21,7 +21,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ShortcutInfo;
-import android.os.Process;
 import android.os.UserHandle;
 import android.util.Log;
 
@@ -30,7 +29,6 @@ import com.android.launcher3.ItemInfo;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherAppWidgetInfo;
 import com.android.launcher3.LauncherSettings.Favorites;
-import com.android.launcher3.SessionCommitReceiver;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.WorkspaceItemInfo;
 import com.android.launcher3.compat.LauncherAppsCompat;
@@ -112,10 +110,6 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
                     }
                     appsList.addPackage(context, packages[i], mUser);
 
-                    // Automatically add homescreen icon for work profile apps for below O device.
-                    if (!Utilities.ATLEAST_OREO && !Process.myUserHandle().equals(mUser)) {
-                        SessionCommitReceiver.queueAppIconAddition(context, packages[i], mUser);
-                    }
                 }
                 flagOp = FlagOp.removeFlag(WorkspaceItemInfo.FLAG_DISABLED_NOT_AVAILABLE);
                 break;

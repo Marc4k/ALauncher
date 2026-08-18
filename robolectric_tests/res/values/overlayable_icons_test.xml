@@ -27,7 +27,6 @@
         <item>@drawable/ic_pin</item>
         <item>@drawable/ic_remove_no_shadow</item>
         <item>@drawable/ic_setting</item>
-        <item>@drawable/ic_smartspace_preferences</item>
         <item>@drawable/ic_split_screen</item>
         <item>@drawable/ic_uninstall_no_shadow</item>
         <item>@drawable/ic_warning</item>

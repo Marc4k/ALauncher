@@ -27,7 +27,6 @@ import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
 import android.graphics.Point;
 import android.graphics.Rect;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -56,8 +55,6 @@ import java.util.Comparator;
 
 import static com.android.launcher3.Utilities.getDevicePrefs;
 import static com.android.launcher3.config.FeatureFlags.APPLY_CONFIG_AT_RUNTIME;
-import static com.android.launcher3.settings.SettingsActivity.GRID_OPTIONS_PREFERENCE_KEY;
-import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
 import static com.android.launcher3.util.PackageManagerHelper.getPackageFilter;
 
 public class InvariantDeviceProfile {
@@ -66,8 +63,6 @@ public class InvariantDeviceProfile {
     // We do not need any synchronization for this variable as its only written on UI thread.
     public static final MainThreadInitializedObject<InvariantDeviceProfile> INSTANCE =
             new MainThreadInitializedObject<>(InvariantDeviceProfile::new);
-
-    private static final String KEY_IDP_GRID_NAME = "idp_grid_name";
 
     private static final float ICON_SIZE_DEFINED_IN_APP_DP = 48;
 
@@ -155,23 +150,10 @@ public class InvariantDeviceProfile {
     }
 
     private InvariantDeviceProfile(Context context) {
-        String gridName = Utilities.getPrefs(context).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)
-                ? Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null)
-                : null;
-        initGrid(context, gridName);
+        initGrid(context);
         mConfigMonitor = new ConfigMonitor(context,
                 APPLY_CONFIG_AT_RUNTIME.get() ? this::onConfigChanged : this::killProcess);
         mOverlayMonitor = new OverlayMonitor(context);
-    }
-
-    /**
-     * This constructor should NOT have any monitors by design.
-     */
-    public InvariantDeviceProfile(Context context, String gridName) {
-        String newName = initGrid(context, gridName);
-        if (newName == null || !newName.equals(gridName)) {
-            throw new IllegalArgumentException("Unknown grid name");
-        }
     }
 
     /**
@@ -185,7 +167,7 @@ public class InvariantDeviceProfile {
         return context.getResources().getString(CONFIG_ICON_MASK_RES_ID);
     }
 
-    private String initGrid(Context context, String gridName) {
+    private void initGrid(Context context) {
         DefaultDisplay.Info displayInfo = DefaultDisplay.INSTANCE.get(context).getInfo();
 
         Point smallestSize = new Point(displayInfo.smallestSize);
@@ -208,7 +190,7 @@ public class InvariantDeviceProfile {
         // ie. All Apps should be consistent between grid sizes.
         ArrayList<DisplayOption> allOptions = new ArrayList<>();
         ArrayList<DisplayOption> filteredOptions = new ArrayList<>();
-        getPredefinedDeviceProfiles(context, gridName, filteredOptions, allOptions);
+        getPredefinedDeviceProfiles(context, filteredOptions, allOptions);
 
         if (allOptions.isEmpty() && filteredOptions.isEmpty()) {
             throw new RuntimeException("No display option with canBeDefault=true");
@@ -258,12 +240,6 @@ public class InvariantDeviceProfile {
                     false /* isMultiWindowMode */);
         }
 
-        GridOption closestProfile = filteredOptions.get(0).grid;
-        if (!closestProfile.name.equals(gridName)) {
-            Utilities.getPrefs(context).edit()
-                    .putString(KEY_IDP_GRID_NAME, closestProfile.name).apply();
-        }
-
         // We need to ensure that there is enough extra space in the wallpaper
         // for the intended parallax effects
         if (context.getResources().getConfiguration().smallestScreenWidthDp >= 720) {
@@ -277,7 +253,6 @@ public class InvariantDeviceProfile {
         ComponentName cn = new ComponentName(context.getPackageName(), getClass().getName());
         defaultWidgetPadding = AppWidgetHostView.getDefaultPaddingForWidget(context, cn, null);
 
-        return closestProfile.name;
     }
 
     private void initGridOption(Context context, ArrayList<DisplayOption> options,
@@ -301,9 +276,12 @@ public class InvariantDeviceProfile {
         iconTextSize = displayOption.iconTextSize;
         fillResIconDpi = getLauncherIconDensity(iconBitmapSize);
 
-        // If the partner customization apk contains any grid overrides, apply them
-        // Supported overrides: numRows, numColumns, iconSize
+        // Partner packages may still tune icon size, but the workspace and hotseat stay 5x5.
         applyPartnerDeviceProfileOverrides(context, metrics);
+        numRows = 5;
+        numColumns = 5;
+        numHotseatIcons = 5;
+        numAllAppsColumns = 5;
     }
 
 
@@ -338,21 +316,12 @@ public class InvariantDeviceProfile {
         }
     }
 
-    public void setCurrentGrid(Context context, String gridName) {
-        Context appContext = context.getApplicationContext();
-        Utilities.getPrefs(appContext).edit().putString(KEY_IDP_GRID_NAME, gridName).apply();
-        MAIN_EXECUTOR.execute(() -> onConfigChanged(appContext));
-    }
-
     private void onConfigChanged(Context context) {
         // Config changes, what shall we do?
         InvariantDeviceProfile oldProfile = new InvariantDeviceProfile(this);
 
         // Re-init grid
-        String gridName = Utilities.getPrefs(context).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)
-                ? Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null)
-                : null;
-        initGrid(context, gridName);
+        initGrid(context);
 
         int changeFlags = 0;
         if (numRows != oldProfile.numRows ||
@@ -385,11 +354,10 @@ public class InvariantDeviceProfile {
     }
 
     /**
-     * @param gridName The current grid name.
-     * @param filteredOptionsOut List filled with all the filtered options based on gridName.
+     * @param filteredOptionsOut List filled with the fixed 5x5 grid options.
      * @param allOptionsOut List filled with all the options that can be the default option.
      */
-    static void getPredefinedDeviceProfiles(Context context, String gridName,
+    static void getPredefinedDeviceProfiles(Context context,
             ArrayList<DisplayOption> filteredOptionsOut, ArrayList<DisplayOption> allOptionsOut) {
         ArrayList<DisplayOption> profiles = new ArrayList<>();
         try (XmlResourceParser parser = context.getResources().getXml(R.xml.device_profiles)) {
@@ -417,11 +385,9 @@ public class InvariantDeviceProfile {
             throw new RuntimeException(e);
         }
 
-        if (!TextUtils.isEmpty(gridName)) {
-            for (DisplayOption option : profiles) {
-                if (gridName.equals(option.grid.name)) {
-                    filteredOptionsOut.add(option);
-                }
+        for (DisplayOption option : profiles) {
+            if (option.grid.numColumns == 5 && option.grid.numRows == 5) {
+                filteredOptionsOut.add(option);
             }
         }
 

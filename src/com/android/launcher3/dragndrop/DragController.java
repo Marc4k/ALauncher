@@ -46,8 +46,6 @@ import com.android.launcher3.util.UiThreadHelper;
 
 import java.util.ArrayList;
 
-import amirz.helpers.Settings;
-
 import static com.android.launcher3.AbstractFloatingView.TYPE_DISCOVERY_BOUNCE;
 import static com.android.launcher3.LauncherAnimUtils.SPRING_LOADED_EXIT_DELAY;
 import static com.android.launcher3.LauncherState.NORMAL;
@@ -229,9 +227,6 @@ public class DragController implements DragDriver.EventListener, TouchController
     }
 
     private void callOnDragStart() {
-        if (Settings.isDesktopLocked(mLauncher)) {
-            return;
-        }
         if (mOptions.preDragCondition != null) {
             mOptions.preDragCondition.onPreDragEnd(mDragObject, true /* dragStarted*/);
         }
@@ -430,10 +425,6 @@ public class DragController implements DragDriver.EventListener, TouchController
      * Call this from a drag source view.
      */
     public boolean onControllerInterceptTouchEvent(MotionEvent ev) {
-        if (Settings.isDesktopLocked(mLauncher)) {
-            cancelDrag();
-            return false;
-        }
         if (mOptions != null && mOptions.isAccessibleDrag) {
             return false;
         }

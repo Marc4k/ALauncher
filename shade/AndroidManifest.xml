@@ -30,28 +30,6 @@
     <!-- Swipe down for notifications -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
 
-    <!-- App prediction -->
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
-        tools:ignore="ProtectedPermissions" />
-
-    <!-- Home button overlay -->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
-    <!-- Tap to lock -->
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
-
-    <!-- Double tap to sleep and recents -->
-    <permission
-        android:name="${packageName}.permission.ACCESSIBILITY"
-        android:protectionLevel="signature" />
-
-    <!-- App lock-->
-<!--    <uses-permission android:name="android.permission.USE_BIOMETRIC" />-->
-
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-
-    <uses-permission android:name="${packageName}.permission.ACCESSIBILITY" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -97,11 +75,7 @@
                 <category android:name="android.intent.category.MONKEY"/>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.LAUNCHER_APP" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.launcher3.grid.control"
-                android:value="${packageName}.grid_control" />
         </activity>
 
         <activity
@@ -142,49 +116,5 @@
             </intent-filter>
         </activity>
 
-        <!-- The service for the home button overlay -->
-        <service
-            android:name="amirz.gesture.GestureService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/gesture_service_config" />
-        </service>
-
-        <!-- The service for double tap to sleep and opening recents. -->
-        <service
-            android:name="amirz.shade.services.GlobalActionService"
-            android:enabled="@bool/atleast_p"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/sleep_service_config" />
-        </service>
-
-        <!-- Widget shortcut to any activity -->
-        <activity android:name="amirz.shortcut.CreateShortcut"
-            android:icon="@drawable/ic_launcher_shortcut"
-            android:label="@string/any_activity_shortcut"
-            android:theme="@style/ShortcutTheme"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.CREATE_SHORTCUT" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-
-        <activity
-            android:name="amirz.helpers.LockTimeoutActivity"
-            android:excludeFromRecents="true"
-            android:theme="@style/TimeoutTheme" />
     </application>
 </manifest>

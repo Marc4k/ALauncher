@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="all_apps_prediction_row_divider_height">17dp</dimen>
-    <dimen name="all_apps_label_top_padding">16dp</dimen>
-    <dimen name="all_apps_label_bottom_padding">8dp</dimen>
-    <dimen name="all_apps_label_text_size">14sp</dimen>
-    <dimen name="all_apps_tip_bottom_margin">8dp</dimen>
-
     <!-- Task dimens -->
     <dimen name="task_thumbnail_top_margin">24dp</dimen>
     <dimen name="task_card_vert_space">40dp</dimen>

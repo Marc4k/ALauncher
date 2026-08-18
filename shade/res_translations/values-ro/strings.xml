@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Sugestii de aplicații"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Toate aplicațiile"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Aplicațiile estimate"</string>
-	<string name="icon_shape_override_label">"Schimbați forma pictogramei"</string>
-	<string name="icon_shape_override_progress">"Se aplică modificările aduse formei pictogramei"</string>
-	<string name="icon_shape_square">"Pătrat"</string>
-	<string name="icon_shape_squircle">"Pătrat cu colțuri rotunjite"</string>
-	<string name="icon_shape_circle">"Cerc"</string>
-	<string name="icon_shape_teardrop">"Lacrimă"</string>
-	<string name="icon_shape_rounded_square">"Pătrat rotunjit"</string>
-	<string name="icon_shape_cylinder">"Cilindru"</string>
-	<string name="device_theme_tone">"Ton"</string>
-	<string name="device_theme_wallpaper">"Automată (în funcție de imaginea de fundal)"</string>
-	<string name="device_theme_light">"Deschisă"</string>
-	<string name="device_theme_dark">"Întunecată"</string>
 	<string name="category_general">"Preferințe generale"</string>
-	<string name="category_style">"Temă"</string>
 	<string name="category_customization">"Personalizare"</string>
 	<string name="category_about">"Despre"</string>
 	<string name="pref_value_default">"Prestabilite"</string>
 	<string name="pref_value_disabled">"Dezactivată"</string>
-	<string name="show_drop_target_label">"Afișați"</string>
-	<string name="hide_drop_target_label">"Ascundeți"</string>
-	<string name="app_info_more">"Mai multe"</string>
-	<string name="app_info_version">"Versiune"</string>
-	<string name="app_info_icon_pack">"Pachet pictograme"</string>
-	<string name="app_info_icon_pack_none">"Niciuna"</string>
-	<string name="app_info_source_unknown">"Necunoscut"</string>
-	<string name="font">"Font"</string>
-	<string name="icon_shape">"Formă"</string>
 	<string name="loading">"Se încarcă..."</string>
 	<string name="about_donate">"Dona"</string>
-	<string name="any_activity_shortcut">"Alegeți activitatea"</string>
 </resources>

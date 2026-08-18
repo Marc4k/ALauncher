@@ -20,8 +20,6 @@ import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import amirz.helpers.Settings;
-
 import static android.view.MotionEvent.ACTION_CANCEL;
 import static android.view.MotionEvent.ACTION_DOWN;
 import static android.view.MotionEvent.ACTION_MOVE;
@@ -104,7 +102,7 @@ public class StatusBarTouchController implements TouchController {
             // one touch pointer. Hence, even if slope passed, only set the slippery flag
             // when there is single touch event. (context: InputDispatcher.cpp line 1445)
             if (dy > mTouchSlop && dy > Math.abs(dx) && ev.getPointerCount() == 1) {
-                if (!mExpandInvoked && Settings.isSwipeDownEnabled(mLauncher)) {
+                if (!mExpandInvoked) {
                     mExpandInvoked = true;
                     try {
                         mExpand.invoke(mSbm);

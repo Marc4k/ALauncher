@@ -52,13 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"제거"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"앱 정보"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"설치"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"바로가기 설치"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"앱이 사용자의 작업 없이 바로가기를 추가할 수 있도록 합니다."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"홈 설정 및 바로가기 읽기"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"앱이 홈에 있는 설정 및 바로가기를 읽을 수 있도록 합니다."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"홈 설정 및 바로가기 쓰기"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"앱이 홈에 있는 설정 및 바로가기를 변경할 수 있도록 합니다."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 전화를 걸 수 없습니다."</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"위젯을 로드하는 중 문제가 발생했습니다."</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"설정"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"시스템 앱은 제거할 수 없습니다."</string>
@@ -82,8 +75,6 @@
     <string name="styles_wallpaper_button_text" msgid="4342122323125579619">"스타일 및 배경화면"</string>
     <string name="settings_button_text" msgid="8873672322605444408">"홈 설정"</string>
     <string name="msg_disabled_by_admin" msgid="6898038085516271325">"관리자가 사용 중지함"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"홈 화면 회전 허용"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"휴대전화 회전 시"</string>
     <string name="notification_dots_title" msgid="9062440428204120317">"알림 표시 점"</string>
     <string name="notification_dots_desc_on" msgid="1679848116452218908">"사용"</string>
     <string name="notification_dots_desc_off" msgid="1760796511504341095">"사용 안함"</string>

@@ -34,34 +34,11 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"اقتراحات التطبيقات"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"جميع التطبيقات"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"تطبيقاتك المتوقّعة"</string>
-	<string name="icon_shape_override_label">"تغيير شكل الرمز"</string>
-	<string name="icon_shape_override_progress">"جارٍ تطبيق تغييرات شكل الرمز"</string>
-	<string name="icon_shape_square">"مربّع"</string>
-	<string name="icon_shape_squircle">"رمز دائري مربّع"</string>
-	<string name="icon_shape_circle">"دائرة"</string>
-	<string name="icon_shape_teardrop">"رمز على شكل دمعة"</string>
-	<string name="icon_shape_rounded_square">"مربع مستدير"</string>
-	<string name="icon_shape_cylinder">"أسطوانة"</string>
-	<string name="device_theme_tone">"الأسلوب"</string>
-	<string name="device_theme_wallpaper">"تلقائي (حسب لون الخلفية)"</string>
-	<string name="device_theme_light">"مظهر فاتح"</string>
-	<string name="device_theme_dark">"مظهر داكن"</string>
 	<string name="category_general">"عامة"</string>
-	<string name="category_style">"الموضوع"</string>
 	<string name="category_customization">"التخصيص"</string>
 	<string name="category_about">"لمحة"</string>
 	<string name="pref_value_default">"التطبيقات التلقائية"</string>
 	<string name="pref_value_disabled">"غير مفعّل"</string>
-	<string name="show_drop_target_label">"إظهار"</string>
-	<string name="hide_drop_target_label">"إخفاء"</string>
-	<string name="app_info_more">"المزيد"</string>
-	<string name="app_info_version">"الإصدار"</string>
-	<string name="app_info_icon_pack">"حزمة الرموز"</string>
-	<string name="app_info_icon_pack_none">"بدون"</string>
-	<string name="app_info_source_unknown">"غير معروف"</string>
-	<string name="font">"الخط"</string>
-	<string name="icon_shape">"الشكل"</string>
 	<string name="loading">"تحميل..."</string>
 	<string name="about_donate">"تبرع"</string>
-	<string name="any_activity_shortcut">"اختيار نشاط"</string>
 </resources>

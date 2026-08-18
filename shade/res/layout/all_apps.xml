@@ -41,7 +41,13 @@
 
         <include layout="@layout/floating_header_content" />
 
-        <include layout="@layout/all_apps_sliding_strip" />
+        <!-- Structural anchor used by FloatingHeaderView for dynamic header rows. -->
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
     </com.android.launcher3.allapps.FloatingHeaderView>
 
     <include

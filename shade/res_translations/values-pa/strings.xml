@@ -34,27 +34,9 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"ਐਪ ਸੰਬੰਧੀ ਸੁਝਾਅ"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ਸਾਰੀਆਂ ਐਪਾਂ"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"ਤੁਹਾਡੀਆਂ ਪੂਰਵ ਅਨੁਮਾਨਿਤ ਐਪਾਂ"</string>
-	<string name="icon_shape_override_label">"ਆਈਕਨ ਦੀ ਆਕ੍ਰਿਤੀ ਬਦਲੋ"</string>
-	<string name="icon_shape_override_progress">"ਆਈਕਨ ਦੀ ਆਕ੍ਰਿਤੀ ਵਿੱਚ ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"</string>
-	<string name="icon_shape_square">"ਵਰਗ"</string>
-	<string name="icon_shape_squircle">"ਵਰਗਾਕਾਰ-ਚੱਕਰ"</string>
-	<string name="icon_shape_circle">"ਚੱਕਰ"</string>
-	<string name="icon_shape_teardrop">"ਹੰਝੂ ਦੀ ਬੂੰਦ"</string>
-	<string name="icon_shape_rounded_square">"ਗੋਲਾਕਾਰ ਵਰਗ"</string>
-	<string name="icon_shape_cylinder">"ਸਲੰਡਰ"</string>
-	<string name="device_theme_wallpaper">"ਸਵੈਚਲਿਤ (ਵਾਲਪੇਪਰ \'ਤੇ ਆਧਾਰਿਤ)"</string>
-	<string name="device_theme_light">"ਬਲਬ"</string>
-	<string name="device_theme_dark">"ਗੂੜ੍ਹਾ"</string>
 	<string name="category_general">"ਸਧਾਰਨ"</string>
 	<string name="category_about">"ਇਸ ਬਾਰੇ"</string>
 	<string name="pref_value_default">"ਪੂਰਵ-ਨਿਰਧਾਰਤ"</string>
 	<string name="pref_value_disabled">"ਅਯੋਗ ਬਣਾਇਆ"</string>
-	<string name="show_drop_target_label">" ਦਿਖਾਓ"</string>
-	<string name="hide_drop_target_label">"ਲੁਕਾਓ"</string>
-	<string name="app_info_more">"ਹੋਰ"</string>
-	<string name="app_info_version">"ਵਰਜਨ"</string>
-	<string name="app_info_icon_pack_none">"ਕੋਈ ਨਹੀਂ"</string>
-	<string name="app_info_source_unknown">"ਅਗਿਆਤ"</string>
 	<string name="about_donate">"ਦਾਨ ਕਰੋ"</string>
-	<string name="any_activity_shortcut">"ਗਤੀਵਿਧੀ ਚੁਣੋ"</string>
 </resources>

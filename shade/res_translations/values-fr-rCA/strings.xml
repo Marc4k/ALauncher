@@ -34,25 +34,9 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Suggestions d\'applications"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Toutes les applications"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Vos prédictions d\'applications"</string>
-	<string name="icon_shape_override_label">"Modifier la forme de l\'icône"</string>
-	<string name="icon_shape_override_progress">"Application des changements à la forme de l\'icône en cours…"</string>
-	<string name="icon_shape_square">"Carré"</string>
-	<string name="icon_shape_squircle">"Carré aux coins ronds"</string>
-	<string name="icon_shape_circle">"Cercle"</string>
-	<string name="icon_shape_teardrop">"Goutte"</string>
-	<string name="device_theme_wallpaper">"Automatique (selon l\'image de fond d\'écran)"</string>
-	<string name="device_theme_light">"Clair"</string>
-	<string name="device_theme_dark">"Sombre"</string>
 	<string name="category_general">"Général"</string>
 	<string name="category_about">"À propos"</string>
 	<string name="pref_value_default">"Par défaut"</string>
 	<string name="pref_value_disabled">"Désactivée"</string>
-	<string name="show_drop_target_label">"Afficher"</string>
-	<string name="hide_drop_target_label">"Masquer"</string>
-	<string name="app_info_more">"More"</string>
-	<string name="app_info_version">"Version"</string>
-	<string name="app_info_icon_pack_none">"Aucun"</string>
-	<string name="app_info_source_unknown">"Inconnu"</string>
 	<string name="about_donate">"Faire un don"</string>
-	<string name="any_activity_shortcut">"Sélectionnez une activité"</string>
 </resources>

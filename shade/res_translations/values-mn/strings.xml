@@ -34,19 +34,7 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Аппын зөвлөмж"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Бүх апп"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Таны таамагласан аппууд"</string>
-	<string name="icon_shape_override_label">"Дүрс тэмдгийн хэлбэрийг өөрчлөх"</string>
-	<string name="icon_shape_override_progress">"Дүрс тэмдгийн хэлбэрийг өөрчилж байна"</string>
-	<string name="icon_shape_square">"Дөрвөлжин"</string>
-	<string name="icon_shape_squircle">"Мохоо өнцөгтэй дөрвөлжин"</string>
-	<string name="icon_shape_circle">"Дугуй"</string>
-	<string name="icon_shape_teardrop">"Дусал"</string>
 	<string name="category_about">"Тухай"</string>
 	<string name="pref_value_default">"Өгөгдмөл"</string>
-	<string name="show_drop_target_label">"Харуулах"</string>
-	<string name="hide_drop_target_label">"Нуух"</string>
-	<string name="app_info_more">"Бусад"</string>
-	<string name="app_info_version">"Хувилбар"</string>
-	<string name="app_info_icon_pack_none">"Байхгүй"</string>
-	<string name="app_info_source_unknown">"Тодорхойгүй"</string>
 	<string name="about_donate">"Хандив"</string>
 </resources>

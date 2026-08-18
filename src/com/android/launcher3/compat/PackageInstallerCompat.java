@@ -36,8 +36,6 @@ public abstract class PackageInstallerCompat {
 
     // Set<String> of session ids of promise icons that have been added to the home screen
     // as FLAG_PROMISE_NEW_INSTALLS.
-    protected static final String PROMISE_ICON_IDS = "promise_icon_ids";
-
     public static final int STATUS_INSTALLED = 0;
     public static final int STATUS_INSTALLING = 1;
     public static final int STATUS_FAILED = 2;

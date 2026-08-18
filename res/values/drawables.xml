@@ -17,7 +17,4 @@
     <drawable name="ic_setup_shadow">@drawable/ic_setting</drawable>
     <drawable name="ic_remove_shadow">@drawable/ic_remove_no_shadow</drawable>
     <drawable name="ic_uninstall_shadow">@drawable/ic_uninstall_no_shadow</drawable>
-    <drawable name="ic_eye_hide_shadow">@drawable/ic_eye_hide</drawable>
-    <drawable name="ic_eye_unhide_shadow">@drawable/ic_eye_unhide</drawable>
-    <drawable name="ic_launcher_shortcut">@drawable/ic_launcher_shortcut_foreground</drawable>
 </resources>
