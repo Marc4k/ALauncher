@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.DialogFragment;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,14 +15,12 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
-import com.android.launcher3.BuildConfig;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.util.SystemUiController;
 
 import amirz.helpers.DefaultLauncher;
-import amirz.helpers.Settings;
 import amirz.shade.customization.IconDatabase;
 import amirz.shade.customization.IconShapeOverride;
 import amirz.shade.customization.ShadeStyle;
@@ -68,16 +63,10 @@ public class ShadeSettings extends SettingsActivity {
         private static final String CATEGORY_SEARCH = "pref_screen_search";
         private static final String CATEGORY_APPS = "pref_screen_apps";
         private static final String CATEGORY_MISC = "pref_screen_misc";
-        private static final String CATEGORY_ABOUT = "pref_screen_about";
 
         private static final String KEY_ICON_PACK = "pref_icon_pack";
-        private static final String KEY_APP_VERSION = "pref_app_version";
-        private static final String KEY_DONATE = "pref_donate";
-        private static final String KEY_APP_INFO = "app_info";
         private static final String KEY_RESTART_LAUNCHER = "pref_restart_launcher";
         private static final String KEY_DEFAULT_LAUNCHER = "pref_default_launcher";
-        private static final String KEY_CONTACT = "pref_contact";
-        private static final String KEY_REVIEW = "pref_review";
         private Activity context;
 
         @Override
@@ -89,15 +78,6 @@ public class ShadeSettings extends SettingsActivity {
             // Load the icon pack once to set the correct default icon pack.
             IconPackManager.get(context);
             if(null == rootKey) {
-                Preference contact = findPreference(KEY_CONTACT);
-                if(null != contact){
-                    contact.setOnPreferenceClickListener(this);
-                }
-
-                Preference review = findPreference(KEY_REVIEW);
-                if(null != contact){
-                    review.setOnPreferenceClickListener(this);
-                }
                 return;
             }
             if(rootKey.equals(CATEGORY_STYLE)) {
@@ -148,30 +128,6 @@ public class ShadeSettings extends SettingsActivity {
                 Preference defaultLauncher = findPreference(KEY_DEFAULT_LAUNCHER);
                 if (null != defaultLauncher) {
                     defaultLauncher.setOnPreferenceClickListener(this);
-                }
-            } else if(rootKey.equals(CATEGORY_ABOUT)) {
-                // About
-                String versionName = BuildConfig.VERSION_NAME;
-                PackageManager pm = context.getPackageManager();
-                try {
-                    PackageInfo pi = pm.getPackageInfo(BuildConfig.APPLICATION_ID, 0);
-                    versionName = pi.versionName;
-                } catch (PackageManager.NameNotFoundException e) {
-                    e.printStackTrace();
-                }
-                Preference version = findPreference(KEY_APP_VERSION);
-                if (null != version) {
-                    version.setSummary(context.getString(R.string.about_app_version_value,
-                            versionName, ""));
-                }
-
-                Preference info = findPreference(KEY_APP_INFO);
-                if (null != info) {
-                    Uri intentData = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
-                    Intent intent = info.getIntent();
-                    if (null != intent) {
-                        info.setIntent(intent.setData(intentData));
-                    }
                 }
             }
         }
@@ -231,12 +187,6 @@ public class ShadeSettings extends SettingsActivity {
                     break;
                 case KEY_DEFAULT_LAUNCHER:
                     new DefaultLauncher(getActivity()).launchHomeOrClearDefaultsDialog();
-                    break;
-                case KEY_CONTACT:
-                    Settings.openFeedback(getActivity());
-                    break;
-                case KEY_REVIEW:
-                    Settings.openPlaystore(getActivity());
                     break;
             }
             return false;

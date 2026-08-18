@@ -205,45 +205,6 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:key="category_more"
-        android:title="@string/app_info_more">
-        <Preference
-            android:icon="@drawable/ic_star"
-            android:key="pref_review"
-            android:title="@string/about_review"
-            android:summary="@string/about_review_desc"
-            android:persistent="false" />
-
-        <Preference
-            android:icon="@drawable/ic_feedback"
-            android:key="pref_contact"
-            android:title="@string/about_contact"
-            android:summary="@string/about_contact_desc"
-            android:persistent="false" />
-
-        <PreferenceScreen
-            android:icon="@drawable/ic_info"
-            android:key="pref_screen_about"
-            android:title="@string/category_about">
-
-            <Preference
-                android:icon="@drawable/ic_dummy_icon"
-                android:key="pref_app_version"
-                android:title="@string/about_app_version"
-                android:persistent="false" />
-
-            <Preference
-                android:icon="@drawable/ic_dummy_icon"
-                android:key="app_info"
-                android:persistent="false"
-                android:title="@string/app_info_drop_target_label">
-                <intent android:action="android.settings.APPLICATION_DETAILS_SETTINGS" />
-            </Preference>
-
-        </PreferenceScreen>
-
-    </PreferenceCategory>
-
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
