@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"ปิดอยู่"</string>
 	<string name="loading">"กำลังโหลด..."</string>
 	<string name="about_donate">"บริจาค"</string>
-	<string name="any_activity_shortcut">"เลือกกิจกรรม"</string>
 </resources>

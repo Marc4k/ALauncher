@@ -39,5 +39,4 @@
 	<string name="pref_value_default">"Noklusējuma"</string>
 	<string name="pref_value_disabled">"Atspējots"</string>
 	<string name="about_donate">"Ziedot"</string>
-	<string name="any_activity_shortcut">"Darbības izvēle"</string>
 </resources>

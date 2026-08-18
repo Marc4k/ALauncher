@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Slått av"</string>
 	<string name="loading">"Laster inn..."</string>
 	<string name="about_donate">"Donere"</string>
-	<string name="any_activity_shortcut">"Velg aktivitet"</string>
 </resources>

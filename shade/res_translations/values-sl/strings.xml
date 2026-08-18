@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Onemogočeno"</string>
 	<string name="loading">"Nalaganje..."</string>
 	<string name="about_donate">"Doniraj"</string>
-	<string name="any_activity_shortcut">"Izberite dejavnost"</string>
 </resources>

@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Deaktivováno"</string>
 	<string name="loading">"Načítání..."</string>
 	<string name="about_donate">"Darovat"</string>
-	<string name="any_activity_shortcut">"Vybrat aktivitu"</string>
 </resources>

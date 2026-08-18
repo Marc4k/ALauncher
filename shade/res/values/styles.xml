@@ -172,7 +172,6 @@
     </style>
 
 
-    <style name="ShortcutTheme" parent="android:Theme.DeviceDefault.Light" />
 
     <style name="ToolbarTheme" parent="@android:style/Theme.Material.Light">
         <item name="android:colorControlNormal">@android:color/white</item>

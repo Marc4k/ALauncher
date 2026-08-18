@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Devre dışı"</string>
 	<string name="loading">"Yükleniyor..."</string>
 	<string name="about_donate">"Bağış"</string>
-	<string name="any_activity_shortcut">"Etkinlik seçin"</string>
 </resources>

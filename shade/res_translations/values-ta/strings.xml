@@ -39,5 +39,4 @@
 	<string name="pref_value_default">"இயல்பு"</string>
 	<string name="pref_value_disabled">"முடக்கப்பட்டது"</string>
 	<string name="about_donate">"நன்கொடை"</string>
-	<string name="any_activity_shortcut">"செயல்பாட்டைத் தேர்வுசெய்யவும்"</string>
 </resources>

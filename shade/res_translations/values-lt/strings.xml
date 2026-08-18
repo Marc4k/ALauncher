@@ -39,5 +39,4 @@
 	<string name="pref_value_default">"Numatytieji"</string>
 	<string name="pref_value_disabled">"Neleidžiama"</string>
 	<string name="about_donate">"Donate"</string>
-	<string name="any_activity_shortcut">"Pasirinkti veiklą"</string>
 </resources>

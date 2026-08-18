@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"已停用"</string>
 	<string name="loading">"正在开启..."</string>
 	<string name="about_donate">"捐"</string>
-	<string name="any_activity_shortcut">"选择活动"</string>
 </resources>

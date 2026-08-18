@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Pois käytöstä"</string>
 	<string name="loading">"Ladataan..."</string>
 	<string name="about_donate">"Lahjoittaa"</string>
-	<string name="any_activity_shortcut">"Valitse toiminto"</string>
 </resources>

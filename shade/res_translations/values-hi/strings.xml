@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"बंद किया गया"</string>
 	<string name="loading">"लोड हो रहा है..."</string>
 	<string name="about_donate">"उपहार देना"</string>
-	<string name="any_activity_shortcut">"गतिविधि चुनें"</string>
 </resources>

@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"사용 안함"</string>
 	<string name="loading">"로드하는 중..."</string>
 	<string name="about_donate">"기부"</string>
-	<string name="any_activity_shortcut">"작업 선택"</string>
 </resources>

@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Deaktiveret"</string>
 	<string name="loading">"Indlæser..."</string>
 	<string name="about_donate">"Doner"</string>
-	<string name="any_activity_shortcut">"Vælg aktivitet"</string>
 </resources>

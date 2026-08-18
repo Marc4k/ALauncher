@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Uitgeschakeld"</string>
 	<string name="loading">"Laden..."</string>
 	<string name="about_donate">"Doneer"</string>
-	<string name="any_activity_shortcut">"Een activiteit kiezen"</string>
 </resources>

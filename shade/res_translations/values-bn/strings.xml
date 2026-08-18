@@ -39,5 +39,4 @@
 	<string name="pref_value_default">"ডিফল্ট"</string>
 	<string name="pref_value_disabled">"অক্ষম হয়েছে"</string>
 	<string name="about_donate">"দান করা"</string>
-	<string name="any_activity_shortcut">"অ্যাক্টিভিটি বেছে নিন"</string>
 </resources>

@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Đã tắt"</string>
 	<string name="loading">"Đang tải..."</string>
 	<string name="about_donate">"Đóng góp"</string>
-	<string name="any_activity_shortcut">"Chọn hoạt động"</string>
 </resources>

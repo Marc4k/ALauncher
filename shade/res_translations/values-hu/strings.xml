@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Letiltva"</string>
 	<string name="loading">"Betöltés..."</string>
 	<string name="about_donate">"Adományoz"</string>
-	<string name="any_activity_shortcut">"Válassza ki a tevékenységet"</string>
 </resources>

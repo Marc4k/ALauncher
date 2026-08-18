@@ -39,5 +39,4 @@
 	<string name="pref_value_default">"Default"</string>
 	<string name="pref_value_disabled">"Disabled"</string>
 	<string name="about_donate">"Donate"</string>
-	<string name="any_activity_shortcut">"Choose activity"</string>
 </resources>

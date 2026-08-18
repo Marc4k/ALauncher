@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Отключено"</string>
 	<string name="loading">"Загрузка..."</string>
 	<string name="about_donate">"Жертвовать"</string>
-	<string name="any_activity_shortcut">"Выбор действия"</string>
 </resources>

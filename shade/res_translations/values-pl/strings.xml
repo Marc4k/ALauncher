@@ -41,5 +41,4 @@
 	<string name="pref_value_disabled">"Wyłączone"</string>
 	<string name="loading">"Ładowanie..."</string>
 	<string name="about_donate">"Wspomóż"</string>
-	<string name="any_activity_shortcut">"Wybierz działanie"</string>
 </resources>
