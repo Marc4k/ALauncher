@@ -123,12 +123,6 @@
                 android:defaultValue="normal"
                 android:persistent="true" />
 
-            <SwitchPreference
-                android:key="pref_transition"
-                android:title="@string/fading_transition"
-                android:summary="@string/fading_transition_desc"
-                android:defaultValue="true"
-                android:persistent="true" />
         </PreferenceScreen>
 
         <PreferenceScreen

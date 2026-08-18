@@ -30,7 +30,6 @@ import amirz.unread.UnreadSession;
 
 import static amirz.shade.ShadeFont.DEFAULT_FONT;
 import static amirz.shade.ShadeFont.KEY_FONT;
-import static amirz.shade.animations.TransitionManager.KEY_FADING_TRANSITION;
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static android.content.Context.SEARCH_SERVICE;
@@ -68,10 +67,7 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-        if (KEY_FADING_TRANSITION.equals(key)) {
-            TransitionManager transitions = (TransitionManager) mLauncher.getAppTransitionManager();
-            transitions.applyWindowPreference(mLauncher);
-        } else if (KEY_DEVICE_THEME.equals(key) || KEY_THEME.equals(key) || KEY_FONT.equals(key)) {
+        if (KEY_DEVICE_THEME.equals(key) || KEY_THEME.equals(key) || KEY_FONT.equals(key)) {
             mLauncher.recreate();
         } else if (KEY_IDP_GRID_NAME.equals(key) || KEY_DOCK_SEARCH.equals(key)) {
             mLauncher.kill();
@@ -114,7 +110,7 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
     @Override
     public void onStart() {
         TransitionManager transitions = (TransitionManager) mLauncher.getAppTransitionManager();
-        transitions.applyWindowPreference(mLauncher);
+        transitions.applyWindowAnimations(mLauncher);
     }
 
     @Override

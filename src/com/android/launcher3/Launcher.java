@@ -334,6 +334,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 .remove("pref_add_icon_to_home")
                 .remove("pref_add_icon_to_home_initialized")
                 .remove("promise_icon_ids")
+                .remove("pref_transition")
                 .apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
