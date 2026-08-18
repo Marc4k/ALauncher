@@ -24,7 +24,7 @@ import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.graphics.RotationMode;
-import com.android.launcher3.uioverrides.touchcontrollers.FlingAndHoldTouchController;
+import com.android.launcher3.uioverrides.touchcontrollers.PortraitStatesTouchController;
 import com.android.launcher3.uioverrides.touchcontrollers.StatusBarTouchController;
 import com.android.launcher3.util.TouchController;
 
@@ -102,7 +102,7 @@ public abstract class RecentsUiFactory {
     public static TouchController[] createTouchControllers(Launcher launcher) {
         ArrayList<TouchController> list = new ArrayList<>();
         list.add(launcher.getDragController());
-        list.add(new FlingAndHoldTouchController(launcher));
+        list.add(new PortraitStatesTouchController(launcher, false));
         if (FeatureFlags.PULL_DOWN_STATUS_BAR) {
             list.add(new StatusBarTouchController(launcher));
         }

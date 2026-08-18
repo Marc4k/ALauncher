@@ -30,17 +30,11 @@
     <!-- Swipe down for notifications -->
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
 
-    <!-- Swipe and hold for recents -->
-    <permission
-        android:name="${packageName}.permission.ACCESSIBILITY"
-        android:protectionLevel="signature" />
-
     <!-- App lock-->
 <!--    <uses-permission android:name="android.permission.USE_BIOMETRIC" />-->
 
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
-    <uses-permission android:name="${packageName}.permission.ACCESSIBILITY" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -127,20 +121,6 @@
                 <action android:name="android.content.pm.action.CONFIRM_PIN_APPWIDGET" />
             </intent-filter>
         </activity>
-
-        <!-- The service for opening recents. -->
-        <service
-            android:name="amirz.shade.services.GlobalActionService"
-            android:enabled="@bool/atleast_p"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/recents_service_config" />
-        </service>
 
         <!-- Widget shortcut to any activity -->
         <activity android:name="amirz.shortcut.CreateShortcut"
