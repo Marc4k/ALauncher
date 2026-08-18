@@ -27,7 +27,6 @@ import amirz.shade.customization.DockSearch;
 import amirz.shade.hidden.HiddenAppsDrawerState;
 import amirz.shade.icons.pack.IconPackManager;
 import amirz.shade.search.AllAppsQsb;
-import amirz.shade.sleep.WorkspaceSleepListener;
 import amirz.unread.UnreadSession;
 
 import static amirz.shade.ShadeFont.DEFAULT_FONT;
@@ -60,7 +59,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
         setDefaultValues(prefs);
         prefs.registerOnSharedPreferenceChangeListener(this);
         UnreadSession.getInstance(mLauncher).onCreate();
-        WorkspaceSleepListener.override(mLauncher);
     }
 
     private String getRecommendedSearchProvider() {

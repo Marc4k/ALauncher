@@ -47,7 +47,6 @@ public class Settings {
     private static final String GOOGLE_QSB = "com.google.android.googlequicksearchbox";
 
     public static final String KEY_HOME_ACTION = "pref_home_action";
-    public static final String KEY_DOUBLE_TAP_LOCK = "pref_double_tap_lock";
 
     public static final String SUPPORT_EMAIL = "support@dworks.io";
 
@@ -82,10 +81,6 @@ public class Settings {
 
     public static String getHomeAction(Context context) {
         return prefs(context).getString(KEY_HOME_ACTION, "");
-    }
-
-    public static boolean isDoubleTapLockEnabled(Context context) {
-        return prefs(context).getBoolean(KEY_DOUBLE_TAP_LOCK, false);
     }
 
     public static void handleHomeAction(Launcher launcher) {
@@ -199,12 +194,6 @@ public class Settings {
         AllAppsQsb search = (AllAppsQsb) launcher.getAppsView().getSearchView();
         search.requestSearch();
         launcher.getStateManager().goToState(ALL_APPS);
-    }
-
-    public static void handleWorkspaceTouchEvent(Launcher launcher) {
-        if (Settings.isDoubleTapLockEnabled(launcher)) {
-            DoubleTapLockHelper.timeoutLock(launcher);
-        }
     }
 
     public static boolean isTransparentTone(Context context) {

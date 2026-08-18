@@ -37,11 +37,7 @@
     <!-- Home button overlay -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <!-- Tap to lock -->
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
-
-    <!-- Double tap to sleep and recents -->
+    <!-- Swipe and hold for recents -->
     <permission
         android:name="${packageName}.permission.ACCESSIBILITY"
         android:protectionLevel="signature" />
@@ -155,7 +151,7 @@
                 android:resource="@xml/gesture_service_config" />
         </service>
 
-        <!-- The service for double tap to sleep and opening recents. -->
+        <!-- The service for opening recents. -->
         <service
             android:name="amirz.shade.services.GlobalActionService"
             android:enabled="@bool/atleast_p"
@@ -166,7 +162,7 @@
 
             <meta-data
                 android:name="android.accessibilityservice"
-                android:resource="@xml/sleep_service_config" />
+                android:resource="@xml/recents_service_config" />
         </service>
 
         <!-- Widget shortcut to any activity -->
@@ -180,11 +176,5 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
-        <activity
-            android:name="amirz.helpers.LockTimeoutActivity"
-            android:excludeFromRecents="true"
-            android:theme="@style/TimeoutTheme" />
     </application>
 </manifest>
