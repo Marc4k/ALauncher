@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"হোমে অ্যাপ্লিকেশানটিকে সেটিংস এবং শর্টকাটগুলি পড়তে দেয়৷"</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"হোম সেটিংস এবং শর্টকাটগুলি লেখে"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"হোমে অ্যাপ্লিকেশানটিকে সেটিংস এবং শর্টকাটগুলি পরিবর্তন করতে দেয়৷"</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"ফোন কলগুলি করার জন্য <xliff:g id="APP_NAME">%1$s</xliff:g> এর অনুমতি নেই"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"উইজেট লোড হতে সমস্যা হয়েছে"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"সেটআপ"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"এটি একটি সিস্টেম অ্যাপ্লিকেশান এবং আনইনস্টল করা যাবে না৷"</string>

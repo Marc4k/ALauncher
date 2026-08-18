@@ -29,7 +29,6 @@
     at compile time. Note that the components defined in AndroidManifest.xml are also required,
     with some minor changed based on the derivative app.
     -->
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
     <uses-permission android:name="android.permission.BIND_APPWIDGET" />

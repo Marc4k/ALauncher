@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"De app toestaan de instellingen en snelkoppelingen op de homepage te lezen."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"instellingen en snelkoppelingen op startscherm zetten"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"De app toestaan de instellingen en snelkoppelingen op de homepage te wijzigen."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> mag niet bellen"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"Probleem bij het laden van widget"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"Configuratie"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"Dit is een systeemapp die niet kan worden verwijderd."</string>

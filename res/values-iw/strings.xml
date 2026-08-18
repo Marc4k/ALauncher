@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"מאפשר לאפליקציה לקרוא את ההגדרות וקיצורי הדרך בדף הבית."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"כתוב הגדרות וקיצורי דרך של דף הבית"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"מאפשר לאפליקציה לשנות את ההגדרות וקיצורי הדרך בדף הבית."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> אינו רשאי להתקשר"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"בעיה בטעינת ווידג\'ט"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"הגדרה"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"זוהי אפליקציית מערכת ולא ניתן להסיר את התקנתה."</string>

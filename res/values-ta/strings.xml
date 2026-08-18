@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"முகப்பில் உள்ள அமைப்பு மற்றும் குறுக்குவழிகளைப் படிக்க ஆப்ஸை அனுமதிக்கிறது."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"முகப்பின் அமைப்பு மற்றும் குறுக்குவழிகளை எழுதுதல்"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"முகப்பில் உள்ள அமைப்பு மற்றும் குறுக்குவழிகளை மாற்ற ஆப்ஸை அனுமதிக்கிறது."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"ஃபோன் அழைப்புகள் செய்ய, <xliff:g id="APP_NAME">%1$s</xliff:g> அனுமதிக்கப்படவில்லை"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"விட்ஜெட்டை ஏற்றுவதில் சிக்கல்"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"அமைவு"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"இது அமைப்பு ஆப்ஸ் என்பதால் நிறுவல் நீக்கம் செய்ய முடியாது."</string>

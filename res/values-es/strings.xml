@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"Permite que la aplicación consulte los ajustes y los accesos directos de la pantalla de inicio."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"escribir información de accesos directos y de ajustes de la pantalla de inicio"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"Permite que las aplicaciones cambien los ajustes y los accesos directos de la pantalla de inicio."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> no puede hacer llamadas"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"Problema al cargar el widget"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"Configuración"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"Esta aplicación es del sistema y no se puede desinstalar."</string>

@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"මුල් පිටුවේ ඇති සැකසීම් සහ කෙටිමං කියවීමට යෙදුමකට අවසර දෙයි."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"මුල් පිටු සැකසීම් සහ කෙටිමං ලියන්න"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"මුල් පිටුවේ සැකසීම් සහ කෙටිමං ඉවත් කිරීමට යෙදුමට අවසර දෙයි."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> හට දුරකථන ඇමතුම් සිදු කිරීමට ඉඩ නොදේ"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"ගැටලු පූරණ විජට් එක"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"ස්ථාපනය කරන්න"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"මෙය පද්ධති යෙදුමක් වන අතර අස්ථාපනය කළ නොහැක."</string>

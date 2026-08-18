@@ -56,7 +56,6 @@
     <string name="permdesc_read_settings" msgid="5833423719057558387">"એપ્લિકેશનને હોમમાં સેટિંગ્સ અને શોર્ટકટ્સ વાંચવાની મંજૂરી આપે છે."</string>
     <string name="permlab_write_settings" msgid="3574213698004620587">"હોમ સેટિંગ્સ અને શોર્ટકટ્સ લખો"</string>
     <string name="permdesc_write_settings" msgid="5440712911516509985">"એપ્લિકેશનને હોમમાં સેટિંગ્સ અને શોર્ટકટ્સ બદલવાની મંજૂરી આપે છે."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> ને ફોન કૉલ્સ કરવાની મંજૂરી નથી"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"વિજેટ લોડ કરવામાં સમસ્યા"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"સેટઅપ"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"આ એક સિસ્ટમ ઍપ્લિકેશન છે અને અનઇન્સ્ટોલ કરી શકાતી નથી."</string>
