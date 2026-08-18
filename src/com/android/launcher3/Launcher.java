@@ -338,6 +338,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 .remove("pref_predictions")
                 .remove("showed_peek_work_tab")
                 .remove("showed_bottom_user_education")
+                .remove("pref_smartspace")
                 .apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
