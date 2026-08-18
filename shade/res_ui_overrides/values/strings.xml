@@ -7,8 +7,6 @@
     <string name="about_info" translatable="false">Info</string>
     <string name="about_info_desc" translatable="false">@string/derived_app_name</string>
     <string name="category_basic" translatable="false">"Basic"</string>
-    <string name="category_misc" translatable="false">"Misc"</string>
-    <string name="category_misc_desc" translatable="false">"Misc"</string>
     <string name="category_search" translatable="false">"Search"</string>
     <string name="close_task" translatable="false">Close</string>
     <string name="theme_transparent" translatable="false">"Transparent"</string>

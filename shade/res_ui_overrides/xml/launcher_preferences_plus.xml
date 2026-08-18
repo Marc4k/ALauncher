@@ -79,27 +79,6 @@
                 android:persistent="true" />
         </PreferenceScreen>
 
-        <PreferenceScreen
-            android:icon="@drawable/ic_customization"
-            android:key="pref_screen_customization"
-            android:title="@string/category_customization">
-
-        </PreferenceScreen>
-
-        <PreferenceScreen
-            android:icon="@drawable/ic_misc"
-            android:key="pref_screen_misc"
-            android:title="@string/category_misc">
-
-            <SwitchPreference
-                android:key="pref_allowRotation"
-                android:title="@string/allow_rotation_title"
-                android:summary="@string/allow_rotation_desc"
-                android:defaultValue="@bool/allow_rotation"
-                android:persistent="true" />
-
-        </PreferenceScreen>
-
     </PreferenceCategory>
 
     <androidx.preference.PreferenceScreen
