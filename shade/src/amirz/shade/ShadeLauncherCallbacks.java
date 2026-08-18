@@ -19,7 +19,6 @@ import amirz.shade.animations.TransitionManager;
 import amirz.shade.customization.DockSearch;
 import amirz.shade.hidden.HiddenAppsDrawerState;
 import amirz.shade.search.AllAppsQsb;
-import amirz.unread.UnreadSession;
 
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static android.content.Context.SEARCH_SERVICE;
@@ -51,7 +50,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
         }
         setDefaultValues(prefs);
         prefs.registerOnSharedPreferenceChangeListener(this);
-        UnreadSession.getInstance(mLauncher).onCreate();
     }
 
     private String getRecommendedSearchProvider() {
@@ -82,7 +80,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onResume() {
-        UnreadSession.getInstance(mLauncher).onResume(mLauncher);
         if (!mLauncher.getAppsView().getApps().hasFilter()) {
             HiddenAppsDrawerState.getInstance(mLauncher).setRevealed(false);
         }
@@ -100,13 +97,11 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onPause() {
-        UnreadSession.getInstance(mLauncher).onPause(mLauncher);
     }
 
     @Override
     public void onDestroy() {
         Utilities.getPrefs(mLauncher).unregisterOnSharedPreferenceChangeListener(this);
-        UnreadSession.getInstance(mLauncher).onDestroy();
     }
 
     @Override

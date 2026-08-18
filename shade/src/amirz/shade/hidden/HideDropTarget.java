@@ -35,7 +35,6 @@ import com.android.launcher3.userevent.nano.LauncherLogProto.Target;
 import com.android.launcher3.views.Snackbar;
 
 import amirz.shade.util.AppReloader;
-import amirz.unread.UnreadSession;
 
 public class HideDropTarget extends ButtonDropTarget {
 
@@ -107,13 +106,11 @@ public class HideDropTarget extends ButtonDropTarget {
         if (canHide(item)) {
             boolean isHidden = HiddenAppsDatabase.isHidden(mLauncher, item);
             HiddenAppsDatabase.setHidden(mLauncher, item, !isHidden);
-            UnreadSession.getInstance(mLauncher).forceUpdate(); // Show or hide notifications.
             AppReloader.get(mLauncher).reload(item);
 
             if (!isHidden) {
                 Runnable onUndoClicked = () -> {
                     HiddenAppsDatabase.setHidden(mLauncher, item, false);
-                    UnreadSession.getInstance(mLauncher).forceUpdate();
                     AppReloader.get(mLauncher).reload(item);
                 };
                 Snackbar.show(mLauncher, R.string.item_hidden, R.string.undo, null, onUndoClicked);

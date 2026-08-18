@@ -28,7 +28,6 @@ import amirz.helpers.SecurityHelper;
 import amirz.shade.ShadeLauncher;
 import amirz.shade.hidden.HiddenAppsDatabase;
 import amirz.shade.util.AppReloader;
-import amirz.unread.UnreadSession;
 
 import static android.content.Context.USER_SERVICE;
 
@@ -150,13 +149,11 @@ public class ShadeShortcutFactory extends SystemShortcutFactory {
             return view -> {
                 boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
                 HiddenAppsDatabase.setHidden(launcher, itemInfo, !isHidden);
-                UnreadSession.getInstance(launcher).forceUpdate(); // Show or hide notifications.
                 AppReloader.get(launcher).reload(itemInfo);
 
                 if (!isHidden) {
                     Runnable onUndoClicked = () -> {
                         HiddenAppsDatabase.setHidden(launcher, itemInfo, false);
-                        UnreadSession.getInstance(launcher).forceUpdate();
                         AppReloader.get(launcher).reload(itemInfo);
                     };
                     Snackbar.show(launcher, R.string.item_hidden, R.string.undo, null, onUndoClicked);
@@ -187,13 +184,11 @@ public class ShadeShortcutFactory extends SystemShortcutFactory {
             return view -> {
                 boolean isHidden = HiddenAppsDatabase.isHidden(launcher, itemInfo);
                 HiddenAppsDatabase.setHidden(launcher, itemInfo, !isHidden);
-                UnreadSession.getInstance(launcher).forceUpdate(); // Show or hide notifications.
                 AppReloader.get(launcher).reload(itemInfo);
 
                 if (!isHidden) {
                     Runnable onUndoClicked = () -> {
                         HiddenAppsDatabase.setHidden(launcher, itemInfo, false);
-                        UnreadSession.getInstance(launcher).forceUpdate();
                         AppReloader.get(launcher).reload(itemInfo);
                     };
                     Snackbar.show(launcher, R.string.item_hidden, R.string.undo, null, onUndoClicked);

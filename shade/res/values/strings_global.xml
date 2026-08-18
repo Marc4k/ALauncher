@@ -10,6 +10,5 @@
     <string name="recents_service_label" translatable="false">
         This service enables opening recent apps on the home screen by dragging up.
     </string>
-    <string name="shadespace_subtext_double" translatable="false">%1$s • %2$s</string>
     <string name="search_hidden_global" translatable="false">Hidden</string>
 </resources>
