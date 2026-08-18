@@ -111,15 +111,9 @@
     <!-- Permission short label -->
     <!-- Permission description -->
     <!-- Permission short label -->
-    <string name="permlab_read_settings">read Home settings and shortcuts</string>
     <!-- Permission description -->
-    <string name="permdesc_read_settings">Allows the app to read the settings and
-        shortcuts in Home.</string>
     <!-- Permission short label -->
-    <string name="permlab_write_settings">write Home settings and shortcuts</string>
     <!-- Permission description -->
-    <string name="permdesc_write_settings">Allows the app to change the settings and
-        shortcuts in Home.</string>
 
     <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
 

@@ -52,10 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"विस्थापित गर्नुहोस्"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"अनुप्रयोग जानकारी"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"स्थापना गर्नुहोस्"</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"गृह सेटिङहरू र सर्टकटहरू पढ्नुहोस्"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"गृहमा एउटा अनुप्रयोगलाई सेटिङहरू र सर्टकटहरू पढ्न अनुमति दिनुहोस्।"</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"गृह सेटिङहरू र सर्टकटहरू लेख्नुहोस्"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"गृहमा एउटा अनुप्रयोगलाई सेटिङ र सर्टकट बदल्न अनुमति दिनुहोस्।"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"समस्या लोडिङ गर्ने विजेट"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"सेटअप"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"यो प्रणाली अनुप्रयोग हो र यसलाई स्थापना रद्द गर्न सकिँदैन।"</string>

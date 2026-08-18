@@ -52,10 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"ຖອນ​ການ​ຕິດ​ຕັ້ງ"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"ຂໍ້ມູນແອັບ"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"ຕິດຕັ້ງ"</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"ອ່ານການຕັ້ງຄ່າໜ້າຫຼັກ ແລະທາງລັດ"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"ອະນຸຍາດໃຫ້ແອັບຯດັ່ງກ່າວອ່ານການຕັ້ງຄ່າ ແລະທາງລັດໃນໜ້າຫຼັກ."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"ຂຽນການຕັ້ງຄ່າໜ້າຫຼັກ ແລະທາງລັດ"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"ອະນຸຍາດໃຫ້ແອັບຯດັ່ງກ່າວ ປ່ຽນການຕັ້ງຄ່າ ແລະທາງລັດໃນໜ້າຫຼັກ."</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"ມີບັນຫາໃນການໂຫລດວິດເຈັດ"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"ຕິດຕັ້ງ"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"ນີ້ແມ່ນແອັບຯຂອງລະບົບ ແລະບໍ່ສາມາດຖອນການຕິດຕັ້ງອອກໄດ້."</string>

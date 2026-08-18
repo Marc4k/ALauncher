@@ -52,10 +52,6 @@
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Avinstallera"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"Info om appen"</string>
     <string name="install_drop_target_label" msgid="2539096853673231757">"Installera"</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"läsa inställningar och genvägar för startsidan"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"Tillåter att appen läser inställningar och genvägar på startsidan."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"skriva inställningar och genvägar för startsidan"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"Tillåter att appen ändrar inställningar och genvägar på startsidan."</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"Det gick inte att läsa in widgeten"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"Konfiguration"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"Det här är en systemapp som inte kan avinstalleras."</string>
