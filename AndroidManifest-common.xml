@@ -89,14 +89,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- Intent received when a session is committed -->
-        <receiver
-            android:name="com.android.launcher3.SessionCommitReceiver" android:exported="false">
-            <intent-filter>
-                <action android:name="android.content.pm.action.SESSION_COMMITTED" />
-            </intent-filter>
-        </receiver>
-
         <!-- Intent received used to initialize a restored widget -->
         <receiver android:name="com.android.launcher3.AppWidgetsRestoredReceiver"
             android:exported="false">

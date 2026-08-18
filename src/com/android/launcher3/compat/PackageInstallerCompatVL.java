@@ -23,18 +23,14 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInstaller;
 import android.content.pm.PackageInstaller.SessionCallback;
 import android.content.pm.PackageInstaller.SessionInfo;
-import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.SparseArray;
 
-import com.android.launcher3.SessionCommitReceiver;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.IconCache;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.config.FeatureFlags;
-import com.android.launcher3.util.IntArray;
-import com.android.launcher3.util.IntSet;
 import com.android.launcher3.util.PackageUserKey;
 import com.android.launcher3.util.Thunk;
 
@@ -42,8 +38,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-
-import static com.android.launcher3.Utilities.getPrefs;
 
 public class PackageInstallerCompatVL extends PackageInstallerCompat {
 
@@ -56,7 +50,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
     private final Context mAppContext;
     private final HashMap<String,Boolean> mSessionVerifiedMap = new HashMap<>();
     private final LauncherAppsCompat mLauncherApps;
-    private final IntSet mPromiseIconIds;
 
     PackageInstallerCompatVL(Context context) {
         mAppContext = context.getApplicationContext();
@@ -64,27 +57,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
         mCache = LauncherAppState.getInstance(context).getIconCache();
         mLauncherApps = LauncherAppsCompat.getInstance(context);
         mLauncherApps.registerSessionCallback(MODEL_EXECUTOR, mCallback);
-        mPromiseIconIds = IntSet.wrap(IntArray.fromConcatString(
-                getPrefs(context).getString(PROMISE_ICON_IDS, "")));
-
-        cleanUpPromiseIconIds();
-    }
-
-    private void cleanUpPromiseIconIds() {
-        IntArray existingIds = new IntArray();
-        for (SessionInfo info : updateAndGetActiveSessionCache().values()) {
-            existingIds.add(info.getSessionId());
-        }
-        IntArray idsToRemove = new IntArray();
-
-        for (int i = mPromiseIconIds.size() - 1; i >= 0; --i) {
-            if (!existingIds.contains(mPromiseIconIds.getArray().get(i))) {
-                idsToRemove.add(mPromiseIconIds.getArray().get(i));
-            }
-        }
-        for (int i = idsToRemove.size() - 1; i >= 0; --i) {
-            mPromiseIconIds.getArray().removeValue(idsToRemove.get(i));
-        }
     }
 
     @Override
@@ -135,30 +107,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
         }
     }
 
-    /**
-     * Add a promise app icon to the workspace iff:
-     * - The settings for it are enabled
-     * - The user installed the app
-     * - There is an app icon and label (For apps with no launching activity, no icon is provided).
-     * - The app is not already installed
-     * - A promise icon for the session has not already been created
-     */
-    private void tryQueuePromiseAppIcon(SessionInfo sessionInfo) {
-        if (Utilities.ATLEAST_OREO && FeatureFlags.PROMISE_APPS_NEW_INSTALLS.get()
-                && SessionCommitReceiver.isEnabled(mAppContext)
-                && verify(sessionInfo) != null
-                && sessionInfo.getInstallReason() == PackageManager.INSTALL_REASON_USER
-                && sessionInfo.getAppIcon() != null
-                && !TextUtils.isEmpty(sessionInfo.getAppLabel())
-                && !mPromiseIconIds.contains(sessionInfo.getSessionId())
-                && mLauncherApps.getApplicationInfo(sessionInfo.getAppPackageName(), 0,
-                        getUserHandle(sessionInfo)) == null) {
-            SessionCommitReceiver.queuePromiseAppIconAddition(mAppContext, sessionInfo);
-            mPromiseIconIds.add(sessionInfo.getSessionId());
-            updatePromiseIconPrefs();
-        }
-    }
-
     private final SessionCallback mCallback = new SessionCallback() {
 
         @Override
@@ -171,8 +119,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
                             PackageInstallInfo.fromInstallingState(sessionInfo));
                 }
             }
-
-            tryQueuePromiseAppIcon(sessionInfo);
         }
 
         @Override
@@ -187,15 +133,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
                 sendUpdate(PackageInstallInfo.fromState(success ? STATUS_INSTALLED : STATUS_FAILED,
                         packageName, key.mUser));
 
-                if (!success && FeatureFlags.PROMISE_APPS_NEW_INSTALLS.get()
-                        && mPromiseIconIds.contains(sessionId)) {
-                    LauncherAppState appState = LauncherAppState.getInstanceNoCreate();
-                    if (appState != null) {
-                        appState.getModel().onSessionFailure(packageName, key.mUser);
-                    }
-                    // If it is successful, the id is removed in the the package added flow.
-                    removePromiseIconId(sessionId);
-                }
             }
         }
 
@@ -213,9 +150,6 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
         @Override
         public void onBadgingChanged(int sessionId) {
             SessionInfo sessionInfo = pushSessionDisplayToLauncher(sessionId);
-            if (sessionInfo != null) {
-                tryQueuePromiseAppIcon(sessionInfo);
-            }
         }
 
         private SessionInfo pushSessionDisplayToLauncher(int sessionId) {
@@ -270,20 +204,10 @@ public class PackageInstallerCompatVL extends PackageInstallerCompat {
 
     @Override
     public boolean promiseIconAddedForId(int sessionId) {
-        return mPromiseIconIds.contains(sessionId);
+        return false;
     }
 
     @Override
     public void removePromiseIconId(int sessionId) {
-        if (mPromiseIconIds.contains(sessionId)) {
-            mPromiseIconIds.getArray().removeValue(sessionId);
-            updatePromiseIconPrefs();
-        }
-    }
-
-    private void updatePromiseIconPrefs() {
-        getPrefs(mAppContext).edit()
-                .putString(PROMISE_ICON_IDS, mPromiseIconIds.getArray().toConcatString())
-                .apply();
     }
 }
