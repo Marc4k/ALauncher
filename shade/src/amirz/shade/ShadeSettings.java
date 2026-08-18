@@ -1,6 +1,5 @@
 package amirz.shade;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.DialogFragment;
@@ -11,7 +10,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.MenuItem;
 import android.view.View;
 
 import androidx.core.view.ViewCompat;
@@ -69,32 +67,6 @@ public class ShadeSettings extends SettingsActivity {
             new SystemUiController(getWindow())
                     .updateUiState(SystemUiController.UI_STATE_BASE_WINDOW, true);
         }
-        setupActionbar("",true);
-    }
-
-    private void setupActionbar(CharSequence title, boolean isHome) {
-        final ActionBar actionBar = getActionBar();
-        if (actionBar != null) {
-            actionBar.setHomeButtonEnabled(isHome);
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            if (isHome){
-                actionBar.setTitle(R.string.settings_title);
-                actionBar.setHomeAsUpIndicator(R.drawable.ic_logo);
-            } else {
-                actionBar.setTitle(title);
-                actionBar.setHomeAsUpIndicator(null);
-            }
-        }
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("unused")
@@ -259,14 +231,6 @@ public class ShadeSettings extends SettingsActivity {
         @Override
         public void onViewCreated(View view, Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
-            final PreferenceScreen preferenceScreen = getPreferenceScreen();
-            if (preferenceScreen != null) {
-                Boolean isHome = TextUtils.isEmpty(preferenceScreen.getTitle());
-                CharSequence title = preferenceScreen.getTitle();
-                ((ShadeSettings)getActivity()).setupActionbar(title, isHome);
-            }
-
-
             View listView = getListView();
             applyInsets(listView);
         }

@@ -95,9 +95,18 @@
     </style>
 
     <!-- Fix navigation bar before Oreo. -->
-    <style name="HomeSettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings" />
-    <style name="HomeSettingsTheme.Light" parent="@android:style/Theme.DeviceDefault.Light" />
-    <style name="HomeSettingsTheme.Dark" parent="@android:style/Theme.DeviceDefault" />
+    <style name="HomeSettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HomeSettingsTheme.Light" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="HomeSettingsTheme.Dark" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
     <!-- Theme for the settings activity. -->
     <style name="Shade.SettingsTheme" parent="@style/HomeSettingsTheme">
