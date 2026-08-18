@@ -40,6 +40,5 @@
 	<string name="hide_drop_target_label">"ଲୁଚାନ୍ତୁ"</string>
 	<string name="app_info_more">"ଅଧିକ"</string>
 	<string name="app_info_version">"ଭର୍ସନ୍:"</string>
-	<string name="app_info_icon_pack_none">"କିଛି ନୁହେଁ"</string>
 	<string name="app_info_source_unknown">"ଅଜଣା"</string>
 </resources>

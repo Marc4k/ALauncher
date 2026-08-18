@@ -10,9 +10,6 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.AdaptiveIconCompat;
 import com.android.launcher3.util.ComponentKey;
 
-import amirz.shade.hidden.HiddenAppsDatabase;
-import amirz.shade.icons.pack.IconResolver;
-
 import static com.android.launcher3.icons.BaseIconFactory.CONFIG_HINT_NO_WRAP;
 
 @SuppressWarnings("unused")
@@ -30,11 +27,9 @@ public class ThirdPartyIconProvider extends RoundIconProvider {
         ComponentKey key = new ComponentKey(
                 launcherActivityInfo.getComponentName(), launcherActivityInfo.getUser());
 
-        IconResolver.DefaultDrawableProvider fallback =
-                () -> super.getIcon(launcherActivityInfo, iconDpi, flattenDrawable);
-        Drawable icon = ThirdPartyIconUtils.getByKey(mContext, key, iconDpi, fallback);
+        Drawable icon = ThirdPartyIconUtils.getByKey(mContext, key, iconDpi);
         if (icon == null) {
-            icon = fallback.get();
+            icon = super.getIcon(launcherActivityInfo, iconDpi, flattenDrawable);
         } else {
             icon.setChangingConfigurations(
                     icon.getChangingConfigurations() | CONFIG_HINT_NO_WRAP);

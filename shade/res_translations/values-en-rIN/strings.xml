@@ -53,7 +53,6 @@
 	<string name="hide_drop_target_label">"Hide"</string>
 	<string name="app_info_more">"More"</string>
 	<string name="app_info_version">"Version"</string>
-	<string name="app_info_icon_pack_none">"None"</string>
 	<string name="app_info_source_unknown">"Unknown"</string>
 	<string name="about_donate">"Donate"</string>
 	<string name="any_activity_shortcut">"Choose activity"</string>

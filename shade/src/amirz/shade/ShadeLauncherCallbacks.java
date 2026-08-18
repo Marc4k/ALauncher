@@ -1,7 +1,6 @@
 package amirz.shade;
 
 import android.app.SearchManager;
-import android.content.ComponentCallbacks2;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -19,7 +18,6 @@ import java.io.PrintWriter;
 import amirz.shade.animations.TransitionManager;
 import amirz.shade.customization.DockSearch;
 import amirz.shade.hidden.HiddenAppsDrawerState;
-import amirz.shade.icons.pack.IconPackManager;
 import amirz.shade.search.AllAppsQsb;
 import amirz.unread.UnreadSession;
 
@@ -46,6 +44,14 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         SharedPreferences prefs = Utilities.getPrefs(mLauncher);
+        prefs.edit().remove("pref_icon_pack").apply();
+        if (Utilities.ATLEAST_NOUGAT) {
+            mLauncher.deleteSharedPreferences(
+                    mLauncher.getPackageName() + ".ICON_DATABASE");
+        } else {
+            mLauncher.getSharedPreferences(
+                    mLauncher.getPackageName() + ".ICON_DATABASE", 0).edit().clear().apply();
+        }
         setDefaultValues(prefs);
         prefs.registerOnSharedPreferenceChangeListener(this);
         UnreadSession.getInstance(mLauncher).onCreate();
@@ -155,9 +161,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
 
     @Override
     public void onTrimMemory(int level) {
-        if (level >= ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW) {
-            IconPackManager.get(mLauncher).trimMemory();
-        }
     }
 
     @Override

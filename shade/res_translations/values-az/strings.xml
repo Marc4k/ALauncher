@@ -46,7 +46,6 @@
 	<string name="hide_drop_target_label">"Gizlədin"</string>
 	<string name="app_info_more">"Digər"</string>
 	<string name="app_info_version">"Versiya"</string>
-	<string name="app_info_icon_pack_none">"Heç bir"</string>
 	<string name="app_info_source_unknown">"Naməlum"</string>
 	<string name="about_donate">"Bağışlayın"</string>
 </resources>

@@ -56,8 +56,6 @@
 	<string name="hide_drop_target_label">"Skrýt"</string>
 	<string name="app_info_more">"Další"</string>
 	<string name="app_info_version">"Verze"</string>
-	<string name="app_info_icon_pack">"Balíček ikon"</string>
-	<string name="app_info_icon_pack_none">"Žádná"</string>
 	<string name="app_info_source_unknown">"Neznámé"</string>
 	<string name="font">"Písmo"</string>
 	<string name="icon_shape">"Tvar"</string>

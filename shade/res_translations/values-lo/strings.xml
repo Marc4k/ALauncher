@@ -48,7 +48,6 @@
 	<string name="hide_drop_target_label">"ເຊື່ອງ"</string>
 	<string name="app_info_more">"ເພີ່ມເຕີມ"</string>
 	<string name="app_info_version">"ເວີຊັນ"</string>
-	<string name="app_info_icon_pack_none">"ບໍ່ມີ"</string>
 	<string name="app_info_source_unknown">"ບໍ່ຮູ້ຈັກ"</string>
 	<string name="about_donate">"ບໍ​ລິ​ຈາກ"</string>
 </resources>

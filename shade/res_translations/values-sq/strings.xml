@@ -46,7 +46,6 @@
 	<string name="hide_drop_target_label">"Fshih"</string>
 	<string name="app_info_more">"Më shumë"</string>
 	<string name="app_info_version">"Versioni"</string>
-	<string name="app_info_icon_pack_none">"Asnjë"</string>
 	<string name="app_info_source_unknown">"I panjohur"</string>
 	<string name="about_donate">"Dhuroj"</string>
 </resources>

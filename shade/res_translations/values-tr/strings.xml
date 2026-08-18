@@ -56,8 +56,6 @@
 	<string name="hide_drop_target_label">"Gizle"</string>
 	<string name="app_info_more">"Diğer"</string>
 	<string name="app_info_version">"Sürüm"</string>
-	<string name="app_info_icon_pack">"Simge paketi"</string>
-	<string name="app_info_icon_pack_none">"Hiçbiri"</string>
 	<string name="app_info_source_unknown">"Bilinmiyor"</string>
 	<string name="font">"Yazı Tipi"</string>
 	<string name="icon_shape">"Şekil"</string>

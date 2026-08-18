@@ -28,9 +28,6 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.widget.WidgetsBottomSheet;
 
-import amirz.shade.settings.IconPackPrefSetter;
-import amirz.shade.settings.ReloadingListPreference;
-import amirz.shade.util.AppReloader;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
@@ -97,8 +94,7 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
     }
 
     public static class PrefsFragment extends PreferenceFragment
-            implements Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
-        private static final String KEY_ICON_PACK = "pref_app_info_icon_pack";
+            implements Preference.OnPreferenceClickListener {
         private static final String KEY_SOURCE = "pref_app_info_source";
         private static final String KEY_LAST_UPDATE = "pref_app_info_last_update";
         private static final String KEY_VERSION = "pref_app_info_version";
@@ -158,11 +154,6 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
             mOnMoreClick = onMoreClick;
             mAnimatedClose = animatedClose;
 
-            ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
-            icons.setValue(IconDatabase.getByComponent(mContext, mKey));
-            icons.setOnReloadListener(ctx -> new IconPackPrefSetter(ctx, mComponent));
-            icons.setOnPreferenceChangeListener(this);
-
             THREAD_POOL_EXECUTOR.execute(() -> {
                 MetadataExtractor extractor = new MetadataExtractor(mContext, mComponent);
 
@@ -206,17 +197,6 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
             } catch (Exception ignored) {
             }
             return false;
-        }
-
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
-            if (newValue.equals(IconDatabase.getGlobal(mContext))) {
-                IconDatabase.resetForComponent(mContext, mKey);
-            } else {
-                IconDatabase.setForComponent(mContext, mKey, (String) newValue);
-            }
-            AppReloader.get(mContext).reload(mKey);
-            return true;
         }
 
         @Override

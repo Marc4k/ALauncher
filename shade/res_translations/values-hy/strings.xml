@@ -46,7 +46,6 @@
 	<string name="hide_drop_target_label">"Թաքցնել"</string>
 	<string name="app_info_more">"Ավելին"</string>
 	<string name="app_info_version">"Տարբերակ"</string>
-	<string name="app_info_icon_pack_none">"Չկան"</string>
 	<string name="app_info_source_unknown">"Անհայտ"</string>
 	<string name="about_donate">"Նվիրաբերել"</string>
 </resources>

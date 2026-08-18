@@ -46,7 +46,6 @@
 	<string name="hide_drop_target_label">"Sakrij"</string>
 	<string name="app_info_more">"Još"</string>
 	<string name="app_info_version">"Verzija"</string>
-	<string name="app_info_icon_pack_none">"Ne postoji"</string>
 	<string name="app_info_source_unknown">"Nepoznato"</string>
 	<string name="about_donate">"Donirati"</string>
 </resources>

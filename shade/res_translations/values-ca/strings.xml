@@ -54,8 +54,6 @@
 	<string name="hide_drop_target_label">"Amaga"</string>
 	<string name="app_info_more">"Més"</string>
 	<string name="app_info_version">"Versió"</string>
-	<string name="app_info_icon_pack">"Paquet d'icones"</string>
-	<string name="app_info_icon_pack_none">"Cap"</string>
 	<string name="app_info_source_unknown">"Desconegut"</string>
 	<string name="font">"Tipus de lletra"</string>
 	<string name="icon_shape">"Forma"</string>

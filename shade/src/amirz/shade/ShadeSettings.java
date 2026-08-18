@@ -20,15 +20,11 @@ import com.android.launcher3.Utilities;
 import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.util.SystemUiController;
 
-import amirz.shade.customization.IconDatabase;
 import amirz.shade.customization.IconShapeOverride;
 import amirz.shade.customization.ShadeStyle;
-import amirz.shade.icons.pack.IconPackManager;
 import amirz.shade.settings.ColorListPreference;
 import amirz.shade.settings.DockSearchPrefSetter;
-import amirz.shade.settings.IconPackPrefSetter;
 import amirz.shade.settings.ReloadingListPreference;
-import amirz.shade.util.AppReloader;
 
 import static amirz.shade.ShadeFont.KEY_FONT;
 import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
@@ -62,7 +58,6 @@ public class ShadeSettings extends SettingsActivity {
         private static final String CATEGORY_SEARCH = "pref_screen_search";
         private static final String CATEGORY_APPS = "pref_screen_apps";
 
-        private static final String KEY_ICON_PACK = "pref_icon_pack";
         private Activity context;
 
         @Override
@@ -71,8 +66,6 @@ public class ShadeSettings extends SettingsActivity {
 
             context = getActivity();
 
-            // Load the icon pack once to set the correct default icon pack.
-            IconPackManager.get(context);
             if(null == rootKey) {
                 return;
             }
@@ -97,13 +90,6 @@ public class ShadeSettings extends SettingsActivity {
                     search.setOnReloadListener(DockSearchPrefSetter::new);
                 }
             } else if(rootKey.equals(CATEGORY_APPS)) {
-                ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
-                if (null != icons) {
-                    icons.setValue(IconDatabase.getGlobal(context));
-                    icons.setOnReloadListener(IconPackPrefSetter::new);
-                    icons.setOnPreferenceChangeListener(this);
-                }
-
                 PreferenceScreen style = (PreferenceScreen) findPreference(CATEGORY_APPS);
                 if (null != style) {
                     Preference iconShapeOverride = findPreference(KEY_ICON_SHAPE);
@@ -147,11 +133,6 @@ public class ShadeSettings extends SettingsActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {
             switch (preference.getKey()) {
-                case KEY_ICON_PACK:
-                    IconDatabase.clearAll(context);
-                    IconDatabase.setGlobal(context, (String) newValue);
-                    AppReloader.get(context).reload();
-                    break;
                 case KEY_THEME:
                 case KEY_DEVICE_THEME:
                 case KEY_FONT:

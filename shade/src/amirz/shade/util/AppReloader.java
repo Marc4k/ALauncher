@@ -18,7 +18,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import amirz.shade.customization.IconDatabase;
 import amirz.shade.hidden.HiddenAppsDatabase;
 
 public class AppReloader {
@@ -43,10 +42,6 @@ public class AppReloader {
         mUsers = UserManagerCompat.getInstance(context);
         mShortcuts = DeepShortcutManager.getInstance(context);
         mApps = LauncherAppsCompat.getInstance(context);
-    }
-
-    public Set<ComponentKey> withIconPack(String iconPack) {
-        return matchFilter(key -> IconDatabase.getByComponent(mContext, key).equals(iconPack));
     }
 
     public Set<ComponentKey> hiddenApps() {

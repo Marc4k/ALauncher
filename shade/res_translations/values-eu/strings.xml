@@ -46,7 +46,6 @@
 	<string name="hide_drop_target_label">"Ezkutatu"</string>
 	<string name="app_info_more">"Gehiago"</string>
 	<string name="app_info_version">"Bertsioa"</string>
-	<string name="app_info_icon_pack_none">"Bat ere ez"</string>
 	<string name="app_info_source_unknown">"Ezezaguna"</string>
 	<string name="about_donate">"Eman"</string>
 </resources>
