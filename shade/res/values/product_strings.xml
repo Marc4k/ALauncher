@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shade_app_name" translatable="false">ALauncher</string>
+    <string name="shade_app_name_short" translatable="false">ALauncher</string>
+    <string name="settings_title" translatable="false">ALauncher settings</string>
+    <string name="about_review" translatable="false">Review ALauncher</string>
+</resources>

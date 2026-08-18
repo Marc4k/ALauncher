@@ -24,8 +24,6 @@
     <string name="change_default_home_dialog_proceed" translatable="false">Settings</string>
     <string name="change_launcher" translatable="false">Set ALauncher as Home</string>
     <string name="change_launcher_desc" translatable="false">Change default launcher</string>
-    <string name="subscription" translatable="false">Love ALauncher?</string>
-    <string name="subscription_desc" translatable="false">Unlock Pro version and support ALauncher</string>
     <string name="close_task" translatable="false">Close</string>
     <string name="theme_transparent" translatable="false">"Transparent"</string>
     <string name="theme_sunrise" translatable="false">Sunrise</string>

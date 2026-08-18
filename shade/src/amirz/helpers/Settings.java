@@ -301,21 +301,7 @@ public class Settings {
         return !(null == activity || activity.isDestroyed());
     }
 
-    public static boolean isProVersion(){
-        return BuildConfig.FLAVOR.contains("Pro");
-    }
-
-    public static boolean isGoogleBuild(){
-        return BuildConfig.FLAVOR.contains("Google");
-    }
-
-    public static boolean isAmazonBuild(){
-        return BuildConfig.FLAVOR.contains("Amazon");
-    }
-
-    public static final String AMAZON_SHORT_URL = "amzn://apps/android?p=";
     public static final String GOOGLE_SHORT_URL = "market://details?id=";
-    public static final String AMAZON_APP_URL = "https://www.amazon.com/gp/mas/dl/android?p=";
     public static final String GOOGLE_APP_URL = "https://play.google.com/store/apps/details?id=";
 
     public static Uri getAppUri(){
@@ -323,19 +309,11 @@ public class Settings {
     }
 
     public static String getAppShortUrl(){
-        String url = GOOGLE_SHORT_URL + BuildConfig.APPLICATION_ID;
-        if(isAmazonBuild()){
-            url = AMAZON_SHORT_URL + BuildConfig.APPLICATION_ID;
-        }
-        return url;
+        return GOOGLE_SHORT_URL + BuildConfig.APPLICATION_ID;
     }
 
     public static String getAppLongUrl(){
-        String url = GOOGLE_APP_URL + BuildConfig.APPLICATION_ID;
-        if(isAmazonBuild()){
-            url = AMAZON_APP_URL + BuildConfig.APPLICATION_ID;
-        }
-        return url;
+        return GOOGLE_APP_URL + BuildConfig.APPLICATION_ID;
     }
 
     public static void openPlaystore(Context çontext){
@@ -345,15 +323,4 @@ public class Settings {
         }
     }
 
-    public static Uri getAppProStoreUri(){
-        String url = getAppLongUrl() + "dev.dworks.apps.alauncher.pro";
-        return Uri.parse(url);
-    }
-
-    public static void openProAppLink(Activity activity){
-        Intent intent = new Intent(Intent.ACTION_VIEW, getAppProStoreUri());
-        if(isIntentAvailable(activity, intent)) {
-            activity.startActivity(intent);
-        }
-    }
 }

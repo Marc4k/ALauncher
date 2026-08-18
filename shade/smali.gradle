@@ -2,16 +2,16 @@ import smali.SmaliTask
 
 tasks.whenTaskAdded { task ->
     def name = task.name
-    if (name.startsWith('preApp') && name.endsWith('Build')) {
+    if (name.startsWith('preLeewyn') && name.endsWith('Build')) {
         task.dependsOn 'buildShadeSmali'
     }
-    if (name.startsWith('extractIncludeApp') && name.endsWith('Proto')) {
+    if (name.startsWith('extractIncludeLeewyn') && name.endsWith('Proto')) {
         task.dependsOn 'buildShadeSmali'
     }
 }
 
 dependencies {
-    appImplementation fileTree(dir: 'build/shadelibs', include: '*.jar')
+    leewynImplementation fileTree(dir: 'build/shadelibs', include: '*.jar')
 }
 
 task 'buildShadeSmali' {
@@ -41,7 +41,7 @@ task 'buildShadeSmali' {
             task "dex_to_jar_${name}"(type: JavaExec) {
                 dependsOn "smali_to_dex_${name}"
                 classpath = fileTree(dir: file('buildSrc/dex2jar'), include: '*.jar')
-                main = "com.googlecode.dex2jar.tools.Dex2jarCmd"
+                mainClass = "com.googlecode.dex2jar.tools.Dex2jarCmd"
                 args = [
                         intermediateFile,
                         "--output", jarFile,

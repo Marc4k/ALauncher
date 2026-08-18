@@ -17,12 +17,6 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Preference
-        android:icon="@drawable/ic_support"
-        android:key="pref_pro"
-        android:summary="@string/subscription_desc"
-        android:title="@string/subscription" />
-
     <com.android.launcher3.settings.NotificationDotsPreference
         android:icon="@drawable/ic_notifications"
         android:key="pref_icon_badging"
@@ -55,7 +49,6 @@
                 android:title="@string/dock_search"
                 android:summary="@string/loading"
                 android:defaultValue=""
-                app:showPro="true"
                 android:persistent="true" />
 
         </PreferenceScreen>
@@ -72,7 +65,6 @@
                 android:entries="@array/device_theme_entries"
                 android:entryValues="@array/device_theme_entry_values"
                 android:defaultValue="system"
-                app:showPro="true"
                 android:persistent="true" />
 
             <amirz.shade.settings.ColorListPreference
@@ -82,7 +74,6 @@
                 android:entries="@array/theme_entries"
                 android:entryValues="@array/theme_entry_values"
                 android:defaultValue=""
-                app:showPro="true"
                 android:persistent="true" />
 
             <ListPreference
@@ -105,7 +96,6 @@
                 android:title="@string/icon_pack"
                 android:summary="@string/loading"
                 android:defaultValue=""
-                app:showPro="true"
                 android:persistent="true" />
 
             <amirz.shade.settings.ListPreference
@@ -115,7 +105,6 @@
                 android:entries="@array/icon_shape_override_paths_names"
                 android:entryValues="@array/icon_shape_override_paths_values"
                 android:defaultValue="@string/icon_shape_override_path_circle"
-                app:showPro="true"
                 android:persistent="true" />
 
         </PreferenceScreen>
@@ -147,7 +136,6 @@
                 android:key="pref_home_action"
                 android:persistent="true"
                 android:summary="%s"
-                app:showPro="true"
                 android:title="@string/home_action" />
         </PreferenceScreen>
 
