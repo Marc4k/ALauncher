@@ -145,8 +145,7 @@ public class DiscoveryBounce extends AbstractFloatingView {
 
     private static void showForHomeIfNeeded(Launcher launcher, boolean withDelay) {
         if (!launcher.isInState(NORMAL)
-                || (launcher.getSharedPrefs().getBoolean(HOME_BOUNCE_SEEN, false)
-                && !shouldShowForWorkProfile(launcher))
+                || launcher.getSharedPrefs().getBoolean(HOME_BOUNCE_SEEN, false)
                 || AbstractFloatingView.getTopOpenView(launcher) != null
                 || UserManagerCompat.getInstance(launcher).isDemoUser()
                 || Utilities.IS_RUNNING_IN_TEST_HARNESS) {
@@ -171,8 +170,7 @@ public class DiscoveryBounce extends AbstractFloatingView {
                 || !launcher.hasBeenResumed()
                 || launcher.isForceInvisible()
                 || launcher.getDeviceProfile().isVerticalBarLayout()
-                || (launcher.getSharedPrefs().getBoolean(SHELF_BOUNCE_SEEN, false)
-                && !shouldShowForWorkProfile(launcher))
+                || launcher.getSharedPrefs().getBoolean(SHELF_BOUNCE_SEEN, false)
                 || UserManagerCompat.getInstance(launcher).isDemoUser()
                 || Utilities.IS_RUNNING_IN_TEST_HARNESS) {
             return;
@@ -212,12 +210,6 @@ public class DiscoveryBounce extends AbstractFloatingView {
         public void setProgress(float progress) {
             mController.setProgress(progress - mDelta);
         }
-    }
-
-    private static boolean shouldShowForWorkProfile(Launcher launcher) {
-        return !launcher.getSharedPrefs().getBoolean(
-                PersonalWorkSlidingTabStrip.KEY_SHOWED_PEEK_WORK_TAB, false)
-                && UserManagerCompat.getInstance(launcher).hasWorkProfile();
     }
 
     private static void incrementShelfBounceCount(Launcher launcher) {

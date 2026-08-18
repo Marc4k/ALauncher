@@ -6,17 +6,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Process;
-import android.os.UserHandle;
 import android.text.TextUtils;
 
 import com.android.launcher3.AbstractFloatingView;
-import com.android.launcher3.AppInfo;
 import com.android.launcher3.LauncherCallbacks;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
-import com.android.launcher3.allapps.AllAppsStore;
-import com.android.launcher3.compat.UserManagerCompat;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -34,7 +29,6 @@ import static amirz.shade.customization.DockSearch.KEY_DOCK_SEARCH;
 import static amirz.shade.customization.ShadeStyle.KEY_THEME;
 import static android.content.Context.SEARCH_SERVICE;
 import static com.android.launcher3.LauncherState.ALL_APPS;
-import static com.android.launcher3.allapps.PersonalWorkSlidingTabStrip.KEY_SHOWED_PEEK_WORK_TAB;
 import static com.android.launcher3.settings.SettingsActivity.GRID_OPTIONS_PREFERENCE_KEY;
 import static com.android.launcher3.util.Themes.KEY_DEVICE_THEME;
 
@@ -82,21 +76,6 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
                 .putBoolean(GRID_OPTIONS_PREFERENCE_KEY, true)
                 .apply();
 
-        // Removes the permanent bounce when there is a work profile but no work apps.
-        if (UserManagerCompat.getInstance(mLauncher).hasWorkProfile() && !hasWorkApp()) {
-            prefs.edit().putBoolean(KEY_SHOWED_PEEK_WORK_TAB, true).apply();
-        }
-    }
-
-    private boolean hasWorkApp() {
-        AllAppsStore store = mLauncher.getAppsView().getAppsStore();
-        UserHandle myUser = Process.myUserHandle();
-        for (AppInfo info : store.getApps()) {
-            if (!info.user.equals(myUser)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override

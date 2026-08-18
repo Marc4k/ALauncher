@@ -41,7 +41,6 @@
 
         <include layout="@layout/floating_header_content" />
 
-        <include layout="@layout/all_apps_sliding_strip" />
     </com.android.launcher3.allapps.FloatingHeaderView>
 
     <include

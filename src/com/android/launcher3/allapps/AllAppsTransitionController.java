@@ -253,9 +253,4 @@ public class AllAppsTransitionController implements StateHandler, OnDeviceProfil
         return Float.compare(mProgress, 0f) == 0;
     }
 
-    public void highlightWorkTabIfNecessary() {
-        if (isAllAppsExpanded()) {
-            mAppsView.highlightWorkTabIfNecessary();
-        }
-    }
 }

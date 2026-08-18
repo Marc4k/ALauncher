@@ -336,6 +336,8 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 .remove("promise_icon_ids")
                 .remove("pref_transition")
                 .remove("pref_predictions")
+                .remove("showed_peek_work_tab")
+                .remove("showed_bottom_user_education")
                 .apply();
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
@@ -433,7 +435,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onEnterAnimationComplete() {
         super.onEnterAnimationComplete();
         UiFactory.onEnterAnimationComplete(this);
-        mAllAppsController.highlightWorkTabIfNecessary();
         mRotationHelper.setCurrentTransitionRequest(REQUEST_NONE);
     }
 
