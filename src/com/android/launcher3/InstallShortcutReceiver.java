@@ -20,7 +20,6 @@ import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProviderInfo;
-import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -66,7 +65,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-public class InstallShortcutReceiver extends BroadcastReceiver {
+public class InstallShortcutReceiver {
 
     public static final int FLAG_ACTIVITY_PAUSED = 1;
     public static final int FLAG_LOADER_RUNNING = 2;
@@ -79,9 +78,6 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
 
     private static final String TAG = "InstallShortcutReceiver";
     private static final boolean DBG = false;
-
-    private static final String ACTION_INSTALL_SHORTCUT =
-            "com.android.launcher.action.INSTALL_SHORTCUT";
 
     private static final String LAUNCH_INTENT_KEY = "intent.launch";
     private static final String NAME_KEY = "name";
@@ -184,25 +180,6 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
             }
         }
         sp.edit().putStringSet(APPS_PENDING_INSTALL, newStrings).apply();
-    }
-
-    public void onReceive(Context context, Intent data) {
-        if (!ACTION_INSTALL_SHORTCUT.equals(data.getAction())) {
-            return;
-        }
-        PendingInstallShortcutInfo info = createPendingInfo(context, data);
-        if (info != null) {
-            if (!info.isLauncherActivity()) {
-                // Since its a custom shortcut, verify that it is safe to launch.
-                if (!new PackageManagerHelper(context).hasPermissionForActivity(
-                        info.launchIntent, null)) {
-                    // Target cannot be launched, or requires some special permission to launch
-                    Log.e(TAG, "Ignoring malicious intent " + info.launchIntent.toUri(0));
-                    return;
-                }
-            }
-            queuePendingShortcutInfo(info, context);
-        }
     }
 
     /**
