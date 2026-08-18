@@ -2,13 +2,16 @@ import smali.SmaliTask
 
 tasks.whenTaskAdded { task ->
     def name = task.name
-    if (name.startsWith('preShade') && name.endsWith('Build')) {
+    if (name.startsWith('preLeewyn') && name.endsWith('Build')) {
+        task.dependsOn 'buildShadeSmali'
+    }
+    if (name.startsWith('extractIncludeLeewyn') && name.endsWith('Proto')) {
         task.dependsOn 'buildShadeSmali'
     }
 }
 
 dependencies {
-    appImplementation fileTree(dir: 'build/shadelibs', include: '*.jar')
+    leewynImplementation fileTree(dir: 'build/shadelibs', include: '*.jar')
 }
 
 task 'buildShadeSmali' {

@@ -29,7 +29,6 @@ import com.android.launcher3.util.SystemUiController;
 
 import java.util.List;
 
-import amirz.App;
 import amirz.aidlbridge.LauncherClientIntent;
 import amirz.helpers.DefaultLauncher;
 import amirz.helpers.Settings;
@@ -112,7 +111,6 @@ public class ShadeSettings extends SettingsActivity {
         private static final String KEY_APP_INFO = "app_info";
         private static final String KEY_RESTART_LAUNCHER = "pref_restart_launcher";
         private static final String KEY_DEFAULT_LAUNCHER = "pref_default_launcher";
-        private static final String KEY_PRO = "pref_pro";
         private static final String KEY_CONTACT = "pref_contact";
         private static final String KEY_REVIEW = "pref_review";
         private Activity context;
@@ -126,14 +124,6 @@ public class ShadeSettings extends SettingsActivity {
             // Load the icon pack once to set the correct default icon pack.
             IconPackManager.get(context);
             if(null == rootKey) {
-                Preference purchase = findPreference(KEY_PRO);
-                if(null != purchase) {
-                    if(App.isPurchased()) {
-                        getPreferenceScreen().removePreference(purchase);
-                    } else {
-                        purchase.setOnPreferenceClickListener(this);
-                    }
-                }
                 Preference contact = findPreference(KEY_CONTACT);
                 if(null != contact){
                     contact.setOnPreferenceClickListener(this);
@@ -248,12 +238,6 @@ public class ShadeSettings extends SettingsActivity {
                     }
                 }
             }
-            if(App.isPurchased()) {
-                Preference purchase = findPreference(KEY_PRO);
-                if (null != purchase) {
-                    getPreferenceScreen().removePreference(purchase);
-                }
-            }
         }
 
         @Override
@@ -311,9 +295,6 @@ public class ShadeSettings extends SettingsActivity {
                     break;
                 case KEY_REVIEW:
                     Settings.openPlaystore(getActivity());
-                    break;
-                case KEY_PRO:
-                    App.getInstance().openPurchaseActivity(getActivity());
                     break;
             }
             return false;
