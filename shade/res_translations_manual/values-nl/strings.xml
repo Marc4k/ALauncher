@@ -14,7 +14,6 @@
     <string name="theme_twilight">Schemering</string>
     <string name="theme_blossom">Bloesem</string>
     <string name="dock_search">Zoekbalk</string>
-    <string name="feed_provider">Nieuws bron</string>
     <string name="grid_division">Raster indeling</string>
     <string name="grid_division_dense">Compact (6 bij 6)</string>
     <string name="grid_division_normal">Normaal (5 bij 5)</string>

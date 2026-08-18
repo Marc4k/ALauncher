@@ -14,7 +14,6 @@
     <string name="theme_twilight">Λυκόφως</string>
     <string name="theme_blossom">Άνθος</string>
     <string name="dock_search">Γραφικό στοιχείο αναζήτησης</string>
-    <string name="feed_provider">Ροή ειδήσεων</string>
     <string name="grid_division">Αναλογία πλέγματος</string>
     <string name="grid_division_dense">Πυκνό (6×6)</string>
     <string name="grid_division_normal">Νορμάλ (5×5)</string>

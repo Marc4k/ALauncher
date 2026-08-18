@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"የመተግበሪያ ጥቆማዎች"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"ሁሉም መተግበሪያዎች"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"የእርስዎ የሚገመቱ መተግበሪያዎች"</string>
-	<string name="smartspace_preferences">"ምርጫዎች"</string>
-	<string name="smartspace_preferences_in_settings">"በአፍታ እይታ"</string>
-	<string name="smartspace_preferences_in_settings_desc">"በመነሻ ማያ ገጽዎ አናት ላይ"</string>
 	<string name="icon_shape_override_label">"የአዶ ቅርፅ ለውጥ"</string>
 	<string name="icon_shape_override_progress">"የአዶ ቅርች ለውጦች"</string>
 	<string name="icon_shape_square">"ካሬ"</string>

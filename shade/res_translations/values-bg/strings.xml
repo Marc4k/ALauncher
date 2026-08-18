@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Предложения за приложения"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Всички приложения"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Предвидени приложения"</string>
-	<string name="smartspace_preferences">"Предпочитания"</string>
-	<string name="smartspace_preferences_in_settings">"Бърз поглед"</string>
-	<string name="smartspace_preferences_in_settings_desc">"В горната част на началния ви екран"</string>
 	<string name="icon_shape_override_label">"Промяна на формата на иконите"</string>
 	<string name="icon_shape_override_progress">"Промените във формата на иконите се прилагат"</string>
 	<string name="icon_shape_square">"Квадрат"</string>

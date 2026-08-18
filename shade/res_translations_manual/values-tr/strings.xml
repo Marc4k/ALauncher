@@ -14,7 +14,6 @@
     <string name="theme_twilight">Alacakaranlık</string>
     <string name="theme_blossom">Çiçek</string>
     <string name="dock_search">Arama çubuğu</string>
-    <string name="feed_provider">Haber akışı</string>
     <string name="grid_division">Kılavuz aralığı</string>
     <string name="grid_division_dense">Sıkışık (6\'ya 6)</string>
     <string name="grid_division_normal">Normal (5\'e 5)</string>

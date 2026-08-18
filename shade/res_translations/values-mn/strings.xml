@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Аппын зөвлөмж"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Бүх апп"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Таны таамагласан аппууд"</string>
-	<string name="smartspace_preferences">"Сонголт"</string>
-	<string name="smartspace_preferences_in_settings">"Гялс харах"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Таны Үндсэн нүүрний дээд хэсэгт"</string>
 	<string name="icon_shape_override_label">"Дүрс тэмдгийн хэлбэрийг өөрчлөх"</string>
 	<string name="icon_shape_override_progress">"Дүрс тэмдгийн хэлбэрийг өөрчилж байна"</string>
 	<string name="icon_shape_square">"Дөрвөлжин"</string>

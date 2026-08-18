@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Snackbar's generic activity fallback; formerly declared by the purchase layout. -->
+    <item name="content_view" type="id" />
+</resources>

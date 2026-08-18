@@ -62,7 +62,9 @@ android {
         }
 
         release {
-            signingConfig signingConfigs.release
+            if (keystoreProperties.exists()) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard.flags'
@@ -74,47 +76,6 @@ android {
         coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
-    }
-
-    // The flavor dimensions for build variants (e.g. aospWithQuickstep, aospWithoutQuickstep)
-    // See: https://developer.android.com/studio/build/build-variants#flavor-dimensions
-    flavorDimensions "app", "recents", "default", "store"
-
-    productFlavors {
-//        aosp {
-//            dimension "app"
-//            applicationId 'com.android.launcher3'
-//            testApplicationId 'com.android.launcher3.tests'
-//        }
-
-//        l3go {
-//            dimension "app"
-//            applicationId 'com.android.launcher3'
-//            testApplicationId 'com.android.launcher3.tests'
-//        }
-
-//        withQuickstep {
-//            dimension "recents"
-//
-//            minSdkVersion 28
-//        }
-//
-//        withQuickstepIconRecents {
-//            dimension "recents"
-//
-//            minSdkVersion 28
-//        }
-
-//        withoutQuickstep {
-//            dimension "recents"
-//        }
-    }
-
-    android.variantFilter { variant ->
-        // Icon recents is Go only
-        if (name.contains("WithQuickstepIconRecents") && !name.contains("l3go")) {
-            variant.setIgnore(true)
-        }
     }
 
     sourceSets {
@@ -146,32 +107,6 @@ android {
             manifest.srcFile "tests/AndroidManifest.xml"
         }
 
-//        aosp {
-//            java.srcDirs = ['src_flags', 'src_shortcuts_overrides']
-//            manifest.srcFile "AndroidManifest.xml"
-//        }
-
-//        l3go {
-//            res.srcDirs = ['go/res']
-//            java.srcDirs = ['go/src']
-//            manifest.srcFile "go/AndroidManifest.xml"
-//        }
-
-//        withoutQuickstep {
-//            java.srcDirs = ['src_ui_overrides']
-//        }
-
-//        withQuickstep {
-//            res.srcDirs = ['quickstep/res', 'quickstep/recents_ui_overrides/res']
-//            java.srcDirs = ['quickstep/src', 'quickstep/recents_ui_overrides/src']
-//            manifest.srcFile "quickstep/AndroidManifest.xml"
-//        }
-//
-//        withQuickstepIconRecents {
-//            res.srcDirs = ['quickstep/res', 'go/quickstep/res']
-//            java.srcDirs = ['quickstep/src', 'go/quickstep/src']
-//            manifest.srcFile "quickstep/AndroidManifest.xml"
-//        }
     }
     lint {
         abortOnError false
@@ -186,7 +121,6 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        jcenter()
     }
 
     gradle.projectsEvaluated {
@@ -252,9 +186,11 @@ protobuf {
     }
 }
 
-android.signingConfigs.release.storeFile file(props.keyStore)
-android.signingConfigs.release.storePassword props.keyStorePassword
-android.signingConfigs.release.keyAlias props.keyAlias
-android.signingConfigs.release.keyPassword props.keyAliasPassword
+if (keystoreProperties.exists()) {
+    android.signingConfigs.release.storeFile file(props.keyStore)
+    android.signingConfigs.release.storePassword props.keyStorePassword
+    android.signingConfigs.release.keyAlias props.keyAlias
+    android.signingConfigs.release.keyPassword props.keyAliasPassword
+}
 
 apply from: 'shade/shade.gradle'

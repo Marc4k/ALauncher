@@ -34,9 +34,6 @@
     <string name="title_app_suggestions" msgid="4185902664111965088">"Колдонмо сунуштары"</string>
     <string name="all_apps_label" msgid="8542784161730910663">"Бардык колдонмолор"</string>
     <string name="all_apps_prediction_tip" msgid="2672336544844936186">"Божомолдонгон колдонмолоруңуз"</string>
-	<string name="smartspace_preferences">"Жеке жөндөөлөр"</string>
-	<string name="smartspace_preferences_in_settings">"Дароо көрүү"</string>
-	<string name="smartspace_preferences_in_settings_desc">"Башкы экрандын өйдө жагында"</string>
 	<string name="icon_shape_override_label">"Сүрөтчөнүн формасын өзгөртүү"</string>
 	<string name="icon_shape_override_progress">"Өзгөртүлгөн сүрөтчөнүн формасы колдонулууда"</string>
 	<string name="icon_shape_square">"Чарчы"</string>

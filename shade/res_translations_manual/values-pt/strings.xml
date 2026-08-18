@@ -14,7 +14,6 @@
     <string name="theme_twilight">Crepúsculo</string>
     <string name="theme_blossom">Florido</string>
     <string name="dock_search">Widget de pesquisa</string>
-    <string name="feed_provider">Feed de notícias</string>
     <string name="grid_division">Espaçamento da grade</string>
     <string name="grid_division_dense">Denso (6 por 6)</string>
     <string name="grid_division_normal">Normal (5 por 5)</string>
