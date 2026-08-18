@@ -40,6 +40,7 @@ public class ShadeLauncherCallbacks implements LauncherCallbacks,
                 .remove("pref_icon_pack")
                 .remove("pref_grid_options")
                 .remove("idp_grid_name")
+                .remove("pref_locked_apps")
                 .apply();
         if (Utilities.ATLEAST_NOUGAT) {
             mLauncher.deleteSharedPreferences(
