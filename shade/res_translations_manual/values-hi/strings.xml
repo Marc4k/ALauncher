@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="needs_usage_access">उपयोग की आवश्यकता है</string>
-    <string name="msg_missing_usage_access">एप्लिकेशन सुझाव दिखाने के लिए, उपयोग पहुंच चालू करें <xliff:g id="नाम" example="मेरा ऐप">%1$s</xliff:g></string>
     <string name="dock_search">खोज विजेट</string>
-    <string name="fading_transition">लुप्त होती संक्रमण</string>
-    <string name="fading_transition_desc">एप खोलते समय</string>
-    <string name="about_contact">संपर्क</string>
-    <string name="about_donate_desc">प्ले बैलेंस का उपयोग करना</string>
 </resources>

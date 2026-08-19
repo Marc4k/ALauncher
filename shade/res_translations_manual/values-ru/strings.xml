@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="needs_usage_access">Требуется доступ к использованию</string>
-    <string name="msg_missing_usage_access">Чтобы показать предлагаемые приложения, включите доступ к использованию для <xliff:g id="name" example="My App">%1$s</xliff:g></string>
     <string name="dock_search">Виджет поиска</string>
-    <string name="fading_transition">Затухающий переход</string>
-    <string name="fading_transition_desc">При открытии приложений</string>
-    <string name="about_contact">Контактные данные</string>
-    <string name="about_donate_desc">С помощью Play баланса</string>
 </resources>

@@ -20,7 +20,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
-    <string name="work_folder_name" msgid="3753320833950115786">"కార్యాలయం"</string>
     <string name="activity_not_found" msgid="8071924732094499514">"యాప్ ఇన్‌స్టాల్ చేయబడలేదు."</string>
     <string name="activity_not_available" msgid="7456344436509528827">"యాప్ అందుబాటులో లేదు"</string>
     <string name="safemode_shortcut_error" msgid="9160126848219158407">"డౌన్‌లోడ్ చేసిన యాప్ సురక్షిత మోడ్‌లో నిలిపివేయబడింది"</string>
@@ -45,13 +44,10 @@
     <string name="out_of_space" msgid="4691004494942118364">"ఈ హోమ్ స్క్రీన్‌లో ఖాళీ లేదు."</string>
     <string name="hotseat_out_of_space" msgid="7448809638125333693">"ఇష్టమైనవి ట్రేలో ఖాళీ లేదు"</string>
     <string name="all_apps_button_label" msgid="8130441508702294465">"అనువర్తనాల జాబితా"</string>
-    <string name="all_apps_button_personal_label" msgid="1315764287305224468">"వ్యక్తిగత యాప్‌ల జాబితా"</string>
-    <string name="all_apps_button_work_label" msgid="7270707118948892488">"కార్యాలయ యాప్‌ల జాబితా"</string>
     <string name="all_apps_home_button_label" msgid="252062713717058851">"హోమ్"</string>
     <string name="remove_drop_target_label" msgid="7812859488053230776">"తీసివేయి"</string>
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"అన్ఇన్‌స్టాల్ చేయి"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"యాప్ సమాచారం"</string>
-    <string name="install_drop_target_label" msgid="2539096853673231757">"ఇన్‌స్టాల్ చేయండి"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"విడ్జెట్‌ను లోడ్ చేయడంలో సమస్య"</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"సెటప్ చేయి"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"ఇది సిస్టమ్ యాప్ మరియు దీన్ని అన్‌ఇన్‌స్టాల్ చేయడం సాధ్యపడదు."</string>
@@ -82,8 +78,6 @@
     <string name="msg_missing_notification_access" msgid="281113995110910548">"నోటిఫికేషన్ డాట్‌లను చూపించడానికి <xliff:g id="NAME">%1$s</xliff:g>కు యాప్ నోటిఫికేషన్‌లను ఆన్ చేయండి"</string>
     <string name="title_change_settings" msgid="1376365968844349552">"సెట్టింగ్‌లను మార్చు"</string>
     <string name="notification_dots_service_title" msgid="4284221181793592871">"నోటిఫికేషన్ డాట్‌లను చూపు"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"హోమ్ స్క్రీన్‌కి చిహ్నాన్ని జోడించు"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"కొత్త యాప్‌ల కోసం"</string>
     <string name="package_state_unknown" msgid="7592128424511031410">"తెలియదు"</string>
     <string name="abandoned_clean_this" msgid="7610119707847920412">"తీసివేయి"</string>
     <string name="abandoned_search" msgid="891119232568284442">"వెతుకు"</string>
@@ -120,14 +114,5 @@
     <string name="shortcuts_menu_with_notifications_description" msgid="2676582286544232849">"షార్ట్‌కట్‌లు మరియు నోటిఫికేషన్‌లు"</string>
     <string name="action_dismiss_notification" msgid="5909461085055959187">"తీసివేయి"</string>
     <string name="notification_dismissed" msgid="6002233469409822874">"నోటిఫికేషన్ తీసివేయబడింది"</string>
-    <string name="all_apps_personal_tab" msgid="4190252696685155002">"వ్యక్తిగతం"</string>
-    <string name="all_apps_work_tab" msgid="4884822796154055118">"కార్యాలయం"</string>
-    <string name="work_profile_toggle_label" msgid="3081029915775481146">"కార్యాలయ ప్రొఫైల్"</string>
-    <string name="bottom_work_tab_user_education_title" msgid="5785851780786322825">"కార్యాలయ యాప్‌లను ఇక్కడ కనుగొనండి"</string>
-    <string name="bottom_work_tab_user_education_body" msgid="2818107472360579152">"ప్రతి కార్యాలయ యాప్‌కు బ్యాడ్జ్‌ ఉంది మరియు మీ సంస్థ ద్వారా సురక్షితంగా ఉంచబడుతుంది. సులభ యాక్సెస్ కోసం యాప్‌లను మీ హోమ్ స్క్రీన్‌కి తరలించండి."</string>
-    <string name="work_mode_on_label" msgid="4781128097185272916">"మీ సంస్థ ద్వారా నిర్వహించబడతాయి"</string>
-    <string name="work_mode_off_label" msgid="3194894777601421047">"నోటిఫికేషన్‌లు మరియు యాప్‌లు ఆఫ్ చేయబడ్డాయి"</string>
-    <string name="bottom_work_tab_user_education_close_button" msgid="4224492243977802135">"మూసివేయి"</string>
-    <string name="bottom_work_tab_user_education_closed" msgid="1098340939861869465">"మూసివేయబడింది"</string>
     <string name="remote_action_failed" msgid="1383965239183576790">"విఫలమైంది: <xliff:g id="WHAT">%1$s</xliff:g>"</string>
 </resources>

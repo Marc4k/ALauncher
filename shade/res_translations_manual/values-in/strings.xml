@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="needs_usage_access">Diperlukan akses penggunaan</string>
-    <string name="msg_missing_usage_access">Untuk menampilkan Saran Aplikasi, aktifkan akses penggunaan untuk <xliff:g id="name" example="My App">%1$s</xliff:g></string>
     <string name="dock_search">Widget pencarian</string>
-    <string name="fading_transition">Transisi luntur</string>
-    <string name="fading_transition_desc">Ketika membuka apl</string>
-    <string name="about_contact">Kontak</string>
-    <string name="about_donate_desc">Menggunakan saldo Google Play</string>
 </resources>

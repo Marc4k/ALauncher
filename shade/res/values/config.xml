@@ -15,13 +15,11 @@
     <!-- String representing the fragment class for settings activity.-->
     <string name="settings_fragment_name" translatable="false">amirz.shade.ShadeSettings$ShadeSettingsFragment</string>
 
-    <string name="about_contact_url" translatable="false">https://t.me/OneHaKr</string>
 
     <integer name="shade_all_apps_light_alpha">25</integer>
     <integer name="shade_all_apps_dark_alpha">20</integer>
     <integer name="shade_qsb_color_alpha">6</integer>
 
-    <integer name="config_settingsFadeAnimationDuration">250</integer>
     <integer name="config_appOpenLauncherExitAnimationDuration">205</integer>
     <integer name="config_appExitLauncherOpenAnimationDuration">365</integer>
 

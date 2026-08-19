@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="needs_usage_access">Kullanım erişimi gerekli</string>
-    <string name="msg_missing_usage_access">Uygulama Önerilerini göstermek için <xliff:g id="name" example="My App">%1$s</xliff:g> kullanım erişimini açın</string>
     <string name="dock_search">Arama çubuğu</string>
-    <string name="fading_transition">Solarak geçiş</string>
-    <string name="fading_transition_desc">Uygulamaları açarken</string>
-    <string name="about_contact">İletişim</string>
-    <string name="about_donate_desc">Play Store ödemesi ile</string>
 </resources>

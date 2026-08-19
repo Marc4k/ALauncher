@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="needs_usage_access">مطلوب إذن الوصول الى الإستخدام</string>
-    <string name="msg_missing_usage_access">لإظهار إقتراحات التطبيقات، قم بتشغيل وصول الاستخدام لـ<xliff:g id="name" example="My App">%1$s</xliff:g></string>
     <string name="dock_search">تطبيق مصغر للبحث</string>
-    <string name="fading_transition">تأثير التلاشي</string>
-    <string name="fading_transition_desc">عند فتح التطبيقات</string>
-    <string name="about_contact">تواصل معي</string>
-    <string name="about_donate_desc">بإستخدام رصيد متجر بلي</string>
 </resources>
