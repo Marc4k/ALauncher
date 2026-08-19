@@ -1,0 +1,36 @@
+name: Android build
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build debug and release
+        run: ./gradlew --no-daemon assembleDebug assembleRelease
+
+      - name: Audit runtime dependencies
+        shell: bash
+        run: |
+          ./gradlew --no-daemon dependencies --configuration debugRuntimeClasspath > dependency-report.txt
+          if grep -Eiq 'com\.android\.billing|billingclient|amazon[^[:space:]]*(iap|in-app|purchasing)|amazon.*purchasing' dependency-report.txt; then
+            echo "Unintended billing or store dependency detected"
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: launcher-apks
+          path: build/outputs/apk/**/*.apk
