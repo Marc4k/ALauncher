@@ -2,11 +2,9 @@ buildscript {
     repositories {
         mavenCentral()
         google()
-        maven { url "https://jitpack.io" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.10.1'
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.9.4'
     }
 }
 
@@ -31,7 +29,6 @@ private String generateVersionName() {
 final String FRAMEWORK_PREBUILTS_DIR = "prebuilts"
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.protobuf'
 
 def props = new Properties()
 File keystoreProperties = rootProject.file("keystore.properties")
@@ -83,16 +80,12 @@ android {
     sourceSets {
         main {
             res.srcDirs = ['res']
-            java.srcDirs = ['src', 'src_plugins', 'shade/src', 'shade/src_flags',
+            java.srcDirs = ['src', 'src_plugins', 'generated_src', 'shade/src', 'shade/src_flags',
                             'src_shortcuts_overrides', 'shade/src_backport',
                             'shade/src_ui_overrides']
             aidl.srcDirs = ['shade/aidl']
             assets.srcDirs = ['shade/assets']
             manifest.srcFile 'LeewynManifest.xml'
-            proto {
-                srcDir 'protos/'
-                srcDir 'proto_overrides/'
-            }
         }
 
         debug {
@@ -144,27 +137,6 @@ dependencies {
     implementation fileTree(dir: "${FRAMEWORK_PREBUILTS_DIR}/libs", include: 'launcher_protos.jar')
     implementation fileTree(dir: "${FRAMEWORK_PREBUILTS_DIR}/libs", include: 'plugin_core.jar')
 
-}
-
-protobuf {
-    // Configure the protoc executable
-    protoc {
-        artifact = 'com.google.protobuf:protoc:3.0.0:osx-x86_64'
-
-        generateProtoTasks {
-            all().each { task ->
-                task.builtins {
-                    remove java
-                    javanano {
-                        option "java_package=launcher_log_extension.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_log.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_dump.proto|com.android.launcher3.model.nano"
-                        option "enum_style=java"
-                    }
-                }
-            }
-        }
-    }
 }
 
 if (keystoreProperties.exists()) {
