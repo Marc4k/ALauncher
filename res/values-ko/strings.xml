@@ -20,7 +20,6 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" msgid="649227358658669779">"Launcher3"</string>
-    <string name="work_folder_name" msgid="3753320833950115786">"업무"</string>
     <string name="activity_not_found" msgid="8071924732094499514">"앱이 설치되지 않았습니다."</string>
     <string name="activity_not_available" msgid="7456344436509528827">"앱을 사용할 수 없음"</string>
     <string name="safemode_shortcut_error" msgid="9160126848219158407">"다운로드한 앱은 안전 모드에서 사용할 수 없습니다."</string>
@@ -45,13 +44,10 @@
     <string name="out_of_space" msgid="4691004494942118364">"홈 화면에 더 이상 공간이 없습니다."</string>
     <string name="hotseat_out_of_space" msgid="7448809638125333693">"즐겨찾기 트레이에 더 이상 공간이 없습니다."</string>
     <string name="all_apps_button_label" msgid="8130441508702294465">"앱 목록"</string>
-    <string name="all_apps_button_personal_label" msgid="1315764287305224468">"개인 앱 목록"</string>
-    <string name="all_apps_button_work_label" msgid="7270707118948892488">"업무용 앱 목록"</string>
     <string name="all_apps_home_button_label" msgid="252062713717058851">"홈"</string>
     <string name="remove_drop_target_label" msgid="7812859488053230776">"삭제"</string>
     <string name="uninstall_drop_target_label" msgid="4722034217958379417">"제거"</string>
     <string name="app_info_drop_target_label" msgid="692894985365717661">"앱 정보"</string>
-    <string name="install_drop_target_label" msgid="2539096853673231757">"설치"</string>
     <string name="gadget_error_text" msgid="6081085226050792095">"위젯을 로드하는 중 문제가 발생했습니다."</string>
     <string name="gadget_setup_text" msgid="8274003207686040488">"설정"</string>
     <string name="uninstall_system_app_text" msgid="4172046090762920660">"시스템 앱은 제거할 수 없습니다."</string>
@@ -82,8 +78,6 @@
     <string name="msg_missing_notification_access" msgid="281113995110910548">"알림 표시점을 표시하려면 <xliff:g id="NAME">%1$s</xliff:g>의 앱 알림을 사용 설정하세요."</string>
     <string name="title_change_settings" msgid="1376365968844349552">"설정 변경"</string>
     <string name="notification_dots_service_title" msgid="4284221181793592871">"알림 표시 점 보기"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"홈 화면에 아이콘 추가"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"새로 설치한 앱에 적용"</string>
     <string name="package_state_unknown" msgid="7592128424511031410">"알 수 없음"</string>
     <string name="abandoned_clean_this" msgid="7610119707847920412">"삭제"</string>
     <string name="abandoned_search" msgid="891119232568284442">"검색"</string>
@@ -120,14 +114,5 @@
     <string name="shortcuts_menu_with_notifications_description" msgid="2676582286544232849">"바로가기 및 알림"</string>
     <string name="action_dismiss_notification" msgid="5909461085055959187">"닫기"</string>
     <string name="notification_dismissed" msgid="6002233469409822874">"알림이 해제되었습니다."</string>
-    <string name="all_apps_personal_tab" msgid="4190252696685155002">"개인"</string>
-    <string name="all_apps_work_tab" msgid="4884822796154055118">"직장"</string>
-    <string name="work_profile_toggle_label" msgid="3081029915775481146">"직장 프로필"</string>
-    <string name="bottom_work_tab_user_education_title" msgid="5785851780786322825">"여기에서 업무용 앱 찾기"</string>
-    <string name="bottom_work_tab_user_education_body" msgid="2818107472360579152">"각 업무용 앱에는 배지가 있으며 업무용 앱은 조직에서 안전하게 보호됩니다. 앱을 홈 화면으로 이동하여 더 간편하게 사용하세요."</string>
-    <string name="work_mode_on_label" msgid="4781128097185272916">"조직에서 관리"</string>
-    <string name="work_mode_off_label" msgid="3194894777601421047">"알림 및 앱 사용 중지됨"</string>
-    <string name="bottom_work_tab_user_education_close_button" msgid="4224492243977802135">"닫기"</string>
-    <string name="bottom_work_tab_user_education_closed" msgid="1098340939861869465">"종료됨"</string>
     <string name="remote_action_failed" msgid="1383965239183576790">"실패: <xliff:g id="WHAT">%1$s</xliff:g>"</string>
 </resources>

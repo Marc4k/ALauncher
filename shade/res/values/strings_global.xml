@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="placeholder_string" translatable="false">@string/loading</string> <!-- Used for preference height loading. -->
+<!-- Used for preference height loading. -->
     <string name="dock_search_value" translatable="false">%1$s %2$s</string>
-    <string name="about_contact_desc" translatable="false">Give us your suggestions</string>
 </resources>

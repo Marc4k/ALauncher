@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [ <!ENTITY appid "dev.dworks.apps.alauncher"> ]>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="about_contact_email" translatable="false">mailto:support@dworks.io</string>
 
-    <string name="about_review_desc" translatable="false">Review on app store</string>
-    <string name="about_info" translatable="false">Info</string>
-    <string name="about_info_desc" translatable="false">@string/derived_app_name</string>
-    <string name="category_basic" translatable="false">"Basic"</string>
     <string name="category_search" translatable="false">"Search"</string>
-    <string name="close_task" translatable="false">Close</string>
     <string name="widget_search_bar_hint" translatable="false">Search widgets</string>
 
 </resources>

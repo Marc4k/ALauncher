@@ -31,9 +31,7 @@
     <dimen name="hotseat_qsb_scroll_key_shadow_offset">2dp</dimen>
     <dimen name="qsb_shadow_margin">8dp</dimen>
 
-    <dimen name="work_footer_side_padding">0dp</dimen>
 
-    <dimen name="text_horizontal_padding">4dp</dimen>
     <dimen name="text_vertical_padding">2.5dp</dimen>
 
     <!-- Hidden apps -->

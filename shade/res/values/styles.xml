@@ -150,15 +150,6 @@
         <item name="android:colorAccent">?shadeColorAccent</item>
     </style>
 
-    <!-- Various popups -->
-    <style name="Shade.DialogAlert" parent="android:Theme.Material.Dialog.Alert">
-        <item name="android:colorAccent">?shadeColorAccent</item>
-    </style>
-
-    <style name="Shade.DialogAlert.Light" parent="android:Theme.Material.Light.Dialog.Alert">
-        <item name="android:colorAccent">?shadeColorAccent</item>
-    </style>
-
     <!-- Fading transition -->
     <style name="ShadeAnimations" parent="android:Animation.Activity">
         <item name="android:taskToFrontEnterAnimation">@anim/enter_launcher</item>
@@ -173,20 +164,6 @@
 
 
 
-    <style name="ToolbarTheme" parent="@android:style/Theme.Material.Light">
-        <item name="android:colorControlNormal">@android:color/white</item>
-    </style>
 
-    <style name="ActivityTheme" parent="@android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
 
-    <style name="DefaultTheme" parent="@style/ActivityTheme">
-        <item name="android:colorPrimaryDark">@color/colorAccentDark</item>
-        <item name="android:colorPrimary">@android:color/transparent</item>
-        <item name="android:colorAccent">@color/colorAccent</item>
-        <item name="android:colorControlNormal">@color/primary_text_default_material_dark</item>
-        <item name="android:colorControlActivated">@color/primary_text_default_material_dark</item>
-    </style>
 </resources>
