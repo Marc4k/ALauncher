@@ -20,8 +20,8 @@ Direct runtime dependencies:
 - local `prebuilts/libs/plugin_core.jar`
 
 Result: the resolved `debugRuntimeClasspath` contains no Google Play Billing, Amazon IAP,
-Amazon Purchasing, or other store SDK. CI rejects dependencies matching these prohibited
-coordinates or names:
+Amazon Purchasing, or other store SDK. Dependency reviews must reject coordinates or names
+matching:
 
 - `com.android.billing`
 - `billingclient`

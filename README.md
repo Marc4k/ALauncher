@@ -57,4 +57,4 @@ Generate the resolved runtime dependency tree with:
 ```
 
 The maintained audit and prohibited dependency patterns are documented in
-[`docs/dependency-report.md`](docs/dependency-report.md). CI runs the same policy check.
+[`docs/dependency-report.md`](docs/dependency-report.md).
