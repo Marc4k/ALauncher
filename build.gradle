@@ -19,8 +19,8 @@ ext {
     versionPatch = 3
 }
 
-private Integer generateVersionCode(Integer variant) {
-    return ext.versionMajor * 10000 + ext.versionMinor * 1000 + ext.versionPatch * 100 + variant
+private Integer generateVersionCode() {
+    return ext.versionMajor * 10000 + ext.versionMinor * 1000 + ext.versionPatch * 100 + 1
 }
 
 private String generateVersionName() {
@@ -45,8 +45,11 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
+        applicationId "dev.dworks.apps.alauncher"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.generateVersionName()
+        versionCode rootProject.generateVersionCode()
 
         vectorDrawables.useSupportLibrary = true
     }
@@ -80,8 +83,12 @@ android {
     sourceSets {
         main {
             res.srcDirs = ['res']
-            java.srcDirs = ['src', 'src_plugins']
-            manifest.srcFile 'AndroidManifest-common.xml'
+            java.srcDirs = ['src', 'src_plugins', 'shade/src', 'shade/src_flags',
+                            'src_shortcuts_overrides', 'shade/src_backport',
+                            'shade/src_ui_overrides']
+            aidl.srcDirs = ['shade/aidl']
+            assets.srcDirs = ['shade/assets']
+            manifest.srcFile 'LeewynManifest.xml'
             proto {
                 srcDir 'protos/'
                 srcDir 'proto_overrides/'
@@ -89,11 +96,13 @@ android {
         }
 
         debug {
-            manifest.srcFile "AndroidManifest.xml"
+            res.srcDirs = ['shade/res', 'shade/res_translations',
+                           'shade/res_translations_manual', 'shade/res_ui_overrides']
         }
 
         release {
-            manifest.srcFile "AndroidManifest.xml"
+            res.srcDirs = ['shade/res', 'shade/res_translations',
+                           'shade/res_translations_manual', 'shade/res_ui_overrides']
         }
 
     }
@@ -133,6 +142,7 @@ dependencies {
 
     implementation project(':IconLoader')
     implementation fileTree(dir: "${FRAMEWORK_PREBUILTS_DIR}/libs", include: 'launcher_protos.jar')
+    implementation fileTree(dir: "${FRAMEWORK_PREBUILTS_DIR}/libs", include: 'plugin_core.jar')
 
 }
 
@@ -163,5 +173,3 @@ if (keystoreProperties.exists()) {
     android.signingConfigs.release.keyAlias props.keyAlias
     android.signingConfigs.release.keyPassword props.keyAliasPassword
 }
-
-apply from: 'shade/shade.gradle'
